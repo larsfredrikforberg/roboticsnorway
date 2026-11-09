@@ -289,9 +289,9 @@ export const articles: NewsArticle[] = [
         type: "paragraph",
         runs: [
           {
-            text: "Companies, organisations and individuals who want to take part can apply through the ",
+            text: "Companies, organisations and individuals who want to take part can find out how to join on the ",
           },
-          { text: "members join form", href: "/join" },
+          { text: "Join page", href: "/join" },
           {
             text: ". The projects anchored in the network, including \"A door to the Bay Area\", are described on the ",
           },
