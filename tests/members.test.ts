@@ -56,7 +56,7 @@ test("uncertain websites and unconfirmed logos are not published", () => {
   assert.equal(byName["Saro Robotics"].contactEmail, "ingeborg@sarorobotics.com");
   assert.equal(byName["Laksiya Balasubramaniam"].membershipType, "individual");
   assert.equal(byName["Kristoffer Gjerde"].membershipType, "individual");
-  assert.equal(byName["Laksiya Balasubramaniam"].affiliation, null);
-  assert.equal(byName["Kristoffer Gjerde"].affiliation, null);
+  assert.equal(byName["Laksiya Balasubramaniam"].affiliation, "Industrial Product Developer, Robotics and AI");
+  assert.equal(byName["Kristoffer Gjerde"].affiliation, "Director, Strategic Accounts, Cognite");
   assert.equal(byName.Cognite, undefined);
 });
