@@ -615,12 +615,12 @@
       "company_name": "Norwegian Robotics Cluster"
     },
     {
-      "website": "https://aimadlab.com",
-      "website_certainty": "uncertain",
-      "short_description": "Lab for megaprojects, virtual rockets and missiles (as introduced by Emil).",
-      "description_source": "Granola introductions.",
-      "description_certainty": "partial",
-      "contact_person": "Emil Anker",
+      "website": "https://www.aimadlab.com",
+      "website_certainty": "verified",
+      "short_description": "The fastest growing developer community for AI in the Nordics. Runs monthly Mad Meetups at Startuplab in Oslo and the Mad House hacker house for technical founders, with a focus on hard tech such as robotics, space, autonomy and drones.",
+      "description_source": "aimadlab.com",
+      "description_certainty": "verified",
+      "contact_person": "Emil Anker Wiik",
       "contact_email": "emil@aimadlab.com",
       "contact_certainty": "verified",
       "additional_contacts": [
@@ -637,8 +637,8 @@
       "rsvp": "accepted",
       "introduced_at_meeting": true,
       "membership_status": "meeting_attendee_not_on_inception_list",
-      "notes": "Website inferred from email domain; homepage not fetched.",
-      "company_name": "AimadLab"
+      "notes": "Name and description checked on aimadlab.com and LinkedIn, 9 Nov 2026.",
+      "company_name": "AI Mad Lab"
     },
     {
       "website": "https://www.innovasjonnorge.no",

@@ -6,7 +6,7 @@ test("public members are the founding organisations that were present", () => {
   const names = publicMembers().map((member) => member.companyName);
   assert.deepEqual(names, [
     "3LC",
-    "AimadLab",
+    "AI Mad Lab",
     "Dotspot",
     "Hive Autonomy",
     "Humanoid.guide",
