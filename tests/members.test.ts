@@ -30,6 +30,7 @@ test("public members are the founding organisations that were present", () => {
     "Saro Robotics",
     "Sonair",
     "Startuplab",
+    "Takt Logistikk",
   ]);
 });
 

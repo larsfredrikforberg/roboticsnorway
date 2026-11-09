@@ -83,7 +83,8 @@ export function classifyMember(member: SourceMember): MemberDecision {
     status === "meeting_attendee_not_on_inception_list" ||
     status === "related_cluster_guest" ||
     status === "public_partner_guest_not_a_member" ||
-    status === "listed_on_invitation_contact_unknown";
+    status === "listed_on_invitation_contact_unknown" ||
+    status === "joined_by_email";
 
   if (!present) {
     return {

@@ -729,6 +729,26 @@
       "membership_status": "calendar_guest_organisation_unknown",
       "notes": "On the calendar guest list only. Do not invent a company name.",
       "company_name": "(unknown organisation)"
+    },
+    {
+      "website": "https://taktlogistikk.no",
+      "website_certainty": "verified",
+      "short_description": "Helps contractors and developers take control of construction-site logistics: planning, coordinated deliveries and digital information sharing from planning to completed project, based on Lean Construction.",
+      "description_source": "taktlogistikk.no",
+      "description_certainty": "verified",
+      "contact_person": "Gjermund",
+      "contact_email": "gjermund@taktlogistikk.no",
+      "contact_certainty": "verified",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Asked to join by email to Lars-Fredrik Forberg, 9 Nov 2026. Added manually.",
+      "company_name": "Takt Logistikk"
     }
   ],
   "declined_according_to_invitation": [
