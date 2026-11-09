@@ -10,7 +10,7 @@ const steeringGroup = [
   { person: "Christian Rokseth", organisation: "Humanoid.guide", url: "https://humanoid.guide" },
   { person: "Eva Helen Rognskog", organisation: "Necia", url: "https://necia.no" },
   { person: "Maria Katarina Michelsen", organisation: "Runway FBU", url: "https://runwayfbu.com" },
-  { person: "Daniel", organisation: "Saro Robotics", url: "https://www.sarorobotics.com" },
+  { person: "Daniel Kjøle Skogland", organisation: "Saro Robotics", url: "https://www.sarorobotics.com" },
   { person: "Julian Alexander Hahn", organisation: "Wybe Robotics", url: "https://wybe.me" },
 ];
 

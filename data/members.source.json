@@ -99,7 +99,7 @@
       "contact_certainty": "verified",
       "additional_contacts": [
         {
-          "name": "Daniel",
+          "name": "Daniel Kjøle Skogland",
           "email": "daniel@sarorobotics.com",
           "note": "Confirmed for the Robotics Norway steering group (Granola next steps)."
         },
@@ -736,7 +736,7 @@
       "short_description": "Helps contractors and developers take control of construction-site logistics: planning, coordinated deliveries and digital information sharing from planning to completed project, based on Lean Construction.",
       "description_source": "taktlogistikk.no",
       "description_certainty": "verified",
-      "contact_person": "Gjermund",
+      "contact_person": "Gjermund Lien",
       "contact_email": "gjermund@taktlogistikk.no",
       "contact_certainty": "verified",
       "additional_contacts": [],
