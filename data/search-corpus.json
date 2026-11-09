@@ -429,6 +429,14 @@
       "meta": "Gjermund · gjermund@taktlogistikk.no",
       "href": "/members#takt-logistikk",
       "text": "Takt Logistikk. Helps contractors and developers take control of construction-site logistics: planning, coordinated deliveries and digital information sharing from planning to completed project, based on Lean Construction.. Gjermund. gjermund@taktlogistikk.no. https://taktlogistikk.no"
+    },
+    {
+      "id": "member-wybe-robotics",
+      "group": "Members",
+      "title": "Wybe Robotics",
+      "meta": "Julian Alexander Hahn · julian@wybe.me",
+      "href": "/members#wybe-robotics",
+      "text": "Wybe Robotics. Builds robotic employees from its R&D lab in Moss. The Wybe Node, a small on-premises device, handles calls, emails, scheduling and follow-ups around the clock in more than 30 languages, and the same software can be given a humanoid body for cleaning, reception or security.. Julian Alexander Hahn. julian@wybe.me. https://wybe.me"
     }
   ]
 }

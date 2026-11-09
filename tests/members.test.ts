@@ -31,6 +31,7 @@ test("public members are the founding organisations that were present", () => {
     "Sonair",
     "Startuplab",
     "Takt Logistikk",
+    "Wybe Robotics",
   ]);
 });
 
@@ -39,11 +40,10 @@ test("uncertain, declined, private and unknown entries are excluded", () => {
     excludedMembers().map((entry) => [entry.companyName, entry.reason]),
   );
   assert.equal(reasons["Fisker Robotics"], "Flagged uncertain.");
-  assert.equal(reasons.Wybe, "Flagged uncertain.");
   assert.equal(reasons.Cognite, "Declined membership.");
   assert.equal(reasons["Laksiya Balasubramaniam"], undefined);
   assert.match(reasons["(unknown organisation)"], /unknown/i);
-  assert.equal(Object.keys(reasons).length, 4);
+  assert.equal(Object.keys(reasons).length, 3);
 });
 
 test("uncertain websites and unconfirmed logos are not published", () => {

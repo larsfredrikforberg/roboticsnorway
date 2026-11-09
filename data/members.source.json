@@ -314,13 +314,13 @@
     },
     {
       "website": "https://wybe.me",
-      "website_certainty": "uncertain",
-      "short_description": "Listed in the invitation as Wybe (Agibot). No introduction at the 11:00 founding meeting was recorded, and no Wybe address appears on the calendar guest list.",
-      "description_source": "Invitation inception list only.",
-      "description_certainty": "unknown",
-      "contact_person": "Julian",
+      "website_certainty": "verified",
+      "short_description": "Builds robotic employees from its R&D lab in Moss. The Wybe Node, a small on-premises device, handles calls, emails, scheduling and follow-ups around the clock in more than 30 languages, and the same software can be given a humanoid body for cleaning, reception or security.",
+      "description_source": "Humanoids at work event, Startuplab, Nov 2026; wybe.me.",
+      "description_certainty": "verified",
+      "contact_person": "Julian Alexander Hahn",
       "contact_email": "julian@wybe.me",
-      "contact_certainty": "uncertain",
+      "contact_certainty": "verified",
       "additional_contacts": [],
       "logo_url": null,
       "logo_certainty": "unknown",
@@ -328,9 +328,9 @@
       "on_calendar_guest_list": false,
       "rsvp": null,
       "introduced_at_meeting": false,
-      "membership_status": "listed_on_invitation_attendance_not_verified",
-      "notes": "julian@wybe.me appears on Christina Wiig's 3 Nov 'Humanoids at work' speaker email, not on the 11:00 Stiftelsesmøte guest list.",
-      "company_name": "Wybe"
+      "membership_status": "joined_by_email",
+      "notes": "Confirmed as member and steering-group member by Lars-Fredrik Forberg, 9 Nov 2026.",
+      "company_name": "Wybe Robotics"
     },
     {
       "website": "https://www.hiveautonomy.no",
