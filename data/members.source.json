@@ -749,6 +749,26 @@
       "membership_status": "joined_by_email",
       "notes": "Asked to join by email to Lars-Fredrik Forberg, 9 Nov 2026. Added manually.",
       "company_name": "Takt Logistikk"
+    },
+    {
+      "website": "https://bluzenit.com",
+      "website_certainty": "verified",
+      "short_description": "End-to-end asset integrity partner for the oil and gas, petrochemical and industrial sectors. Combines connected sensing, smart robotics, engineering expertise and data intelligence to detect hidden risks such as corrosion under insulation before they become failures. Rooted in North Sea engineering and formerly part of KAEFER.",
+      "description_source": "bluzenit.com",
+      "description_certainty": "verified",
+      "contact_person": "Arve Martinsen",
+      "contact_email": "Arve.Martinsen@bluzenit.com",
+      "contact_certainty": "verified",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "CEO Arve Martinsen asked to join by email to Lars-Fredrik Forberg, 9 Nov 2026. Added manually.",
+      "company_name": "bluZenit"
     }
   ],
   "declined_according_to_invitation": [

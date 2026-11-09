@@ -7,6 +7,7 @@ test("public members are the founding organisations that were present", () => {
   assert.deepEqual(names, [
     "3LC",
     "AI Mad Lab",
+    "bluZenit",
     "Dotspot",
     "Hive Autonomy",
     "Humanoid.guide",
