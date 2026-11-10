@@ -9,6 +9,7 @@ const steeringGroup = [
   { person: "Lars-Fredrik Forberg", organisation: "Kinetic Blocks", url: "https://kineticblocks.com" },
   { person: "Christian Rokseth", organisation: "Humanoid.guide", url: "https://humanoid.guide" },
   { person: "Eva Helen Rognskog", organisation: "Necia", url: "https://necia.no" },
+  { person: "Vidar Tufteland", organisation: "Norwegian Robotics Cluster", url: "https://robotcluster.no" },
   { person: "Maria Katarina Michelsen", organisation: "Runway FBU", url: "https://runwayfbu.com" },
   { person: "Daniel Kjøle Skogland", organisation: "Saro Robotics", url: "https://www.sarorobotics.com" },
   { person: "Julian Alexander Hahn", organisation: "Wybe Robotics", url: "https://wybe.me" },
