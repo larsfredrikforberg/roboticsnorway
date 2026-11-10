@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 const steeringGroup = [
   { person: "Lars-Fredrik Forberg", organisation: "Kinetic Blocks", url: "https://kineticblocks.com" },
   { person: "Christian Rokseth", organisation: "Humanoid.guide", url: "https://humanoid.guide" },
+  { person: "Lene Merethe Liodden", organisation: "Mechatronics Innovation Lab", url: "https://mil-as.no" },
   { person: "Eva Helen Rognskog", organisation: "Necia", url: "https://necia.no" },
   { person: "Vidar Tufteland", organisation: "Norwegian Robotics Cluster", url: "https://robotcluster.no" },
   { person: "Maria Katarina Michelsen", organisation: "Runway FBU", url: "https://runwayfbu.com" },
