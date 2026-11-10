@@ -1,3 +1,4 @@
+import { PhotoCredit } from "@/components/photo-credit";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -75,7 +76,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <NewsPhoto figure={article.hero} preload sizes="(min-width: 48rem) 48rem, 100vw" />
         <figcaption className="mt-3 text-sm leading-6 text-muted-foreground">
           <p>{article.hero.caption}</p>
-          <p className="mt-1">{article.photoCredit}</p>
+          <p className="mt-1"><PhotoCredit text={article.photoCredit} /></p>
         </figcaption>
       </figure>
       <div className="mt-8 space-y-5 text-base leading-7">
@@ -100,7 +101,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
                 <NewsPhoto figure={block.figure} sizes="(min-width: 48rem) 48rem, 100vw" />
                 <figcaption className="mt-2 text-sm leading-6 text-muted-foreground">
                   <p>{block.figure.caption}</p>
-                  {block.credit ? <p className="mt-1">{block.credit}</p> : null}
+                  {block.credit ? <p className="mt-1"><PhotoCredit text={block.credit} /></p> : null}
                 </figcaption>
               </figure>
             );
@@ -120,7 +121,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
                   </figure>
                 ))}
               </div>
-              <figcaption className="mt-4 text-sm text-muted-foreground">{block.credit}</figcaption>
+              <figcaption className="mt-4 text-sm text-muted-foreground"><PhotoCredit text={block.credit} /></figcaption>
             </figure>
           );
         })}

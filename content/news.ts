@@ -59,7 +59,7 @@ function photo(file: string, width: number, height: number, text: string): NewsF
   return { src: file, alt: text, caption: text, width, height };
 }
 
-const startuplabCredit = "Photos: Startuplab";
+const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
@@ -77,7 +77,7 @@ export const articles: NewsArticle[] = [
       966,
       "Marie Mostad, CEO of Startuplab, opens Humanoids at work in front of a full house.",
     ),
-    photoCredit: startuplabCredit,
+    photoCredit: photoCredit,
     blocks: [
       paragraph(
         "The 1990s gave us the PC, the 2000s the internet, then came the smartphone, and now AI. Will humanoids shape the 2030s and beyond?",
@@ -92,7 +92,7 @@ export const articles: NewsArticle[] = [
       {
         type: "gallery",
         frame: false,
-        credit: startuplabCredit,
+        credit: photoCredit,
         figures: [
           photo(
             "/news/humanoids-2.jpg",
@@ -114,7 +114,7 @@ export const articles: NewsArticle[] = [
       ),
       {
         type: "figure",
-        credit: startuplabCredit,
+        credit: photoCredit,
         figure: photo(
           "/news/humanoids-4.jpg",
           1600,
@@ -131,7 +131,7 @@ export const articles: NewsArticle[] = [
       ),
       {
         type: "figure",
-        credit: startuplabCredit,
+        credit: photoCredit,
         figure: photo(
           "/news/humanoids-5.jpg",
           1600,
@@ -146,7 +146,7 @@ export const articles: NewsArticle[] = [
       {
         type: "gallery",
         frame: false,
-        credit: startuplabCredit,
+        credit: photoCredit,
         figures: [
           photo(
             "/news/humanoids-8.jpg",
@@ -178,7 +178,7 @@ export const articles: NewsArticle[] = [
       ),
       {
         type: "figure",
-        credit: startuplabCredit,
+        credit: photoCredit,
         figure: photo("/news/humanoids-6.jpg", 1600, 926, "Guests meet the humanoid after the talks."),
       },
       paragraph(
@@ -195,7 +195,7 @@ export const articles: NewsArticle[] = [
     excerpt:
       "Participants met in person and online at StartupLab in Oslo on 5 November 2026 for the founding meeting of the Robotics Norway network.",
     hero,
-    photoCredit: "Photos: StartupLab",
+    photoCredit: photoCredit,
     blocks: [
       paragraph(
         "On 5 November 2026, Robotics Norway held its founding meeting at StartupLab in Oslo. Participants joined in person and online. The public charter from the meeting describes Robotics Norway as the network and cluster for Norwegian companies that build robots, physical AI, and the data and software around them.",
@@ -224,7 +224,7 @@ export const articles: NewsArticle[] = [
       ),
       {
         type: "gallery",
-        credit: "Photos: StartupLab",
+        credit: photoCredit,
         figures: [
           {
             src: "/news/opening-2.jpg",
