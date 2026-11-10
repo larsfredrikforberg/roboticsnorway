@@ -769,6 +769,26 @@
       "membership_status": "joined_by_email",
       "notes": "CEO Arve Martinsen asked to join by email to Lars-Fredrik Forberg, 9 Nov 2026. Added manually. Org. no. 928 108 856, Energivegen 20, 4056 Tananger. monkeyBot 2.0 video: https://www.youtube.com/watch?v=-7sm7WI95gw. Info from Arve Martinsen, 10 Nov 2026.",
       "company_name": "bluZenit"
+    },
+    {
+      "website": "https://www.linkedin.com/company/handprintrobotics",
+      "website_certainty": "partial",
+      "short_description": "Norwegian physical-AI startup developing humanoid robots, working from NTNU's robotics lab. Founded in 2026 by the former co-founders of Lito.",
+      "description_source": "Join message forwarded by Lars-Fredrik Forberg, 10 Nov 2026; Bendik Skrede's LinkedIn profile.",
+      "description_certainty": "verified",
+      "contact_person": "Bendik Skrede",
+      "contact_email": null,
+      "contact_certainty": "partial",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Asked to join via message to Lars-Fredrik Forberg, 10 Nov 2026, from a co-founder (name and email not given; co-founder Bendik Skrede per LinkedIn). Founders left Lito in summer 2026. Added manually.",
+      "company_name": "Handprint"
     }
   ],
   "declined_according_to_invitation": [
