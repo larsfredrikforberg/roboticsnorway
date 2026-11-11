@@ -809,6 +809,26 @@
       "membership_status": "joined_by_email",
       "notes": "CEO Vasily Morzhakov asked to join by email, forwarded by Lars-Fredrik Forberg 11 Nov 2026. Added manually.",
       "company_name": "Rembrain AS"
+    },
+    {
+      "website": "https://www.oemautomatic.se/produkter/computer-vision",
+      "website_certainty": "verified",
+      "short_description": "Swedish automation supplier whose Computer Vision product area helps companies choose cameras, lidar, 3D cameras, thermal cameras and computers for robotics, automation and autonomous systems. Works closely with suppliers and customers, has a Norwegian subsidiary and an established presence in the Norwegian market.",
+      "description_source": "Join email from Mattias Andersson, forwarded 11 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": "Mattias Andersson",
+      "contact_email": "mattias.andersson@oemautomatic.se",
+      "contact_certainty": "verified",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Mattias Andersson, Sales Manager Computer Vision (based in Sweden), asked to join by email, forwarded by Lars-Fredrik Forberg 11 Nov 2026. Added manually. HQ Fredriksbergsgatan 2, SE-573 92 Tranås.",
+      "company_name": "OEM Automatic"
     }
   ],
   "declined_according_to_invitation": [

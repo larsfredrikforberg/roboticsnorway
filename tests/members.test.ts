@@ -22,6 +22,7 @@ test("public members are the founding organisations that were present", () => {
     "Mechatronics Innovation Lab",
     "Necia",
     "Norwegian Robotics Cluster",
+    "OEM Automatic",
     "Oslo kommune, Sykehjemsetaten",
     "Physical Robotics",
     "Posten Bring",
