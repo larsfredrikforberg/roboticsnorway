@@ -789,6 +789,26 @@
       "membership_status": "joined_by_email",
       "notes": "Asked to join via message to Lars-Fredrik Forberg, 10 Nov 2026, from a co-founder (name and email not given; co-founder Bendik Skrede per LinkedIn). Founders left Lito in summer 2026. Added manually.",
       "company_name": "Handprint"
+    },
+    {
+      "website": "https://rembrain.ai",
+      "website_certainty": "verified",
+      "short_description": "Develops AI-powered robotic workstations for industrial manufacturing, designed to be drop-in: deployable in existing production environments with minimal integration effort. Combines computer vision, physical AI and reusable robotic skills to automate assembly, screwdriving, gluing and quality inspection. Based in Stavanger.",
+      "description_source": "Join email from Vasily Morzhakov, 11 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": "Vasily Morzhakov",
+      "contact_email": "morzhakov@rembrain.ai",
+      "contact_certainty": "verified",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "CEO Vasily Morzhakov asked to join by email, forwarded by Lars-Fredrik Forberg 11 Nov 2026. Added manually.",
+      "company_name": "Rembrain AS"
     }
   ],
   "declined_according_to_invitation": [
