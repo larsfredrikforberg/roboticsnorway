@@ -120,7 +120,7 @@
     },
     {
       "website": "https://humanoid.guide",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "Introduced at the founding meeting from an investor/founder angle by Christian Rokseth. Invitation lists the company as Humanoid.guide (Stavanger).",
       "description_source": "Granola introductions; invitation inception list.",
       "description_certainty": "partial",
@@ -160,7 +160,7 @@
     },
     {
       "website": "https://marseliarobotics.com",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "Industrial robots, based in Stavanger (as introduced by Lone). Press coverage describes software that lets an operator instruct a robot arm in ordinary language.",
       "description_source": "Granola introductions; Finansavisen 13 June 2026 quoted in search results (not re-fetched as primary web page).",
       "description_certainty": "partial",
@@ -180,7 +180,7 @@
     },
     {
       "website": "https://runwayfbu.com",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "Investment fund for the future of industry including robotics; also runs an AI/robotics hub (as introduced by Hanna Selvaag Wangsmo and Maria Katarina Michelsen). LinkedIn company page describes a tech hub with 60+ companies and an AI and Robotics Lab at Aker Tech House, Fornebu, related to RunwayVC (runway.vc).",
       "description_source": "Granola introductions; LinkedIn company page snippet in search results.",
       "description_certainty": "partial",
@@ -248,7 +248,7 @@
     },
     {
       "website": "https://www.ppm.no",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "High-tech robot installations; now robots for nursing homes, based in Trondheim. Mentioned their Nursing Home Lab (NHL) in Trondheim during the meeting.",
       "description_source": "Granola introductions and robot-lab discussion.",
       "description_certainty": "partial",
@@ -372,7 +372,7 @@
       "short_description": "Norwegian advanced robotics and automation company (Necia member page).",
       "description_source": "https://necia.no/news/velkommen-til-vårt-nye-medlem-physical-robotics and Shifter 6 Nov 2026.",
       "description_certainty": "partial",
-      "contact_person": null,
+      "contact_person": "Andreas",
       "contact_email": null,
       "contact_certainty": "unknown",
       "additional_contacts": [],
@@ -381,9 +381,9 @@
       "on_inception_list": true,
       "on_calendar_guest_list": false,
       "rsvp": null,
-      "introduced_at_meeting": false,
+      "introduced_at_meeting": true,
       "membership_status": "listed_on_invitation_contact_unknown",
-      "notes": "No Physical Robotics email was on the calendar guest list. See also uncertain 'Fisker Robotics' entry.",
+      "notes": "No Physical Robotics email was on the calendar guest list. See also uncertain 'Fisker Robotics' entry. Lars-Fredrik Forberg confirmed 11 Nov 2026 that Andreas attended from Physical Robotics (surname and email not given).",
       "company_name": "Physical Robotics"
     },
     {
@@ -407,8 +407,8 @@
       "company_name": "Fisker Robotics"
     },
     {
-      "website": "https://roboxi.com",
-      "website_certainty": "uncertain",
+      "website": "https://www.roboxi.com",
+      "website_certainty": "verified",
       "short_description": "About 30 employees in Stavanger; builds robots for airport aprons / autonomous runway inspection and maintenance (meeting intro and 3LC partnership page).",
       "description_source": "Granola introductions; 3LC–Roboxi partnership page snippets.",
       "description_certainty": "partial",
@@ -428,7 +428,7 @@
     },
     {
       "website": "https://mil-as.no",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "Lab in Grimstad working with robotics, AI and additive manufacturing. Invitation notes equipment including Unitree G1, a quadruped, and Boston Dynamics Spot.",
       "description_source": "Granola introductions; invitation parenthetical.",
       "description_certainty": "partial",
@@ -484,7 +484,7 @@
     },
     {
       "website": "https://www.kameleongruppen.no",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "Robot installation, design and automation for production lines (as introduced by Lars Kjelling).",
       "description_source": "Granola introductions. Invitation/slides spell it 'Kamelon Robotics'.",
       "description_certainty": "partial",
@@ -530,7 +530,7 @@
     },
     {
       "website": "https://www.oslo.kommune.no/",
-      "website_certainty": "partial",
+      "website_certainty": "verified",
       "short_description": "Oslo’s nursing-home agency; introduced interest in nursing-home applications of robotics.",
       "description_source": "Granola introductions; invitation inception list.",
       "description_certainty": "partial",
@@ -590,7 +590,7 @@
     },
     {
       "website": "https://robotcluster.no",
-      "website_certainty": "uncertain",
+      "website_certainty": "verified",
       "short_description": "Industry cluster funded by Innovation Norway, based on Osterøy, bringing together producers, integrators, end users, research, capital and public actors. Admitted to NIC Connect for 2027–2029 according to the founding slides.",
       "description_source": "Granola notes; founding-meeting slides (NRC · OSTERØY).",
       "description_certainty": "partial",
@@ -811,7 +811,7 @@
       "company_name": "Rembrain AS"
     },
     {
-      "website": "https://www.oemautomatic.se/produkter/computer-vision",
+      "website": "https://www.oemautomatic.se",
       "website_certainty": "verified",
       "short_description": "Swedish automation supplier whose Computer Vision product area helps companies choose cameras, lidar, 3D cameras, thermal cameras and computers for robotics, automation and autonomous systems. Works closely with suppliers and customers, has a Norwegian subsidiary and an established presence in the Norwegian market.",
       "description_source": "Join email from Mattias Andersson, forwarded 11 Nov 2026.",

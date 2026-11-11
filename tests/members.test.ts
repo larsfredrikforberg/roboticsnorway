@@ -50,9 +50,9 @@ test("uncertain, declined, private and unknown entries are excluded", () => {
   assert.equal(Object.keys(reasons).length, 3);
 });
 
-test("uncertain websites and unconfirmed logos are not published", () => {
+test("published websites and unconfirmed logos", () => {
   const byName = Object.fromEntries(publicMembers().map((member) => [member.companyName, member]));
-  assert.equal(byName["Marselia Robotics"].website, null);
+  assert.equal(byName["Marselia Robotics"].website, "https://marseliarobotics.com");
   assert.equal(byName.Sonair.logoUrl, null);
   assert.equal(byName["Physical Robotics"].contactEmail, null);
   assert.equal(byName.Dotspot.description, missingDescription);
