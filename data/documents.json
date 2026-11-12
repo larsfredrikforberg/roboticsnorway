@@ -8,6 +8,19 @@
   },
   "documents": [
     {
+      "slug": "steering-group-minutes-2026-11-12",
+      "name": "Minutes – Robotics Norway steering group meeting, 12 November 2026",
+      "type": "Minutes",
+      "mimeType": "text/markdown",
+      "id": "steering-group-minutes-2026-11-12",
+      "link": "/documents/steering-group-minutes-2026-11-12",
+      "lastModified": "2026-11-12T12:00:00.000Z",
+      "publicAnyoneWithLink": false,
+      "extract": "steering-group-minutes-2026-11-12",
+      "summary": "Minutes from the steering group meeting on 12 November 2026: the charter approved, study trips to Grimstad, Odense, the US and China, the Bay Area proposal, and ideas such as one million robots in Norway by 2035.",
+      "translation": null
+    },
+    {
       "slug": "charter",
       "name": "Charter for Robotics Norway",
       "type": "Google Doc",

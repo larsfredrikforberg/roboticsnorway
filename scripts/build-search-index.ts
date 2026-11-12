@@ -68,6 +68,7 @@ export function buildSearchCorpus(): SearchCorpus {
     "section-a": sectionA,
     "charter-current": charterCurrent,
     invitation,
+    "steering-group-minutes-2026-11-12": read("content/legal/steering-group-minutes-2026-11-12.md").trim(),
   };
 
   const documents: CorpusDocument[] = documentsFile.documents.map((document) => {
