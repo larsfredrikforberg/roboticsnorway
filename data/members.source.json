@@ -829,6 +829,26 @@
       "membership_status": "joined_by_email",
       "notes": "Mattias Andersson, Sales Manager Computer Vision (based in Sweden), asked to join by email, forwarded by Lars-Fredrik Forberg 11 Nov 2026. Added manually. HQ Fredriksbergsgatan 2, SE-573 92 Tranås.",
       "company_name": "OEM Automatic"
+    },
+    {
+      "website": "https://endwell.ai",
+      "website_certainty": "verified",
+      "short_description": "Provides a collaborative platform connecting humans, agents and robots. Its first use case is plug and abandonment of offshore wells, but the platform itself is generic. Part of Runway FBU's AI & Robotics Lab.",
+      "description_source": "Join email from Sondre Bø Kongsgård, forwarded 12 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": "Sondre Bø Kongsgård",
+      "contact_email": "sondre.kongsgaard@gmail.com",
+      "contact_certainty": "verified",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Sondre Bø Kongsgård asked to join by email on the recommendation of Maria Katarina T. Michelsen (Runway FBU), forwarded by Lars-Fredrik Forberg 12 Nov 2026. Added manually.",
+      "company_name": "Endwell"
     }
   ],
   "declined_according_to_invitation": [
