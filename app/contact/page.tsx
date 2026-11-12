@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Contact the administrator and steering group of Robotics Norway.",
 };
 
-const steeringGroup = [
+const steeringGroup: { person: string; organisation: string; url: string; role?: string }[] = [
   { person: "Lars-Fredrik Forberg", organisation: "Kinetic Blocks", url: "https://kineticblocks.com" },
   { person: "Christian Rokseth", organisation: "Humanoid.guide", url: "https://humanoid.guide" },
   { person: "Lene Merethe Liodden", organisation: "Mechatronics Innovation Lab", url: "https://mil-as.no" },
@@ -13,6 +13,7 @@ const steeringGroup = [
   { person: "Vidar Tufteland", organisation: "Norwegian Robotics Cluster", url: "https://robotcluster.no" },
   { person: "Maria Katarina Michelsen", organisation: "Runway FBU", url: "https://runwayfbu.com" },
   { person: "Daniel Kjøle Skogland", organisation: "Saro Robotics", url: "https://www.sarorobotics.com" },
+  { person: "Kristian Hesthaug", organisation: "StartupLab", url: "https://www.startuplab.no", role: "Head of the hardware lab" },
   { person: "Julian Alexander Hahn", organisation: "Wybe Robotics", url: "https://wybe.me" },
 ];
 
@@ -41,7 +42,10 @@ export default function ContactPage() {
       <ul className="mt-6 divide-y divide-navy/10 border-y border-navy/10">
         {steeringGroup.map((member) => (
           <li key={member.organisation} className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between">
-            <span className="font-heading text-lg text-navy">{member.person}</span>
+            <span className="font-heading text-lg text-navy">
+              {member.person}
+              {member.role ? <span className="ml-2 text-sm text-navy/70">{member.role}</span> : null}
+            </span>
             <a className="text-flag hover:underline" href={member.url}>
               {member.organisation}
             </a>
