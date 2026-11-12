@@ -25,7 +25,9 @@ export async function generateMetadata({
       description: article.excerpt,
       type: "article",
       publishedTime: article.date,
-      images: [{ url: article.hero.src, alt: article.hero.alt, width: article.hero.width, height: article.hero.height }],
+      images: article.hero
+        ? [{ url: article.hero.src, alt: article.hero.alt, width: article.hero.width, height: article.hero.height }]
+        : undefined,
     },
   };
 }
@@ -72,13 +74,15 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <time dateTime={article.date}>{formatNewsDate(article.date)}</time>
         {` · ${article.place ?? "StartupLab, Oslo"}`}
       </p>
-      <figure className="mt-8">
-        <NewsPhoto figure={article.hero} preload sizes="(min-width: 48rem) 48rem, 100vw" />
-        <figcaption className="mt-3 text-sm leading-6 text-muted-foreground">
-          <p>{article.hero.caption}</p>
-          <p className="mt-1"><PhotoCredit text={article.photoCredit} /></p>
-        </figcaption>
-      </figure>
+      {article.hero ? (
+        <figure className="mt-8">
+          <NewsPhoto figure={article.hero} preload sizes="(min-width: 48rem) 48rem, 100vw" />
+          <figcaption className="mt-3 text-sm leading-6 text-muted-foreground">
+            <p>{article.hero.caption}</p>
+            {article.photoCredit ? <p className="mt-1"><PhotoCredit text={article.photoCredit} /></p> : null}
+          </figcaption>
+        </figure>
+      ) : null}
       <div className="mt-8 space-y-5 text-base leading-7">
         {article.blocks.map((block, index) => {
           if (block.type === "paragraph") {
@@ -135,7 +139,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
             headline: article.title,
             datePublished: article.date,
             description: article.excerpt,
-            image: [`${siteUrl}${article.hero.src}`],
+            image: article.hero ? [`${siteUrl}${article.hero.src}`] : undefined,
             mainEntityOfPage: `${siteUrl}/news/${article.slug}`,
             publisher: {
               "@type": "Organization",

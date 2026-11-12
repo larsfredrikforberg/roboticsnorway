@@ -33,9 +33,10 @@ export type NewsArticle = {
   /** Place shown after the date. Defaults to StartupLab, Oslo. */
   place?: string;
   excerpt: string;
-  hero: NewsFigure;
+  /** Lead photo. Omit for text-only articles. */
+  hero?: NewsFigure;
   /** Credit for the photographs in the article. */
-  photoCredit: string;
+  photoCredit?: string;
   blocks: NewsBlock[];
 };
 
@@ -62,6 +63,62 @@ function photo(file: string, width: number, height: number, text: string): NewsF
 const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
+  {
+    slug: "steering-group-meeting-12-november-2026",
+    title: "Steering group plans study trips and a robot strategy",
+    date: "2026-11-12",
+    order: 1,
+    tags: ["Network", "Steering group"],
+    excerpt:
+      "The Robotics Norway steering group met on 12 November 2026, approved the charter and started planning trips to Grimstad, Odense, the United States and China.",
+    blocks: [
+      paragraph(
+        "The steering group of Robotics Norway met on 12 November 2026. It approved the network's charter, confirmed that the website and member register are in order, and started planning the study trips that the charter promises members.",
+      ),
+      heading("Who took part"),
+      paragraph(
+        "Lars-Fredrik Forberg (Kinetic Blocks) organised the meeting. Also present were Christian Rokseth (Humanoid.guide), Eva Helen Rognskog (Necia), Daniel Kjøle Skogland and Kristian from Saro Robotics, Julian Alexander Hahn (Wybe Robotics), Vidar Tufteland (Norwegian Robotics Cluster), Lene Merethe Liodden (Mechatronics Innovation Lab) and Kristian Hesthaug (StartupLab). Maria Katarina Michelsen (Runway FBU) could not attend.",
+      ),
+      heading("What we discussed"),
+      paragraph(
+        "Study trips took most of the time. A visit to Grimstad is planned for around the turn of the year, and Lene and Lars-Fredrik will draft an agenda with input from the steering group. A short survey will gauge members' interest. A trip to Odense is planned for January, with a planning meeting for those interested on 23 November at 11:00.",
+      ),
+      paragraph(
+        "Further out, Lars-Fredrik and Vidar will sketch a possible trip to the United States in May together with the Norwegian Robotics Cluster. Maria will sketch a trip to Shanghai and Shenzhen. Julian knows Agibot, and the group wants to draw on Innovation Norway's office in China and on Norway's embassies and consulates there.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Lars-Fredrik presented the proposal " },
+          { text: "A door to the Bay Area", href: "/projects" },
+          {
+            text: ". Companies that want to take part sign a letter of intent and prepare a company presentation.",
+          },
+        ],
+      },
+      heading("Ideas on the table"),
+      paragraph(
+        "One million robots in Norway by 2035. The group sees robots as critical infrastructure and believes the government needs a national robot strategy.",
+      ),
+      paragraph(
+        "Events. Saro Robotics plans a physical AI hackathon in mid-January. Robotics Norway will support a large humanoid and robotics event in Norway, and the group discussed the Norwegian championship in AI (NM i KI), which aims to get one per cent of the population to take part.",
+      ),
+      paragraph(
+        "Courses for members. The network wants to arrange robotics courses and webinars with Norwegian companies on robot policies, evaluations, hardware and similar topics, and make them available to members.",
+      ),
+      paragraph(
+        "Membership and services. Vidar, Lene and Eva will write a short text on what it takes to become a member, to be published on this site. Lars-Fredrik and Lene will draft what the network can offer, including services from suppliers among the members.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Want to take part? See how to " },
+          { text: "join Robotics Norway", href: "/join" },
+          { text: "." },
+        ],
+      },
+    ],
+  },
   {
     slug: "humanoids-at-work",
     title: "Humanoids at work: Startuplab and IMD Alumni Club of Norway bring physical AI to Norwegian business",
@@ -339,7 +396,7 @@ export function formatNewsDate(isoDate: string) {
 }
 
 export function articlePlainText(article: NewsArticle) {
-  const parts = [article.excerpt, article.tags?.join(", "), article.hero.caption, article.photoCredit].filter(
+  const parts = [article.excerpt, article.tags?.join(", "), article.hero?.caption, article.photoCredit].filter(
     (part): part is string => Boolean(part),
   );
   for (const block of article.blocks) {

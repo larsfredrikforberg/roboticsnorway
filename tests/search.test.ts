@@ -43,11 +43,9 @@ test("news sorts newest first and breaks date ties by order", () => {
 });
 
 test("humanoids at work is featured ahead of the founding article", () => {
-  const sorted = articlesByDate();
+  const sorted = articlesByDate().filter((article) => article.date === "2026-11-05");
   assert.equal(sorted[0]?.slug, "humanoids-at-work");
-  assert.equal(sorted[0]?.date, "2026-11-05");
   assert.equal(sorted[1]?.slug, "robotics-norway-is-founded");
-  assert.equal(sorted[1]?.date, "2026-11-05");
   assert.ok((sorted[0]?.order ?? 0) > (sorted[1]?.order ?? 0));
 });
 
@@ -85,4 +83,10 @@ test("search finds the founding news article", () => {
   assert.equal(news.group, "News");
   assert.equal(news.title, "Robotics Norway is founded");
   assert.equal(groupHits([news])[0]?.group, "News");
+});
+
+test("the steering group meeting article is newest and has no photos", () => {
+  const newest = articlesByDate()[0];
+  assert.equal(newest?.slug, "steering-group-meeting-12-november-2026");
+  assert.equal(newest?.hero, undefined);
 });

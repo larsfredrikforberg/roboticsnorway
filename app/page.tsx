@@ -43,10 +43,12 @@ export default function HomePage() {
           <h2 id="latest-news-heading" className="mt-3 font-heading text-4xl text-navy">
             Latest news
           </h2>
-          <article className="mt-8 grid border border-border sm:grid-cols-[18rem_1fr]">
-            <Link href={`/news/${latestNews.slug}`} className="block bg-paper">
-              <NewsPhoto figure={latestNews.hero} sizes="(min-width: 640px) 18rem, 100vw" />
-            </Link>
+          <article className={`mt-8 grid border border-border${latestNews.hero ? " sm:grid-cols-[18rem_1fr]" : ""}`}>
+            {latestNews.hero ? (
+              <Link href={`/news/${latestNews.slug}`} className="block bg-paper">
+                <NewsPhoto figure={latestNews.hero} sizes="(min-width: 640px) 18rem, 100vw" />
+              </Link>
+            ) : null}
             <div className="flex flex-col justify-center p-6 sm:p-8">
               <time dateTime={latestNews.date} className="text-sm text-muted-foreground">
                 {formatNewsDate(latestNews.date)}
