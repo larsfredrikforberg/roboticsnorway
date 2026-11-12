@@ -10,6 +10,7 @@ test("public members are the founding organisations that were present", () => {
     "bluZenit",
     "Dotspot",
     "Endwell",
+    "Framdrift Innovasjon AS",
     "Handprint",
     "Hive Autonomy",
     "Humanoid.guide",

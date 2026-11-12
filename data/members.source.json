@@ -849,6 +849,26 @@
       "membership_status": "joined_by_email",
       "notes": "Sondre Bø Kongsgård asked to join by email on the recommendation of Maria Katarina T. Michelsen (Runway FBU), forwarded by Lars-Fredrik Forberg 12 Nov 2026. Added manually.",
       "company_name": "Endwell"
+    },
+    {
+      "website": "https://framdrift.com",
+      "website_certainty": "verified",
+      "short_description": "A home for entrepreneurs and investors building out of Bergen to the world.",
+      "description_source": "Join form answers forwarded by Lars-Fredrik Forberg, 12 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": "Lasse or Emilie",
+      "contact_email": "hello@framdrift.com",
+      "contact_certainty": "verified",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Joined via form answers forwarded by Lars-Fredrik Forberg 12 Nov 2026. Org. no. 936 431 127. Added manually.",
+      "company_name": "Framdrift Innovasjon AS"
     }
   ],
   "declined_according_to_invitation": [
