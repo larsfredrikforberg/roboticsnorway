@@ -869,6 +869,32 @@
       "membership_status": "joined_by_email",
       "notes": "Joined via form answers forwarded by Lars-Fredrik Forberg 12 Nov 2026. Org. no. 936 431 127. Added manually.",
       "company_name": "Framdrift Innovasjon AS"
+    },
+    {
+      "website": "https://www.autonomousretailnorway.no",
+      "website_certainty": "verified",
+      "short_description": "Develops modular robotic retail systems that combine robotics, physical AI and proprietary software to automate retail operations. Building on experience operating unmanned airport stores, it is working towards its first autonomous retail Village at Oslo Airport in 2028.",
+      "description_source": "Join email from Courtney Marles forwarded by Lars-Fredrik Forberg, 15 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": "Courtney Marles",
+      "contact_email": "courtney@autonomousretailnorway.no",
+      "contact_certainty": "verified",
+      "additional_contacts": [
+        {
+          "name": "Christian Nordbach",
+          "email": "christian@autonomousretailnorway.no",
+          "note": "CTO. Attended the founding meeting."
+        }
+      ],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Joined by email from Courtney Marles (CEO and co-founder), 15 Nov 2026. CTO Christian Nordbach attended the founding meeting. Added manually.",
+      "company_name": "Autonomous Retail Norway AS"
     }
   ],
   "declined_according_to_invitation": [
