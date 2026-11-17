@@ -64,6 +64,57 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "one-million-humanoids-in-norway-by-2050",
+    title: "One million humanoids in Norway by 2050 – are we ready?",
+    date: "2026-11-17",
+    order: 1,
+    tags: ["Commentary"],
+    place: "Shifter",
+    excerpt:
+      "In a commentary in Shifter, Robotics Norway president Lars-Fredrik Forberg writes that Norway could have around one million humanoids by 2050, and that regulation, test arenas and skills need to be in place by 2035.",
+    hero: photo(
+      "/news/one-million-humanoids.jpg",
+      1200,
+      683,
+      "People seated on wooden steps at a Robotics Norway gathering.",
+    ),
+    photoCredit: "Photo: Mia Sandnes Nilsen",
+    blocks: [
+      paragraph(
+        "In a commentary published in Shifter on 17 November 2026, Lars-Fredrik Forberg, president of Robotics Norway, asks whether Norway is ready for a future with around one million humanoid robots.",
+      ),
+      paragraph(
+        "China has made the technology behind humanoid robots a national priority in a five-year plan adopted in March, he writes. Chinese manufacturers talk openly about a robot in every home, and the first household robots are due to enter ordinary homes in Wuhan in early 2027. Chinese companies delivered around 90 percent of all humanoids sold worldwide last year.",
+      ),
+      paragraph(
+        "Morgan Stanley estimates that the world will have nearly one billion humanoids by 2050. With the same robot density the bank expects in the United States, Norway would then have around one million. Regulation, test arenas and skills therefore need to be in place by 2035, Forberg argues.",
+      ),
+      paragraph(
+        "Robots that do physical work in nursing homes, hospitals and industry will become infrastructure in a country where Statistics Norway estimates that health and care services will lack 42,400 full-time equivalents in 2040, and where the working-age population starts to fall from the mid-2030s, he writes, citing the government. A country that depends on robots in elderly care without controlling the software, the data or the spare parts has given up part of its freedom of action in a crisis, and robots therefore belong in emergency preparedness planning, not only in procurement departments.",
+      ),
+      paragraph(
+        "Most of the humanoids taken into use in Norway will probably be produced in China, the United States or Germany, because mass production requires supply chains and capital Norway does not have. Norway's opportunity, he argues, lies in the layers that decide whether a robot actually works in a given work operation: collecting consent-based data on how health workers, operators and hotel staff do their jobs, using that data to train robot policies, and scaling up when the technology is mature.",
+      ),
+      paragraph(
+        "The City of Oslo's nursing home agency plans to build a \"robot gym\" where robots can be tested and trained in a controlled environment before they meet residents. Robotics Norway supports the establishment of 500 robot labs in Norway, preferably one in each municipality, so that nursing homes, schools, companies and founders can try robots on their own work operations, collect data under shared rules for consent and ownership, and share experience.",
+      ),
+      paragraph(
+        "Forberg writes that the government and the Storting should adopt a national plan for robotics and physical artificial intelligence with the same weight as the National Transport Plan, fund robot labs and test arenas with health and care as the first priority, clarify the rules for collecting and owning work data, let municipalities and health trusts be first customers through innovative procurement, and include robots in the national preparedness plans. The decisions that determine whether Norway becomes a competent user of robots, and a supplier of data and services, or only a market for other countries' technology, must be taken in this and the next parliamentary term, he concludes.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Read the commentary in Shifter (in Norwegian): " },
+          {
+            text: "1 million humanoider i Norge i 2050 – er vi klare?",
+            href: "https://www.shifter.no/kommentar/1-million-humanoider-i-norge-i-2050-er-vi-klare/482979",
+          },
+          { text: "." },
+        ],
+      },
+    ],
+  },
+  {
     slug: "steering-group-meeting-12-november-2026",
     title: "Steering group plans study trips and a robot strategy",
     date: "2026-11-12",

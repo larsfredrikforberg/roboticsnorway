@@ -85,8 +85,10 @@ test("search finds the founding news article", () => {
   assert.equal(groupHits([news])[0]?.group, "News");
 });
 
-test("the steering group meeting article is newest and has no photos", () => {
+test("the Shifter commentary is newest and the steering group article has no photos", () => {
   const newest = articlesByDate()[0];
-  assert.equal(newest?.slug, "steering-group-meeting-12-november-2026");
-  assert.equal(newest?.hero, undefined);
+  assert.equal(newest?.slug, "one-million-humanoids-in-norway-by-2050");
+  assert.ok(newest?.hero);
+  const steering = getArticle("steering-group-meeting-12-november-2026");
+  assert.equal(steering?.hero, undefined);
 });
