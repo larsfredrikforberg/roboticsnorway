@@ -109,11 +109,11 @@ export const articles: NewsArticle[] = [
       ),
       heading("Intelligence moves off the screen"),
       paragraph(
-        "Kathryn Van Nys of Google Cloud opened at 09:15 by describing foundational intelligence moving from screens into factories, energy grids and robotics. According to Van Nys, more than 50 billion dollars flowed into physical AI this year alone, around five times the level of two years ago, and 11 percent of all venture funding now goes into embodied intelligence. She contrasted a software market of around 15 trillion dollars with a physical economy of 50 to 100 trillion, and cited three drivers: just-in-time trade shattered by the pandemic, with reshoring viable only if factories become software-defined; Europe's elevated energy costs and critical mineral mines that take more than 16 years to come online; and an 85 million skilled-worker shortage projected by 2030, with a third of Europe's manufacturing workforce aged 50 to 64. Europe's unfair advantage, she argued, is its precision mechatronics heritage and a large industrial base including Valmet, Nokia, ABB and Siemens. Google's stack, as she described it, spans DeepMind models such as Gemini Robotics, Veo and Genie; Google Cloud; Intrinsic, recently open-sourced under Apache 2.0.",
+        "Kathryn Van Nys of Google Cloud opened by describing foundational intelligence moving from screens into factories, energy grids and robotics. According to Van Nys, more than 50 billion dollars flowed into physical AI this year alone, around five times the level of two years ago, and 11 percent of all venture funding now goes into embodied intelligence. She contrasted a software market of around 15 trillion dollars with a physical economy of 50 to 100 trillion, and cited three drivers: just-in-time trade shattered by the pandemic, with reshoring viable only if factories become software-defined; Europe's elevated energy costs and critical mineral mines that take more than 16 years to come online; and an 85 million skilled-worker shortage projected by 2030, with a third of Europe's manufacturing workforce aged 50 to 64. Europe's unfair advantage, she argued, is its precision mechatronics heritage and a large industrial base including Valmet, Nokia, ABB and Siemens. Google's stack, as she described it, spans DeepMind models such as Gemini Robotics, Veo and Genie; Google Cloud; Intrinsic, recently open-sourced under Apache 2.0.",
       ),
       heading("An industrial renaissance"),
       paragraph(
-        "At 09:25 Sebastian Heitmann of Extantia said industry was long seen as the villain, and that technology now makes harmony with the planet and good jobs possible. He updated three pillars: electrons, now also about energy independence; molecules, for resource independence; and physical AI, the ability to build locally. Britain held 23 percent of global manufacturing by 1880 and then lost it through globalisation, he said. China now accounts for around 31 percent, and, according to Heitmann, 54 percent of all robots sold globally went to China last year. AI, robotics and 3D printing mean labour costs no longer determine where a factory is built. Battery-pack costs, he said, have fallen from more than 1,000 dollars per kilowatt-hour in 2010 to around 108 dollars today. Europe, he argued, needs massive investment in compute, energy, robots and capital.",
+        "Sebastian Heitmann of Extantia said industry was long seen as the villain, and that technology now makes harmony with the planet and good jobs possible. He updated three pillars: electrons, now also about energy independence; molecules, for resource independence; and physical AI, the ability to build locally. Britain held 23 percent of global manufacturing by 1880 and then lost it through globalisation, he said. China now accounts for around 31 percent, and, according to Heitmann, 54 percent of all robots sold globally went to China last year. AI, robotics and 3D printing mean labour costs no longer determine where a factory is built. Battery-pack costs, he said, have fallen from more than 1,000 dollars per kilowatt-hour in 2010 to around 108 dollars today. Europe, he argued, needs massive investment in compute, energy, robots and capital.",
       ),
       {
         type: "figure",
@@ -127,7 +127,7 @@ export const articles: NewsArticle[] = [
       },
       heading("Physical AI in the factory today"),
       paragraph(
-        "The 09:35 panel brought together Jan-Erik Solheim of STAIR in Malmö, Alexander Stevens of Motion in Brussels, and Fabian Kurz of Qualia in Copenhagen. Stevens said Motion's customers are 40 percent food and beverage, 30 percent heavy industry and 30 percent warehouse logistics. Solheim described STAIR's spatial intelligence layer as real-time tracking of robots, trucks and goods flow. Kurz said Qualia trains foundation models for robotics companies in manufacturing, agriculture and hospitals.",
+        "The first panel brought together Jan-Erik Solheim of STAIR in Malmö, Alexander Stevens of Motion in Brussels, and Fabian Kurz of Qualia in Copenhagen. Stevens said Motion's customers are 40 percent food and beverage, 30 percent heavy industry and 30 percent warehouse logistics. Solheim described STAIR's spatial intelligence layer as real-time tracking of robots, trucks and goods flow. Kurz said Qualia trains foundation models for robotics companies in manufacturing, agriculture and hospitals.",
       ),
       {
         type: "figure",
@@ -144,7 +144,7 @@ export const articles: NewsArticle[] = [
       ),
       heading("A humanoid on stage"),
       paragraph(
-        "At 10:05 Stevens demonstrated the Galbot S1 palletizing on stage. The robot, he said, ships to a warehouse customer in Belgium next week.",
+        "Stevens then demonstrated the Galbot S1 palletizing on stage. The robot, he said, ships to a warehouse customer in Belgium next week.",
       ),
       {
         type: "figure",
