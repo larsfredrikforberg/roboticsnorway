@@ -93,7 +93,7 @@ export const articles: NewsArticle[] = [
       "/news/industrial-renaissance-summit-session-03.jpg",
       1600,
       1200,
-      "The Session 03 panel on stage at the Industrial Renaissance Summit, under a slide titled How to Build, Fund, and Scale Physical AI.",
+      "The panel on building, funding and scaling physical AI, moderated by Joseph Michael (Google Cloud), with Andreas Klinger (Prototype), Tom Hubregtsen and Fran Infante (Voltrac), Andreas Kupke (LightQ) and Carlota Ochoa Neven du Mont (Extantia).",
     ),
     photoCredit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
     blocks: [
@@ -120,7 +120,7 @@ export const articles: NewsArticle[] = [
           "/news/industrial-renaissance-summit-session-03-names.jpg",
           1600,
           1200,
-          "The Session 03 panel, with side screens showing Carlota Ochoa Neven du Mont of Extantia and Andreas Kupke of LightQ.",
+          "Carlota Ochoa Neven du Mont (Extantia) and Andreas Kupke (LightQ) on the panel.",
         ),
       },
       paragraph(
@@ -153,7 +153,7 @@ export const articles: NewsArticle[] = [
           "/news/industrial-renaissance-summit-session-04.jpg",
           1600,
           1200,
-          "The Session 04 conversation on stage, with a side screen showing Nikolai Ensslen of Vesoma, under a slide titled The New Workforce: Robots Learning on the Job.",
+          "Nikolai Ensslen (Vesoma) in conversation with Yair Reem (Extantia) about robots learning on the job.",
         ),
       },
       paragraph(
@@ -169,7 +169,7 @@ export const articles: NewsArticle[] = [
           "/news/industrial-renaissance-summit-locomotion.jpg",
           1600,
           2133,
-          "Nikolai Ensslen of Vesoma on stage in front of a slide titled Locomotion, showing a humanoid robot suspended from a gantry.",
+          "Nikolai Ensslen (Vesoma) on how a robot learned to walk in three hours rather than six months.",
         ),
       },
       {
@@ -179,7 +179,7 @@ export const articles: NewsArticle[] = [
           "/news/industrial-renaissance-summit-vla-rl.jpg",
           1600,
           1200,
-          "A slide comparing 1X RAW VLA, 1X VLA + RL FT and 1X PURE RL on a cup-moving task, during the Vesoma session.",
+          "Nikolai Ensslen (Vesoma) argues that reinforcement learning outperforms vision-language-action models for physical skills.",
         ),
       },
       paragraph(
@@ -202,7 +202,7 @@ export const articles: NewsArticle[] = [
           "/news/industrial-renaissance-summit-closing.jpg",
           1600,
           1200,
-          "Closing words at the Industrial Renaissance Summit, with a slide naming Sebastian Heitmann, founding partner at Extantia, and Itxaso Araque, director of startups at Google, and a side screen showing Araque.",
+          "Sebastian Heitmann (Extantia) and Itxaso Araque (Google) close the Industrial Renaissance Summit.",
         ),
       },
     ],
