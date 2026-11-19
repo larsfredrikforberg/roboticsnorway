@@ -82,7 +82,7 @@ const photoCredit = "Photos: Jonas Kloster";
 export const articles: NewsArticle[] = [
   {
     slug: "humanoid-full-stack-playbook",
-    title: "Humanoid's full-stack playbook: from a demo to robots that work every shift",
+    title: "What makes us human? Humanoid builds robots to take on the work that holds us back",
     date: "2026-11-19",
     order: 4,
     tags: ["Events"],
