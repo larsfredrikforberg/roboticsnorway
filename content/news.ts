@@ -35,6 +35,8 @@ export type NewsArticle = {
   excerpt: string;
   /** Lead photo. Omit for text-only articles. */
   hero?: NewsFigure;
+  /** Optional organisation logo, shown small on the article page. */
+  logo?: NewsFigure;
   /** Credit for the photographs in the article. */
   photoCredit?: string;
   blocks: NewsBlock[];
@@ -63,6 +65,60 @@ function photo(file: string, width: number, height: number, text: string): NewsF
 const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
+  {
+    slug: "robotics-nation-talent-pipeline",
+    title: "Robotics Nation is building a talent pipeline for robotics, starting in school",
+    date: "2026-11-19",
+    order: 1,
+    tags: ["Network"],
+    place: "Voima Ventures",
+    excerpt:
+      "Robotics Norway president Lars-Fredrik Forberg met Erkka Lehtonen, president of the Finnish non-profit Robotics Nation, at Voima Ventures on 17 November 2026. Robotics Nation is building a national talent pipeline for robotics, starting in upper secondary school, with student-run clubs now in 22 schools.",
+    hero: photo(
+      "/news/robotics-nation-vex.jpg",
+      558,
+      539,
+      "Students around a VEX robotics field during a qualification match.",
+    ),
+    logo: photo("/news/robotics-nation-logo.png", 1167, 1235, "Robotics Nation logo"),
+    photoCredit: "Image: Robotics Nation",
+    blocks: [
+      paragraph(
+        "Robotics Norway president Lars-Fredrik Forberg met Erkka Lehtonen, president of Robotics Nation, at Voima Ventures on 17 November 2026. Robotics Nation ry is a Finnish non-profit based in Espoo.",
+      ),
+      paragraph("Lehtonen describes the work as follows:"),
+      paragraph(
+        "\"Robotics Nation ry is a Finnish non-profit building the world's first national talent pipeline for robotics, starting in upper secondary school. We set up student-run robotics clubs, now in 22 schools around the country, and connect them through competitive robotics, physical AI hackathons and a growing national network.\"",
+      ),
+      paragraph(
+        "\"Why: Robotics and physical AI will reshape industry in the coming years, and the Nordics need far more people who can build these systems. Most teenagers never touch a robot until university, if ever. We change that. Our clubs work like small startups: students design, build, compete, train and finetune robots and models. They leave upper secondary school with real skills and a clear path into engineering, research or founding the next robotics company. A strong Nordic robotics industry starts with talent, and we're building it from the ground up.\"",
+      ),
+      {
+        type: "figure",
+        credit: "Image: Robotics Nation",
+        figure: photo(
+          "/news/robotics-nation-clubs-map.png",
+          699,
+          536,
+          "Active Robotics Nation clubs in Finland: 22 schools around the country.",
+        ),
+      },
+      paragraph(
+        "Robotics Norway is interested in how a similar talent pipeline could take shape in Norway, and in Nordic cooperation on this work.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Read more at " },
+          {
+            text: "roboticsnation.org",
+            href: "https://www.roboticsnation.org/",
+          },
+          { text: "." },
+        ],
+      },
+    ],
+  },
   {
     slug: "one-million-humanoids-in-norway-by-2050",
     title: "One million humanoids in Norway by 2050 – are we ready?",

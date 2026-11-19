@@ -1,5 +1,6 @@
 import { PhotoCredit } from "@/components/photo-credit";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { NewsPhoto } from "@/components/news-photo";
@@ -74,6 +75,17 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <time dateTime={article.date}>{formatNewsDate(article.date)}</time>
         {` · ${article.place ?? "StartupLab, Oslo"}`}
       </p>
+      {article.logo ? (
+        <div className="mt-8">
+          <Image
+            src={article.logo.src}
+            alt={article.logo.alt}
+            width={article.logo.width}
+            height={article.logo.height}
+            className="h-16 w-auto"
+          />
+        </div>
+      ) : null}
       {article.hero ? (
         <figure className="mt-8">
           <NewsPhoto figure={article.hero} preload sizes="(min-width: 48rem) 48rem, 100vw" />
