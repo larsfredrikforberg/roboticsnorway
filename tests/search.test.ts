@@ -85,11 +85,11 @@ test("search finds the founding news article", () => {
   assert.equal(groupHits([news])[0]?.group, "News");
 });
 
-test("the Robotics Nation article is newest and the steering group article has no photos", () => {
+test("the Industrial Renaissance Summit article is newest and the steering group article has no photos", () => {
   const newest = articlesByDate()[0];
-  assert.equal(newest?.slug, "robotics-nation-talent-pipeline");
+  assert.equal(newest?.slug, "industrial-renaissance-summit-slush");
   assert.ok(newest?.hero);
-  assert.ok(newest?.logo);
+  assert.ok(newest?.video);
   const steering = getArticle("steering-group-meeting-12-november-2026");
   assert.equal(steering?.hero, undefined);
 });

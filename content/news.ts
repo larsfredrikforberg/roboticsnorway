@@ -13,11 +13,20 @@ export type TextRun = {
   href?: string;
 };
 
+export type NewsVideo = {
+  src: string;
+  poster: string;
+  width: number;
+  height: number;
+  caption: string;
+};
+
 export type NewsBlock =
   | { type: "paragraph"; runs: TextRun[] }
   | { type: "heading"; text: string }
   | { type: "figure"; figure: NewsFigure; credit?: string }
-  | { type: "gallery"; figures: NewsFigure[]; credit: string; frame?: boolean };
+  | { type: "gallery"; figures: NewsFigure[]; credit: string; frame?: boolean }
+  | { type: "video"; video: NewsVideo; credit?: string };
 
 export type NewsArticle = {
   slug: string;
@@ -37,6 +46,8 @@ export type NewsArticle = {
   hero?: NewsFigure;
   /** Optional organisation logo, shown small on the article page. */
   logo?: NewsFigure;
+  /** Optional video, shown in the article where a video block is placed. */
+  video?: NewsVideo;
   /** Credit for the photographs in the article. */
   photoCredit?: string;
   blocks: NewsBlock[];
@@ -62,9 +73,128 @@ function photo(file: string, width: number, height: number, text: string): NewsF
   return { src: file, alt: text, caption: text, width, height };
 }
 
+function video(src: string, poster: string, width: number, height: number, text: string): NewsVideo {
+  return { src, poster, width, height, caption: text };
+}
+
 const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
+  {
+    slug: "industrial-renaissance-summit-slush",
+    title: "The Industrial Renaissance Summit at Slush: physical AI moves into the factory",
+    date: "2026-11-19",
+    order: 2,
+    tags: ["Events"],
+    place: "Slush, Helsinki",
+    excerpt:
+      "Robotics Norway president Lars-Fredrik Forberg attended the Industrial Renaissance Summit on day 2 of Slush in Helsinki on 19 November 2026. Hosted by Extantia and Google Cloud and moderated by BBC journalist Maddie Savage, the morning focused on industrial transformation, robotics and physical AI.",
+    hero: photo(
+      "/news/industrial-renaissance-summit-session-01.jpg",
+      1600,
+      1200,
+      "The Session 01 panel, The New Factory: Where Physical AI Is Working Today, on the Industrial Renaissance Summit stage, with Google Cloud and Extantia as partners.",
+    ),
+    video: video(
+      "/news/industrial-renaissance-summit-galbot-demo.mp4",
+      "/news/industrial-renaissance-summit-galbot-demo-poster.jpg",
+      1080,
+      1920,
+      "Motion's Galbot S1 palletizes grey crates on stage at the Industrial Renaissance Summit.",
+    ),
+    photoCredit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+    blocks: [
+      paragraph(
+        "Robotics Norway president Lars-Fredrik Forberg attended the Industrial Renaissance Summit on Thursday 19 November 2026, day 2 of Slush in Helsinki. The summit was hosted by Extantia, a Berlin-based venture firm focused on resilience and sustainability, and by Google Cloud, and moderated by BBC journalist Maddie Savage, who is based in Stockholm. The morning focused on industrial transformation, robotics and physical AI.",
+      ),
+      heading("Intelligence moves off the screen"),
+      paragraph(
+        "Kathryn Van Nys of Google Cloud opened at 09:15 by describing foundational intelligence moving from screens into factories, energy grids and robotics. According to Van Nys, more than 50 billion dollars flowed into physical AI this year alone, around five times the level of two years ago, and 11 percent of all venture funding now goes into embodied intelligence. She contrasted a software market of around 15 trillion dollars with a physical economy of 50 to 100 trillion, and cited three drivers: just-in-time trade shattered by the pandemic, with reshoring viable only if factories become software-defined; Europe's elevated energy costs and critical mineral mines that take more than 16 years to come online; and an 85 million skilled-worker shortage projected by 2030, with a third of Europe's manufacturing workforce aged 50 to 64. Europe's unfair advantage, she argued, is its precision mechatronics heritage and a large industrial base including Valmet, Nokia, ABB and Siemens. Google's stack, as she described it, spans DeepMind models such as Gemini Robotics, Veo and Genie; Google Cloud; Intrinsic, recently open-sourced under Apache 2.0.",
+      ),
+      heading("An industrial renaissance"),
+      paragraph(
+        "At 09:25 Sebastian Heitmann of Extantia said industry was long seen as the villain, and that technology now makes harmony with the planet and good jobs possible. He updated three pillars: electrons, now also about energy independence; molecules, for resource independence; and physical AI, the ability to build locally. Britain held 23 percent of global manufacturing by 1880 and then lost it through globalisation, he said. China now accounts for around 31 percent, and, according to Heitmann, 54 percent of all robots sold globally went to China last year. AI, robotics and 3D printing mean labour costs no longer determine where a factory is built. Battery-pack costs, he said, have fallen from more than 1,000 dollars per kilowatt-hour in 2010 to around 108 dollars today. Europe, he argued, needs massive investment in compute, energy, robots and capital.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/industrial-renaissance-summit-54-percent.jpg",
+          1600,
+          1200,
+          "A speaker presents a slide stating that 54 percent of the world's new industrial robots went into China in 2024, beside a chart of robots per 10,000 manufacturing employees.",
+        ),
+      },
+      heading("Physical AI in the factory today"),
+      paragraph(
+        "The 09:35 panel brought together Jan-Erik Solheim of STAIR in Malmö, Alexander Stevens of Motion in Brussels, and Fabian Kurz of Qualia in Copenhagen. Stevens said Motion's customers are 40 percent food and beverage, 30 percent heavy industry and 30 percent warehouse logistics. Solheim described STAIR's spatial intelligence layer as real-time tracking of robots, trucks and goods flow. Kurz said Qualia trains foundation models for robotics companies in manufacturing, agriculture and hospitals.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/industrial-renaissance-summit-panel.jpg",
+          1600,
+          1200,
+          "The Session 01 panel on stage, with side screens showing Maddie Savage, Alex Stevens of Motion, Fabian Kurz of Qualia and Jan-Erik Solheim of STAIR.",
+        ),
+      },
+      paragraph(
+        "The panelists argued that robots fill a genuine labour gap, can restock warehouses overnight without night shifts, and offer full traceability. Motion's Galbot S1 weighs 320 kilograms and has a 50-kilogram payload, which Stevens said is the heaviest on the market, and uses lidar to slow down near people. Kurz said people quickly anthropomorphize robots; naming them is practical, but making them look human is unnecessary. Motion starts with trade union presentations before deployment, trains operators with cameras and AR glasses, and supports sites by remote teleoperation.",
+      ),
+      heading("A humanoid on stage"),
+      paragraph(
+        "At 10:05 Stevens demonstrated the Galbot S1 palletizing on stage. The robot, he said, ships to a warehouse customer in Belgium next week.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/industrial-renaissance-summit-galbot-extantia.jpg",
+          1600,
+          2133,
+          "A Galbot robot raises its arm on the Extantia stage, beside a table with a grey crate and a member of the Motion team.",
+        ),
+      },
+      {
+        type: "video",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        video: video(
+          "/news/industrial-renaissance-summit-galbot-demo.mp4",
+          "/news/industrial-renaissance-summit-galbot-demo-poster.jpg",
+          1080,
+          1920,
+          "Motion's Galbot S1 palletizes grey crates on stage at the Industrial Renaissance Summit.",
+        ),
+      },
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/industrial-renaissance-summit-galbot-pallets.jpg",
+          1600,
+          2133,
+          "A Galbot robot stands over grey crates stacked on a blue pallet, with the Google Cloud backdrop behind it.",
+        ),
+      },
+      paragraph(
+        "According to Stevens, Europe needs around 800,000 humanoids by 2040 to fill a 2.4 million manufacturing-worker gap projected by the European Commission. China installed around 350,000 robots last year, he said, against around 60,000 in Europe. He presented MotionOS, built on Google Cloud and Gemini, for qualification from customer video, digital-twin planning, VR training, safety certification and fleet management. Motion leases its robots, which cost 100,000 to 150,000 euros today, and grew from six to 50 customers within two months of its pre-seed announcement. Hardware is mostly imported from China by sea; the biggest sustainability impact would come from reshoring production to Europe. Stevens argued that robots should drive deflation and make goods cheaper.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/industrial-renaissance-summit-record-operators.jpg",
+          1600,
+          2133,
+          "Alexander Stevens of Motion on stage in front of a slide titled Record the operators, showing Motion's data agent and headset captures.",
+        ),
+      },
+      paragraph(
+        "For Norway, the labour shortages and the case for building more production locally speak directly to a country that already has an industrial base to build on.",
+      ),
+    ],
+  },
   {
     slug: "robotics-nation-talent-pipeline",
     title: "Robotics Nation is building a talent pipeline for robotics, starting in school",
@@ -503,9 +633,13 @@ export function formatNewsDate(isoDate: string) {
 }
 
 export function articlePlainText(article: NewsArticle) {
-  const parts = [article.excerpt, article.tags?.join(", "), article.hero?.caption, article.photoCredit].filter(
-    (part): part is string => Boolean(part),
-  );
+  const parts = [
+    article.excerpt,
+    article.tags?.join(", "),
+    article.hero?.caption,
+    article.video?.caption,
+    article.photoCredit,
+  ].filter((part): part is string => Boolean(part));
   for (const block of article.blocks) {
     if (block.type === "paragraph") {
       parts.push(block.runs.map((run) => run.text).join(""));
@@ -513,6 +647,9 @@ export function articlePlainText(article: NewsArticle) {
       parts.push(block.text);
     } else if (block.type === "figure") {
       parts.push(block.figure.caption);
+      if (block.credit) parts.push(block.credit);
+    } else if (block.type === "video") {
+      parts.push(block.video.caption);
       if (block.credit) parts.push(block.credit);
     } else {
       parts.push(...block.figures.map((figure) => figure.caption));

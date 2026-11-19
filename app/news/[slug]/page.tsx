@@ -122,6 +122,28 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
               </figure>
             );
           }
+          if (block.type === "video") {
+            return (
+              <figure key={index} className="my-8">
+                <video
+                  controls
+                  playsInline
+                  muted
+                  preload="metadata"
+                  poster={block.video.poster}
+                  width={block.video.width}
+                  height={block.video.height}
+                  className="mx-auto h-auto w-full max-w-sm bg-black"
+                >
+                  <source src={block.video.src} type="video/mp4" />
+                </video>
+                <figcaption className="mt-2 text-sm leading-6 text-muted-foreground">
+                  <p>{block.video.caption}</p>
+                  {block.credit ? <p className="mt-1"><PhotoCredit text={block.credit} /></p> : null}
+                </figcaption>
+              </figure>
+            );
+          }
           const paired = block.figures.length > 1;
           return (
             <figure key={index} className="my-10">
