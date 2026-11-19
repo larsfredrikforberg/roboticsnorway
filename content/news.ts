@@ -214,7 +214,7 @@ export const articles: NewsArticle[] = [
           "/news/humanoid-what-makes-us-human.jpg",
           1600,
           1200,
-          "From Humanoid's film \"What makes us human?\", shown during the talk: What makes us human? Is it what we do? One every eleven seconds. 60 billion hours of unpaid labor. So what if we could change the way we work? Welcome home.",
+          "From Humanoid's film \"What makes us human?\", shown during the talk: What makes us human? Is it what we do? Or what we are capable of? We have always been curious. We ask questions. We explore. And learn. That's how we move forward. Generation after generation. But somewhere along the way, we created a world where people spend their days doing the same things again and again. Working in places that are too cold. Too hot. Too dangerous. Every year, nearly 3 million people die because of their work. And when the working day ends, another one begins. Cooking, cleaning, tidying. 60 billion hours of unpaid labour. Every single day. But is that what makes us human? We don't think so. We believe our greatest strength is not repetition. It's imagination. Our ability to question what exists. To see what could be, and to make it happen. So what if we could change the way we work? What if machines could take on the tasks that hold us back? Not to replace what makes us human, but to give us more room. More time to think. To create. To move forward. Because the future of work isn't just about what machines can do. It's about what humans can become.",
         ),
       },
     ],
