@@ -93,7 +93,7 @@ export const articles: NewsArticle[] = [
       "/news/industrial-renaissance-summit-session-01.jpg",
       1600,
       1200,
-      "The Session 01 panel, The New Factory: Where Physical AI Is Working Today, on the Industrial Renaissance Summit stage, with Google Cloud and Extantia as partners.",
+      "From left: moderator Maddie Savage (BBC), Alexander Stevens (Motion), Jan-Erik Solheim (STAIR) and Fabian Kurz (Qualia) in the panel The New Factory: Where Physical AI Is Working Today.",
     ),
     video: video(
       "/news/industrial-renaissance-summit-galbot-demo.mp4",
@@ -122,7 +122,7 @@ export const articles: NewsArticle[] = [
           "/news/industrial-renaissance-summit-54-percent.jpg",
           1600,
           1200,
-          "A speaker presents a slide stating that 54 percent of the world's new industrial robots went into China in 2024, beside a chart of robots per 10,000 manufacturing employees.",
+          "Sebastian Heitmann of Extantia presents a slide stating that 54 percent of the world's new industrial robots went into China in 2024, beside a chart of robots per 10,000 manufacturing employees.",
         ),
       },
       heading("Physical AI in the factory today"),
