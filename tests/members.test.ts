@@ -30,6 +30,7 @@ test("public members are the founding organisations that were present", () => {
     "Physical Robotics",
     "Posten Bring",
     "PPM Robotics",
+    "Proptonomy AS",
     "Rembrain AS",
     "ROBOXI",
     "Runway FBU",

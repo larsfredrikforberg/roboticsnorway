@@ -895,6 +895,26 @@
       "membership_status": "joined_by_email",
       "notes": "Joined by email from Courtney Marles (CEO and co-founder), 15 Nov 2026. CTO Christian Nordbach attended the founding meeting. Added manually.",
       "company_name": "Autonomous Retail Norway AS"
+    },
+    {
+      "website": "https://proptonomy.ai",
+      "website_certainty": "verified",
+      "short_description": "Proptonomy builds AI that runs day-to-day operations for short-term rental managers: guest messaging, owner communication, and coordination of cleaning and maintenance. We are now taking it into the physical world with humanoid robots that clean and turn over rental apartments between guests, with Proptonomy's AI built in.",
+      "description_source": "Company-provided English description in join email, 21 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": null,
+      "contact_email": null,
+      "contact_certainty": "unknown",
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Asked to join by email to Lars-Fredrik Forberg, 21 Nov 2026. Added manually.",
+      "company_name": "Proptonomy AS"
     }
   ],
   "declined_according_to_invitation": [
