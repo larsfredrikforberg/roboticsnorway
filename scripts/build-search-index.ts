@@ -140,14 +140,14 @@ export function buildSearchCorpus(): SearchCorpus {
       id: `member-${member.slug}`,
       group: "Members" as const,
       title: member.companyName,
-      meta: [member.contactPerson, member.contactEmail].filter(Boolean).join(" · "),
+      meta: [member.contactEmail, member.contactUrl].filter(Boolean).join(" · "),
       href: `/members#${member.slug}`,
       text: [
         member.companyName,
         member.membershipType === "individual" ? member.affiliation : null,
         member.description,
-        member.membershipType === "individual" ? null : member.contactPerson,
         member.membershipType === "individual" ? null : member.contactEmail,
+        member.membershipType === "individual" ? null : member.contactUrl,
         member.website,
       ]
         .filter(Boolean)

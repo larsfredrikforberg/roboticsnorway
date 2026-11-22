@@ -15,6 +15,7 @@ const member: MemberRecord = {
   description: "Line one\nLine two",
   contactPerson: "Ada",
   contactEmail: "ada@example.no",
+  contactUrl: null,
   status: "approved",
   source: "founding",
   joinedAt: "2026-11-05T09:00:00.000Z",

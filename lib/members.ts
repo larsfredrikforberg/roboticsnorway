@@ -13,6 +13,8 @@ type SourceMember = {
   contact_person: string | null;
   contact_email: string | null;
   contact_certainty?: string;
+  public_contact_email?: string | null;
+  public_contact_url?: string | null;
   logo_url: string | null;
   logo_certainty?: string;
   on_inception_list?: boolean;
@@ -82,7 +84,6 @@ export function classifyMember(member: SourceMember): MemberDecision {
     status === "founding_member_listed" ||
     status === "meeting_attendee_not_on_inception_list" ||
     status === "related_cluster_guest" ||
-    status === "public_partner_guest_not_a_member" ||
     status === "listed_on_invitation_contact_unknown" ||
     status === "joined_by_email";
 
@@ -124,16 +125,56 @@ function publishedDescription(member: SourceMember) {
   return member.short_description;
 }
 
-function publishedContact(member: SourceMember) {
-  if (
-    member.contact_certainty === "uncertain" ||
-    member.contact_certainty === "unknown"
-  ) {
-    return { contactPerson: null, contactEmail: null };
-  }
+const GENERIC_LOCAL_PARTS = new Set([
+  "hello",
+  "hi",
+  "hei",
+  "info",
+  "information",
+  "contact",
+  "kontakt",
+  "contacts",
+  "post",
+  "postmottak",
+  "firmapost",
+  "mail",
+  "office",
+  "inbox",
+  "sales",
+  "salg",
+  "support",
+  "kundeservice",
+  "kundesupport",
+  "kundsupport",
+  "service",
+  "team",
+  "admin",
+  "administrasjon",
+  "enquiries",
+  "inquiries",
+  "inquiry",
+  "enquiry",
+  "press",
+  "presse",
+  "media",
+]);
+
+export function isGenericCompanyEmail(email: string | null | undefined): boolean {
+  if (!email) return false;
+  const trimmed = email.trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) return false;
+  const local = trimmed.split("@")[0] ?? "";
+  if (GENERIC_LOCAL_PARTS.has(local)) return true;
+  return /postmottak|firmapost|kundeservice|kundesupport|kundsupport|kundesenter|kontaktoss/.test(local);
+}
+
+function publishedPublicContact(member: SourceMember) {
+  const email = member.public_contact_email?.trim() || null;
+  const url = member.public_contact_url?.trim() || null;
   return {
-    contactPerson: member.contact_person,
-    contactEmail: member.contact_email,
+    contactPerson: null,
+    contactEmail: email,
+    contactUrl: email ? null : url,
   };
 }
 
@@ -141,8 +182,7 @@ function membershipTypeOf(member: SourceMember): MembershipType {
   return member.membership_kind === "individual" ? "individual" : "organisation";
 }
 
-export function toPublicMember(member: SourceMember): MemberRecord {
-  const contact = publishedContact(member);
+function baseRecord(member: SourceMember): Omit<MemberRecord, "contactPerson" | "contactEmail" | "contactUrl"> {
   const membershipType = membershipTypeOf(member);
   const affiliation = member.affiliation?.trim() || null;
   return {
@@ -154,11 +194,33 @@ export function toPublicMember(member: SourceMember): MemberRecord {
     website: publishedWebsite(member),
     logoUrl: publishedLogo(member),
     description: publishedDescription(member),
-    contactPerson: contact.contactPerson,
-    contactEmail: contact.contactEmail,
     status: "approved",
     source: "founding",
     joinedAt: "2026-11-05T09:00:00.000Z",
+  };
+}
+
+export function toPublicMember(member: SourceMember): MemberRecord {
+  const membershipType = membershipTypeOf(member);
+  const contact =
+    membershipType === "individual"
+      ? { contactPerson: null, contactEmail: null, contactUrl: null }
+      : publishedPublicContact(member);
+  return {
+    ...baseRecord(member),
+    contactPerson: contact.contactPerson,
+    contactEmail: contact.contactEmail,
+    contactUrl: contact.contactUrl,
+  };
+}
+
+/** Internal record for admin export and seeding: keeps person contacts from the source. */
+export function toInternalMember(member: SourceMember): MemberRecord {
+  return {
+    ...baseRecord(member),
+    contactPerson: member.contact_person,
+    contactEmail: member.contact_email,
+    contactUrl: null,
   };
 }
 
@@ -172,11 +234,43 @@ export function excludedMembers() {
   return memberDecisions().filter((decision) => !decision.include);
 }
 
+function includedSourceMembers() {
+  return sourceMembers.filter((member) => classifyMember(member).include);
+}
+
 export function publicMembers(): MemberRecord[] {
-  return sourceMembers
-    .filter((member) => classifyMember(member).include)
+  return includedSourceMembers()
     .map(toPublicMember)
     .sort((a, b) => a.companyName.localeCompare(b.companyName, "en"));
+}
+
+export function internalMembers(): MemberRecord[] {
+  return includedSourceMembers()
+    .map(toInternalMember)
+    .sort((a, b) => a.companyName.localeCompare(b.companyName, "en"));
+}
+
+export const PUBLIC_DIRECTORY_EXCLUSIONS = new Set(["Innovation Norway"]);
+
+export function applyPublicContactPolicy(member: MemberRecord, publicByName?: Map<string, MemberRecord>): MemberRecord {
+  if (PUBLIC_DIRECTORY_EXCLUSIONS.has(member.companyName)) {
+    return member;
+  }
+  if (member.membershipType === "individual") {
+    return { ...member, contactPerson: null, contactEmail: null, contactUrl: null };
+  }
+  const directory = publicByName ?? new Map(publicMembers().map((item) => [item.companyName.toLowerCase(), item]));
+  const fromSource = directory.get(member.companyName.toLowerCase());
+  if (fromSource) {
+    return {
+      ...member,
+      contactPerson: null,
+      contactEmail: fromSource.contactEmail,
+      contactUrl: fromSource.contactUrl,
+    };
+  }
+  const email = isGenericCompanyEmail(member.contactEmail) ? member.contactEmail : null;
+  return { ...member, contactPerson: null, contactEmail: email, contactUrl: null };
 }
 
 export const declinedOutsideMemberRows =

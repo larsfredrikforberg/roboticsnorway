@@ -52,24 +52,29 @@ export function MemberCard({ member }: { member: MemberRecord }) {
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="leading-6 text-ink">{member.description}</p>
-        <dl className="space-y-1 text-sm">
-          <div>
-            <dt className="inline font-heading text-navy">Contact </dt>
-            <dd className="inline">{member.contactPerson ?? "Not yet published"}</dd>
-          </div>
-          <div>
-            <dt className="sr-only">Email</dt>
-            <dd>
-              {member.contactEmail ? (
-                <a className="text-navy underline decoration-border underline-offset-4" href={`mailto:${member.contactEmail}`}>
-                  {member.contactEmail}
-                </a>
-              ) : (
-                <span className="text-muted-foreground">Email not yet published</span>
-              )}
-            </dd>
-          </div>
-        </dl>
+        {member.contactEmail || member.contactUrl ? (
+          <dl className="space-y-1 text-sm">
+            <div>
+              <dt className="inline font-heading text-navy">Contact </dt>
+              <dd className="inline">
+                {member.contactEmail ? (
+                  <a className="text-navy underline decoration-border underline-offset-4" href={`mailto:${member.contactEmail}`}>
+                    {member.contactEmail}
+                  </a>
+                ) : (
+                  <a
+                    className="text-navy underline decoration-border underline-offset-4"
+                    href={member.contactUrl ?? undefined}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Contact page
+                  </a>
+                )}
+              </dd>
+            </div>
+          </dl>
+        ) : null}
       </CardContent>
     </Card>
   );

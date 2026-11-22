@@ -94,3 +94,27 @@ test("the Humanoid Slush article is newest and the steering group article has no
   const steering = getArticle("steering-group-meeting-12-november-2026");
   assert.equal(steering?.hero, undefined);
 });
+
+test("the public member search corpus has no personal contacts and no Innovation Norway card", () => {
+  const members = data.searchDocuments.filter((document) => document.group === "Members");
+  assert.equal(
+    members.some((document) => document.title === "Innovation Norway"),
+    false,
+  );
+  assert.ok(members.some((document) => document.title === "Norwegian Robotics Cluster"));
+  const blob = members.map((document) => `${document.meta}\n${document.text}`).join("\n");
+  for (const email of [
+    "ingeborg@sarorobotics.com",
+    "lars.fredrik@kineticblocks.com",
+    "laksiyab@gmail.com",
+    "kristoffer.gjerde@cognite.com",
+    "geir.haugum@innovationnorway.no",
+    "vidar@robotcluster.no",
+    "crokseth@gmail.com",
+  ]) {
+    assert.equal(blob.toLowerCase().includes(email.toLowerCase()), false, email);
+  }
+  const saro = members.find((document) => document.title === "Saro Robotics");
+  assert.ok(saro);
+  assert.match(saro.meta, /contact@sarorobotics.com/);
+});

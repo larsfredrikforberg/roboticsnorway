@@ -295,111 +295,103 @@
       "id": "member-3lc",
       "group": "Members",
       "title": "3LC",
-      "meta": "Per Arne Jensen · per.arne.jensen@3lc.ai",
+      "meta": "hello@3lc.ai",
       "href": "/members#3lc",
-      "text": "3LC. 3LC (3 Lines of Code) provides data-centric computer-vision workflows, annotation management and quality tooling. Founding-meeting notes also described software for shrimp research/data processing; that phrasing may mix 3LC with Lito and should be treated with care.. Per Arne Jensen. per.arne.jensen@3lc.ai. https://3lc.ai"
+      "text": "3LC. 3LC (3 Lines of Code) provides data-centric computer-vision workflows, annotation management and quality tooling. Founding-meeting notes also described software for shrimp research/data processing; that phrasing may mix 3LC with Lito and should be treated with care.. hello@3lc.ai. https://3lc.ai"
     },
     {
       "id": "member-ai-mad-lab",
       "group": "Members",
       "title": "AI Mad Lab",
-      "meta": "Emil Anker Wiik · emil@aimadlab.com",
+      "meta": "",
       "href": "/members#ai-mad-lab",
-      "text": "AI Mad Lab. The fastest growing developer community for AI in the Nordics. Runs monthly Mad Meetups at Startuplab in Oslo and the Mad House hacker house for technical founders, with a focus on hard tech such as robotics, space, autonomy and drones.. Emil Anker Wiik. emil@aimadlab.com. https://www.aimadlab.com"
+      "text": "AI Mad Lab. The fastest growing developer community for AI in the Nordics. Runs monthly Mad Meetups at Startuplab in Oslo and the Mad House hacker house for technical founders, with a focus on hard tech such as robotics, space, autonomy and drones.. https://www.aimadlab.com"
     },
     {
       "id": "member-autonomous-retail-norway-as",
       "group": "Members",
       "title": "Autonomous Retail Norway AS",
-      "meta": "Courtney Marles · courtney@autonomousretailnorway.no",
+      "meta": "hello@autonomousretailnorway.no",
       "href": "/members#autonomous-retail-norway-as",
-      "text": "Autonomous Retail Norway AS. Develops modular robotic retail systems that combine robotics, physical AI and proprietary software to automate retail operations. Building on experience operating unmanned airport stores, it is working towards its first autonomous retail Village at Oslo Airport in 2028.. Courtney Marles. courtney@autonomousretailnorway.no. https://www.autonomousretailnorway.no"
+      "text": "Autonomous Retail Norway AS. Develops modular robotic retail systems that combine robotics, physical AI and proprietary software to automate retail operations. Building on experience operating unmanned airport stores, it is working towards its first autonomous retail Village at Oslo Airport in 2028.. hello@autonomousretailnorway.no. https://www.autonomousretailnorway.no"
     },
     {
       "id": "member-bluzenit",
       "group": "Members",
       "title": "bluZenit",
-      "meta": "Arve Martinsen · Arve.Martinsen@bluzenit.com",
+      "meta": "hello@bluzenit.com",
       "href": "/members#bluzenit",
-      "text": "bluZenit. End-to-end asset integrity partner for the oil and gas, petrochemical and industrial sectors. Combines connected sensing, smart robotics, engineering expertise and data intelligence to detect hidden risks such as corrosion under insulation before they become failures. Rooted in North Sea engineering and formerly part of KAEFER. Based in Tananger near Stavanger. Its robotics work includes monkeyBot 2.0, a bio-inspired pipe-climbing inspection robot.. Arve Martinsen. Arve.Martinsen@bluzenit.com. https://bluzenit.com"
+      "text": "bluZenit. End-to-end asset integrity partner for the oil and gas, petrochemical and industrial sectors. Combines connected sensing, smart robotics, engineering expertise and data intelligence to detect hidden risks such as corrosion under insulation before they become failures. Rooted in North Sea engineering and formerly part of KAEFER. Based in Tananger near Stavanger. Its robotics work includes monkeyBot 2.0, a bio-inspired pipe-climbing inspection robot.. hello@bluzenit.com. https://bluzenit.com"
     },
     {
       "id": "member-dotspot",
       "group": "Members",
       "title": "Dotspot",
-      "meta": "Marcus Horn · marcus.horn@dotspot.ai",
+      "meta": "support@dotspot.ai",
       "href": "/members#dotspot",
-      "text": "Dotspot. A public description has not been confirmed yet.. Marcus Horn. marcus.horn@dotspot.ai. https://dotspot.ai"
+      "text": "Dotspot. A public description has not been confirmed yet.. support@dotspot.ai. https://dotspot.ai"
     },
     {
       "id": "member-endwell",
       "group": "Members",
       "title": "Endwell",
-      "meta": "Sondre Bø Kongsgård · hello@endwell.ai",
+      "meta": "hello@endwell.ai",
       "href": "/members#endwell",
-      "text": "Endwell. Provides a collaborative platform connecting humans, agents and robots. Its first use case is plug and abandonment of offshore wells, but the platform itself is generic. Part of Runway FBU's AI & Robotics Lab.. Sondre Bø Kongsgård. hello@endwell.ai. https://endwell.ai"
+      "text": "Endwell. Provides a collaborative platform connecting humans, agents and robots. Its first use case is plug and abandonment of offshore wells, but the platform itself is generic. Part of Runway FBU's AI & Robotics Lab.. hello@endwell.ai. https://endwell.ai"
     },
     {
       "id": "member-framdrift-innovasjon-as",
       "group": "Members",
       "title": "Framdrift Innovasjon AS",
-      "meta": "Lasse or Emilie · hello@framdrift.com",
+      "meta": "hello@framdrift.com",
       "href": "/members#framdrift-innovasjon-as",
-      "text": "Framdrift Innovasjon AS. A home for entrepreneurs and investors building out of Bergen to the world.. Lasse or Emilie. hello@framdrift.com. https://framdrift.com"
+      "text": "Framdrift Innovasjon AS. A home for entrepreneurs and investors building out of Bergen to the world.. hello@framdrift.com. https://framdrift.com"
     },
     {
       "id": "member-handprint",
       "group": "Members",
       "title": "Handprint",
-      "meta": "Bendik Skrede",
+      "meta": "",
       "href": "/members#handprint",
-      "text": "Handprint. Norwegian physical-AI startup developing humanoid robots, working from NTNU's robotics lab. Founded in 2026 by the former co-founders of Lito.. Bendik Skrede. https://www.linkedin.com/company/handprintrobotics"
+      "text": "Handprint. Norwegian physical-AI startup developing humanoid robots, working from NTNU's robotics lab. Founded in 2026 by the former co-founders of Lito.. https://www.linkedin.com/company/handprintrobotics"
     },
     {
       "id": "member-hive-autonomy",
       "group": "Members",
       "title": "Hive Autonomy",
-      "meta": "Oskar Mykland · oskar.mykland@hiveautonomy.no",
+      "meta": "info@hiveautonomy.no",
       "href": "/members#hive-autonomy",
-      "text": "Hive Autonomy. Installs a 'silicon brain' on existing industrial machines (wheel loaders, forklifts and similar) so fleets can be supervised remotely and run as a coordinated autonomous system.. Oskar Mykland. oskar.mykland@hiveautonomy.no. https://www.hiveautonomy.no"
+      "text": "Hive Autonomy. Installs a 'silicon brain' on existing industrial machines (wheel loaders, forklifts and similar) so fleets can be supervised remotely and run as a coordinated autonomous system.. info@hiveautonomy.no. https://www.hiveautonomy.no"
     },
     {
       "id": "member-humanoid-guide",
       "group": "Members",
       "title": "Humanoid.guide",
-      "meta": "Christian Rokseth · crokseth@gmail.com",
+      "meta": "human@humanoid.guide",
       "href": "/members#humanoid-guide",
-      "text": "Humanoid.guide. Introduced at the founding meeting from an investor/founder angle by Christian Rokseth. Invitation lists the company as Humanoid.guide (Stavanger).. Christian Rokseth. crokseth@gmail.com. https://humanoid.guide"
-    },
-    {
-      "id": "member-innovation-norway",
-      "group": "Members",
-      "title": "Innovation Norway",
-      "meta": "Geir Haugum · geir.haugum@innovationnorway.no",
-      "href": "/members#innovation-norway",
-      "text": "Innovation Norway. Public funding partner and proposed project manager for the Bay Area project. Guest at the founding meeting, not a listed founding member company.. Geir Haugum. geir.haugum@innovationnorway.no. https://www.innovasjonnorge.no"
+      "text": "Humanoid.guide. Introduced at the founding meeting from an investor/founder angle by Christian Rokseth. Invitation lists the company as Humanoid.guide (Stavanger).. human@humanoid.guide. https://humanoid.guide"
     },
     {
       "id": "member-kameleon-robotics",
       "group": "Members",
       "title": "Kameleon Robotics",
-      "meta": "Lars Kjelling · lars.kjelling@kameleongruppen.no",
+      "meta": "post@kameleongruppen.no",
       "href": "/members#kameleon-robotics",
-      "text": "Kameleon Robotics. Robot installation, design and automation for production lines (as introduced by Lars Kjelling).. Lars Kjelling. lars.kjelling@kameleongruppen.no. https://www.kameleongruppen.no"
+      "text": "Kameleon Robotics. Robot installation, design and automation for production lines (as introduced by Lars Kjelling).. post@kameleongruppen.no. https://www.kameleongruppen.no"
     },
     {
       "id": "member-kinetic-blocks-as",
       "group": "Members",
       "title": "Kinetic Blocks AS",
-      "meta": "Lars-Fredrik Forberg · lars.fredrik@kineticblocks.com",
+      "meta": "sales@kineticblocks.com",
       "href": "/members#kinetic-blocks-as",
-      "text": "Kinetic Blocks AS. Data marketplace for humanoids and robots (as introduced at the founding meeting). Organisation number 938 345 627. Proposed administrator company for 2027.. Lars-Fredrik Forberg. lars.fredrik@kineticblocks.com. https://kineticblocks.com"
+      "text": "Kinetic Blocks AS. Data marketplace for humanoids and robots (as introduced at the founding meeting). Organisation number 938 345 627. Proposed administrator company for 2027.. sales@kineticblocks.com. https://kineticblocks.com"
     },
     {
       "id": "member-kristoffer-gjerde",
       "group": "Members",
       "title": "Kristoffer Gjerde",
-      "meta": "Kristoffer Gjerde · kristoffer.gjerde@cognite.com",
+      "meta": "",
       "href": "/members#kristoffer-gjerde",
       "text": "Kristoffer Gjerde. Director, Strategic Accounts, Cognite. Director of Strategic Accounts at Cognite, where he drives commercial growth with leading oil and gas operators while continuing to champion the use of robotics in industrial operations. He joined Cognite in 2021 and spent 2022 to 2025 in Riyadh as Head of Robotics at CNTXT, Cognite's joint venture with Aramco. He then returned to shape Cognite's robotics strategy as Director of Robotics Strategy, focusing on bringing autonomous inspection into day-to-day operations. MSc in Computer Science, specialising in Artificial Intelligence."
     },
@@ -407,7 +399,7 @@
       "id": "member-laksiya-balasubramaniam",
       "group": "Members",
       "title": "Laksiya Balasubramaniam",
-      "meta": "Laksiya Balasubramaniam · laksiyab@gmail.com",
+      "meta": "",
       "href": "/members#laksiya-balasubramaniam",
       "text": "Laksiya Balasubramaniam. Industrial Product Developer, Robotics and AI. Industrial product developer in robotics and AI. Previously at Adigo Mechatronics and Procter & Gamble. MSc in Robotics from NTNU."
     },
@@ -415,161 +407,161 @@
       "id": "member-lito",
       "group": "Members",
       "title": "Lito",
-      "meta": "Thomas Soerensen · thomas@lito.so",
+      "meta": "",
       "href": "/members#lito",
-      "text": "Lito. Robotics data lab in Oslo that collects manipulation training data with wireless handheld grippers (stereo video, motion, gripper opening, and planned fingertip touch). Founded by Thomas Sørensen (CEO) and Ludvig Øvrevik (CTO).. Thomas Soerensen. thomas@lito.so. https://lito.so"
+      "text": "Lito. Robotics data lab in Oslo that collects manipulation training data with wireless handheld grippers (stereo video, motion, gripper opening, and planned fingertip touch). Founded by Thomas Sørensen (CEO) and Ludvig Øvrevik (CTO).. https://lito.so"
     },
     {
       "id": "member-marselia-robotics",
       "group": "Members",
       "title": "Marselia Robotics",
-      "meta": "Lone · lone@marseliarobotics.com",
+      "meta": "info@marseliarobotics.com",
       "href": "/members#marselia-robotics",
-      "text": "Marselia Robotics. Industrial robots, based in Stavanger (as introduced by Lone). Press coverage describes software that lets an operator instruct a robot arm in ordinary language.. Lone. lone@marseliarobotics.com. https://marseliarobotics.com"
+      "text": "Marselia Robotics. Industrial robots, based in Stavanger (as introduced by Lone). Press coverage describes software that lets an operator instruct a robot arm in ordinary language.. info@marseliarobotics.com. https://marseliarobotics.com"
     },
     {
       "id": "member-mechatronics-innovation-lab",
       "group": "Members",
       "title": "Mechatronics Innovation Lab",
-      "meta": "Jayant Singh · Jayant@mil-as.no",
+      "meta": "post@mil-as.no",
       "href": "/members#mechatronics-innovation-lab",
-      "text": "Mechatronics Innovation Lab. Lab in Grimstad working with robotics, AI and additive manufacturing. Invitation notes equipment including Unitree G1, a quadruped, and Boston Dynamics Spot.. Jayant Singh. Jayant@mil-as.no. https://mil-as.no"
+      "text": "Mechatronics Innovation Lab. Lab in Grimstad working with robotics, AI and additive manufacturing. Invitation notes equipment including Unitree G1, a quadruped, and Boston Dynamics Spot.. post@mil-as.no. https://mil-as.no"
     },
     {
       "id": "member-necia",
       "group": "Members",
       "title": "Necia",
-      "meta": "Eva Helen Rognskog · er@necia.no",
+      "meta": "",
       "href": "/members#necia",
-      "text": "Necia. Necia Tech Cluster works on Industry 4.0, automation, AI and humanoid robotics in the Moss region, with about 23 member companies. Part of EU project eViva and planning an international Robotics Expo in Moss.. Eva Helen Rognskog. er@necia.no. https://necia.no"
+      "text": "Necia. Necia Tech Cluster works on Industry 4.0, automation, AI and humanoid robotics in the Moss region, with about 23 member companies. Part of EU project eViva and planning an international Robotics Expo in Moss.. https://necia.no"
     },
     {
       "id": "member-norwegian-robotics-cluster",
       "group": "Members",
       "title": "Norwegian Robotics Cluster",
-      "meta": "Vidar Tufteland · vidar@robotcluster.no",
+      "meta": "post@robotcluster.no",
       "href": "/members#norwegian-robotics-cluster",
-      "text": "Norwegian Robotics Cluster. Industry cluster funded by Innovation Norway, based on Osterøy, bringing together producers, integrators, end users, research, capital and public actors. Admitted to NIC Connect for 2027–2029 according to the founding slides.. Vidar Tufteland. vidar@robotcluster.no. https://robotcluster.no"
+      "text": "Norwegian Robotics Cluster. Industry cluster funded by Innovation Norway, based on Osterøy, bringing together producers, integrators, end users, research, capital and public actors. Admitted to NIC Connect for 2027–2029 according to the founding slides.. post@robotcluster.no. https://robotcluster.no"
     },
     {
       "id": "member-oem-automatic",
       "group": "Members",
       "title": "OEM Automatic",
-      "meta": "Mattias Andersson · mattias.andersson@oemautomatic.se",
+      "meta": "info@oemautomatic.se",
       "href": "/members#oem-automatic",
-      "text": "OEM Automatic. Swedish automation supplier whose Computer Vision product area helps companies choose cameras, lidar, 3D cameras, thermal cameras and computers for robotics, automation and autonomous systems. Works closely with suppliers and customers, has a Norwegian subsidiary and an established presence in the Norwegian market.. Mattias Andersson. mattias.andersson@oemautomatic.se. https://www.oemautomatic.se"
+      "text": "OEM Automatic. Swedish automation supplier whose Computer Vision product area helps companies choose cameras, lidar, 3D cameras, thermal cameras and computers for robotics, automation and autonomous systems. Works closely with suppliers and customers, has a Norwegian subsidiary and an established presence in the Norwegian market.. info@oemautomatic.se. https://www.oemautomatic.se"
     },
     {
       "id": "member-oslo-kommune-sykehjemsetaten",
       "group": "Members",
       "title": "Oslo kommune, Sykehjemsetaten",
-      "meta": "Johnny Advocaat · johnny.advocaat@sye.oslo.kommune.no",
+      "meta": "postmottak@sye.oslo.kommune.no",
       "href": "/members#oslo-kommune-sykehjemsetaten",
-      "text": "Oslo kommune, Sykehjemsetaten. Oslo’s nursing-home agency; introduced interest in nursing-home applications of robotics.. Johnny Advocaat. johnny.advocaat@sye.oslo.kommune.no. https://www.oslo.kommune.no/"
+      "text": "Oslo kommune, Sykehjemsetaten. Oslo’s nursing-home agency; introduced interest in nursing-home applications of robotics.. postmottak@sye.oslo.kommune.no. https://www.oslo.kommune.no/"
     },
     {
       "id": "member-physical-robotics",
       "group": "Members",
       "title": "Physical Robotics",
-      "meta": "Andreas",
+      "meta": "https://www.physicalrobotics.com/contact",
       "href": "/members#physical-robotics",
-      "text": "Physical Robotics. Norwegian advanced robotics and automation company (Necia member page).. Andreas. https://www.physicalrobotics.com"
+      "text": "Physical Robotics. Norwegian advanced robotics and automation company (Necia member page).. https://www.physicalrobotics.com/contact. https://www.physicalrobotics.com"
     },
     {
       "id": "member-posten-bring",
       "group": "Members",
       "title": "Posten Bring",
-      "meta": "Camilla De Verdier · camilla.de.verdier@bring.com",
+      "meta": "https://www.bring.com/contact",
       "href": "/members#posten-bring",
-      "text": "Posten Bring. Interested in robotics and automation (as introduced by Camilla).. Camilla De Verdier. camilla.de.verdier@bring.com. https://www.bring.com"
+      "text": "Posten Bring. Interested in robotics and automation (as introduced by Camilla).. https://www.bring.com/contact. https://www.bring.com"
     },
     {
       "id": "member-ppm-robotics",
       "group": "Members",
       "title": "PPM Robotics",
-      "meta": "Trygve Thomessen · trygve.thomessen@ppm.no",
+      "meta": "info@ppm.no",
       "href": "/members#ppm-robotics",
-      "text": "PPM Robotics. High-tech robot installations; now robots for nursing homes, based in Trondheim. Mentioned their Nursing Home Lab (NHL) in Trondheim during the meeting.. Trygve Thomessen. trygve.thomessen@ppm.no. https://www.ppm.no"
+      "text": "PPM Robotics. High-tech robot installations; now robots for nursing homes, based in Trondheim. Mentioned their Nursing Home Lab (NHL) in Trondheim during the meeting.. info@ppm.no. https://www.ppm.no"
     },
     {
       "id": "member-proptonomy-as",
       "group": "Members",
       "title": "Proptonomy AS",
-      "meta": "",
+      "meta": "hello@proptonomy.ai",
       "href": "/members#proptonomy-as",
-      "text": "Proptonomy AS. Proptonomy builds AI that runs day-to-day operations for short-term rental managers: guest messaging, owner communication, and coordination of cleaning and maintenance. We are now taking it into the physical world with humanoid robots that clean and turn over rental apartments between guests, with Proptonomy's AI built in.. https://proptonomy.ai"
+      "text": "Proptonomy AS. Proptonomy builds AI that runs day-to-day operations for short-term rental managers: guest messaging, owner communication, and coordination of cleaning and maintenance. We are now taking it into the physical world with humanoid robots that clean and turn over rental apartments between guests, with Proptonomy's AI built in.. hello@proptonomy.ai. https://proptonomy.ai"
     },
     {
       "id": "member-rembrain-as",
       "group": "Members",
       "title": "Rembrain AS",
-      "meta": "Vasily Morzhakov · morzhakov@rembrain.ai",
+      "meta": "https://rembrain.ai/#submitform",
       "href": "/members#rembrain-as",
-      "text": "Rembrain AS. Develops AI-powered robotic workstations for industrial manufacturing, designed to be drop-in: deployable in existing production environments with minimal integration effort. Combines computer vision, physical AI and reusable robotic skills to automate assembly, screwdriving, gluing and quality inspection. Based in Stavanger.. Vasily Morzhakov. morzhakov@rembrain.ai. https://rembrain.ai"
+      "text": "Rembrain AS. Develops AI-powered robotic workstations for industrial manufacturing, designed to be drop-in: deployable in existing production environments with minimal integration effort. Combines computer vision, physical AI and reusable robotic skills to automate assembly, screwdriving, gluing and quality inspection. Based in Stavanger.. https://rembrain.ai/#submitform. https://rembrain.ai"
     },
     {
       "id": "member-roboxi",
       "group": "Members",
       "title": "ROBOXI",
-      "meta": "Magnus Olsen Finnesand · magnus@roboxi.com",
+      "meta": "post@roboxi.com",
       "href": "/members#roboxi",
-      "text": "ROBOXI. About 30 employees in Stavanger; builds robots for airport aprons / autonomous runway inspection and maintenance (meeting intro and 3LC partnership page).. Magnus Olsen Finnesand. magnus@roboxi.com. https://www.roboxi.com"
+      "text": "ROBOXI. About 30 employees in Stavanger; builds robots for airport aprons / autonomous runway inspection and maintenance (meeting intro and 3LC partnership page).. post@roboxi.com. https://www.roboxi.com"
     },
     {
       "id": "member-runway-fbu",
       "group": "Members",
       "title": "Runway FBU",
-      "meta": "Hanna Selvaag Wangsmo · hanna@runwayfbu.com",
+      "meta": "hello@runwayfbu.com",
       "href": "/members#runway-fbu",
-      "text": "Runway FBU. Investment fund for the future of industry including robotics; also runs an AI/robotics hub (as introduced by Hanna Selvaag Wangsmo and Maria Katarina Michelsen). LinkedIn company page describes a tech hub with 60+ companies and an AI and Robotics Lab at Aker Tech House, Fornebu, related to RunwayVC (runway.vc).. Hanna Selvaag Wangsmo. hanna@runwayfbu.com. https://runwayfbu.com"
+      "text": "Runway FBU. Investment fund for the future of industry including robotics; also runs an AI/robotics hub (as introduced by Hanna Selvaag Wangsmo and Maria Katarina Michelsen). LinkedIn company page describes a tech hub with 60+ companies and an AI and Robotics Lab at Aker Tech House, Fornebu, related to RunwayVC (runway.vc).. hello@runwayfbu.com. https://runwayfbu.com"
     },
     {
       "id": "member-ruter-as",
       "group": "Members",
       "title": "Ruter AS",
-      "meta": "Vibeke Harlem · vibeke.harlem@ruter.no",
+      "meta": "https://ruter.no/hjelp/kontakt-oss",
       "href": "/members#ruter-as",
-      "text": "Ruter AS. Researching the impact of robotics on public transport (as introduced by Vibeke Harlem).. Vibeke Harlem. vibeke.harlem@ruter.no. https://ruter.no"
+      "text": "Ruter AS. Researching the impact of robotics on public transport (as introduced by Vibeke Harlem).. https://ruter.no/hjelp/kontakt-oss. https://ruter.no"
     },
     {
       "id": "member-saro-robotics",
       "group": "Members",
       "title": "Saro Robotics",
-      "meta": "Ingeborg Sofie Bogen · ingeborg@sarorobotics.com",
+      "meta": "contact@sarorobotics.com",
       "href": "/members#saro-robotics",
-      "text": "Saro Robotics. Builds autonomous climbing robots for inspection of industrial pipe networks, delivering continuous inspection data for energy infrastructure (including corrosion under insulation).. Ingeborg Sofie Bogen. ingeborg@sarorobotics.com. https://www.sarorobotics.com"
+      "text": "Saro Robotics. Builds autonomous climbing robots for inspection of industrial pipe networks, delivering continuous inspection data for energy infrastructure (including corrosion under insulation).. contact@sarorobotics.com. https://www.sarorobotics.com"
     },
     {
       "id": "member-sonair",
       "group": "Members",
       "title": "Sonair",
-      "meta": "Tor Odland · tor@sonair.com",
+      "meta": "hello@sonair.com",
       "href": "/members#sonair",
-      "text": "Sonair. Makes ADAR One, a safety-certified 3D ultrasonic sensor (SIL 2 / PL d) for detecting people and obstacles around robots.. Tor Odland. tor@sonair.com. https://sonair.com"
+      "text": "Sonair. Makes ADAR One, a safety-certified 3D ultrasonic sensor (SIL 2 / PL d) for detecting people and obstacles around robots.. hello@sonair.com. https://sonair.com"
     },
     {
       "id": "member-startuplab",
       "group": "Members",
       "title": "Startuplab",
-      "meta": "Kristian Hesthaug · kristian@startuplab.no",
+      "meta": "hello@startuplab.no",
       "href": "/members#startuplab",
-      "text": "Startuplab. Norway’s largest tech incubator, with a hardware, deep tech and defence focus (as introduced at the founding meeting). Host of the founding meeting and the agreed first robot lab in Oslo.. Kristian Hesthaug. kristian@startuplab.no. https://www.startuplab.no"
+      "text": "Startuplab. Norway’s largest tech incubator, with a hardware, deep tech and defence focus (as introduced at the founding meeting). Host of the founding meeting and the agreed first robot lab in Oslo.. hello@startuplab.no. https://www.startuplab.no"
     },
     {
       "id": "member-takt-logistikk",
       "group": "Members",
       "title": "Takt Logistikk",
-      "meta": "Gjermund Lien · gjermund@taktlogistikk.no",
+      "meta": "https://taktlogistikk.no/about/contact",
       "href": "/members#takt-logistikk",
-      "text": "Takt Logistikk. Helps contractors and developers take control of construction-site logistics: planning, coordinated deliveries and digital information sharing from planning to completed project, based on Lean Construction.. Gjermund Lien. gjermund@taktlogistikk.no. https://taktlogistikk.no"
+      "text": "Takt Logistikk. Helps contractors and developers take control of construction-site logistics: planning, coordinated deliveries and digital information sharing from planning to completed project, based on Lean Construction.. https://taktlogistikk.no/about/contact. https://taktlogistikk.no"
     },
     {
       "id": "member-wybe-robotics",
       "group": "Members",
       "title": "Wybe Robotics",
-      "meta": "Julian Alexander Hahn · julian@wybe.me",
+      "meta": "hello@wybe.me",
       "href": "/members#wybe-robotics",
-      "text": "Wybe Robotics. Builds robotic employees from its R&D lab in Moss. The Wybe Node, a small on-premises device, handles calls, emails, scheduling and follow-ups around the clock in more than 30 languages, and the same software can be given a humanoid body for cleaning, reception or security.. Julian Alexander Hahn. julian@wybe.me. https://wybe.me"
+      "text": "Wybe Robotics. Builds robotic employees from its R&D lab in Moss. The Wybe Node, a small on-premises device, handles calls, emails, scheduling and follow-ups around the clock in more than 30 languages, and the same software can be given a humanoid body for cleaning, reception or security.. hello@wybe.me. https://wybe.me"
     }
   ]
 }

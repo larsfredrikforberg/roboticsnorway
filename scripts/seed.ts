@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { eq, sql } from "drizzle-orm";
 import { Pool } from "pg";
-import { publicMembers } from "../lib/members";
+import { internalMembers } from "../lib/members";
 import { members } from "../lib/db/schema";
 
 export async function seed() {
@@ -15,7 +15,7 @@ export async function seed() {
 
   const pool = new Pool({ connectionString });
   const db = drizzle(pool, { schema: { members } });
-  const founding = publicMembers();
+  const founding = internalMembers();
   let inserted = 0;
   let updated = 0;
 

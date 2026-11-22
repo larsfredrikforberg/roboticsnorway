@@ -13,6 +13,7 @@ export type MemberRecord = {
   description: string;
   contactPerson: string | null;
   contactEmail: string | null;
+  contactUrl: string | null;
   status: MemberStatus;
   source: "founding" | "application";
   joinedAt: string | null;
