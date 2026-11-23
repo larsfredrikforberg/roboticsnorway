@@ -81,6 +81,70 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "runway-fbu-lab-demo-day",
+    title: "Demo Day at Runway FBU's Industrial AI & Robotics Lab",
+    date: "2026-11-23",
+    order: 3,
+    tags: ["Events"],
+    place: "Aker Tech House, Fornebu",
+    excerpt:
+      "On Thursday 3 December, Runway FBU's Industrial AI & Robotics Lab presents its first cohort at Aker Tech House in Fornebu. Fifteen companies will pitch what they have built and tested over six months. Registration is on Luma.",
+    hero: photo(
+      "/news/runway-fbu-lab-demo-day.jpg",
+      1403,
+      1402,
+      "The official poster for Industrial AI & Robotics Lab Demo Day on 3 December 2026 at Aker Tech House, Fornebu.",
+    ),
+    photoCredit: "Image: Runway FBU, from the official Luma event page",
+    blocks: [
+      paragraph(
+        "Runway FBU, a Robotics Norway member, is hosting Industrial AI & Robotics Lab Demo Day on Thursday 3 December 2026 at Aker Tech House in Fornebu. The event runs from 16:00 to 22:00 and brings together more than 100 curated industry decision-makers, founders and investors. Fifteen companies from the Lab's first cohort will present what they have built and tested over six months. If a team catches a guest's attention, the organisers will help connect them to explore a pilot, partnership or investment. The afternoon is hosted by Sagar Chandna of Runway FBU / RunwayVC.",
+      ),
+      heading("The Lab"),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "The Industrial AI & Robotics Lab is a six-month applied programme at Aker Tech House, running from June to December 2026. According to " },
+          { text: "Runway FBU", href: "https://runwayfbu.com/lab" },
+          { text: ", it brings technical founders together with industry partners to build, test and pilot industrial AI, autonomy and robotics on real problems, with real data and in real operating environments. The Lab is not an accelerator, and it does not take automatic equity. Runway FBU also runs a Tech Hub with more than 60 industrial tech companies at the same address, and is related to the venture fund RunwayVC." },
+        ],
+      },
+      paragraph(
+        "The Lab is made possible with support from Innovation Norway and the partners Aker BP, Aker BioMarine, NorSea Group, Danske Bank, NTNU, UiT, HUB Ocean, REV Ocean, Accenture, Telenor, Energy Valley, Bærum Municipality and Akershus County Council.",
+      ),
+      heading("The programme"),
+      paragraph(
+        "Welcome drinks in the Tech Hub begin at 16:00. At 16:30, Maria Katarina T. Michelsen will talk about six months inside the Lab: how it works, what the first cohort achieved, and what was learned from bringing founders and industry together.",
+      ),
+      paragraph(
+        "From 16:40, Matts Johansen, CEO of Aker BioMarine, will speak about what the company has gained from the Lab, including how first meetings turned into pilot agreements, and what those pilots have delivered so far. Aker BP then joins Michelsen on stage to discuss what it is like to be a Lab partner, what working directly with founders has opened up for the company, and where it sees opportunities for AI and robotics in oil and gas.",
+      ),
+      paragraph(
+        "From 17:00 to 18:15 the 15 Lab companies give short pitches on what they have built, what they have tested and what comes next. The companies on the programme are Digel, Saro Robotics, Eyer, TasteForge, Midpilot, Marselia Robotics, Availant, Palindrome AI, 3D Components, SASTECH, Lodestone Labs, Bevisera, Endwell, ANOX and Arctech Robotics.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Three of them are also Robotics Norway members: Saro Robotics, Marselia Robotics and Endwell. Sondre Bø Kongsgård, who started Endwell, will present why Endwell was started. Endwell has also built a " },
+          { text: "workspace for the robotics landscape in Norway", href: "/news/endwell-robotics-norway-workspace" },
+          { text: "." },
+        ],
+      },
+      paragraph(
+        "At 18:15 the hosts will explain how Lab partners help shape which companies are scouted for the next cohort, and what it takes to join. From 18:30 to 22:00 there is food, drinks and time to meet the founders in the Cognite Lounge.",
+      ),
+      heading("Register on Luma"),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "The event takes place at Aker Tech House, John Strandruds Vei 10, 1360 Fornebu. Registration is subject to host approval. " },
+          { text: "Register on Luma", href: "https://luma.com/w3ct1r90" },
+          { text: "." },
+        ],
+      },
+    ],
+  },
+  {
     slug: "odense-robotics-gateway",
     title: "Odense Robotics, a gateway to Denmark's robotics, automation and drone industry",
     date: "2026-11-23",
