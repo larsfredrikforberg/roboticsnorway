@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useId, useMemo, useState } from "react";
 import { buttonVariants } from "@/components/ui/button";
-import { ENDWELL_APP_URL, labelSide, layoutMap, type CityCluster } from "@/lib/member-map";
+import { ENDWELL_JOIN_URL, labelSide, layoutMap, type CityCluster } from "@/lib/member-map";
 import { cn } from "cn";
 
 export type MemberMapProps = {
@@ -29,12 +29,12 @@ export function MemberMap({ clusters }: MemberMapProps) {
         </p>
         <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
           <a
-            href={ENDWELL_APP_URL}
+            href={ENDWELL_JOIN_URL}
             target="_blank"
             rel="noreferrer"
             className={cn(buttonVariants({ size: "lg" }), "h-11 bg-flag px-5 text-white hover:bg-flag/90")}
           >
-            Open the Endwell app
+            Join the Endwell workspace
           </a>
           <Link href="/news/endwell-robotics-norway-workspace" className="inline-flex h-11 items-center text-sm text-flag hover:underline">
             Read the news story

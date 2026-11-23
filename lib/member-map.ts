@@ -3,6 +3,8 @@ import { norwayMainland } from "@/data/norway-mainland";
 import type { MemberRecord } from "@/lib/types";
 
 export const ENDWELL_APP_URL = "https://app.endwell.ai/";
+/** Invitation link for the Robotics Norway workspace, with unlimited duration. */
+export const ENDWELL_JOIN_URL = "https://app.endwell.ai/join#aD4_JxCdPh0gFf9xSI_ri82tJ6hq27kS";
 
 export type MappedMember = {
   slug: string;
