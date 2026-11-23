@@ -308,6 +308,46 @@
       "text": "Minutes from the founding meeting at Startuplab on 5 November 2026: member introductions, existing initiatives, the Bay Area project, robot labs, the steering group and next steps."
     },
     {
+      "id": "partner-robotics-nation",
+      "group": "Partners",
+      "title": "Robotics Nation",
+      "meta": "Finland",
+      "href": "/partners#robotics-nation",
+      "text": "Robotics Nation. Finland. Robotics Nation is a Finnish non-profit building a national talent pipeline for robotics, starting in upper secondary school. The organisation sets up student-run robotics clubs — now in 22 schools around Finland — trains teachers, and connects students through competitions and a growing national network. It treats robotics education as a public good, so that students across the country get the same chance to build, program and design robots.. https://www.roboticsnation.org"
+    },
+    {
+      "id": "partner-odense-robotics",
+      "group": "Partners",
+      "title": "Odense Robotics",
+      "meta": "Denmark · info@odenserobotics.dk",
+      "href": "/partners#odense-robotics",
+      "text": "Odense Robotics. Denmark. Odense Robotics is Denmark’s national robotics, automation and drone cluster. It helps robotics companies innovate and grow, and helps companies that want to automate find the right solutions. Together with its members — more than 300 robotics, automation and drone companies, knowledge institutions, municipalities and related organisations — the cluster works to realise the potential of Danish robotics.. info@odenserobotics.dk. https://www.odenserobotics.dk"
+    },
+    {
+      "id": "partner-norwegian-robotics-cluster",
+      "group": "Partners",
+      "title": "Norwegian Robotics Cluster",
+      "meta": "Norway · post@robotcluster.no",
+      "href": "/partners#norwegian-robotics-cluster",
+      "text": "Norwegian Robotics Cluster. Norway. Norwegian Robotics Cluster (Den Norske Robotklyngen) is an industry cluster whose member companies work together to strengthen productivity and competitiveness through greater use of robotics and physical AI. The cluster offers competence-building, meeting places, innovation collaboration and internationalisation, and has been admitted to the Norwegian Innovation Clusters programme. It currently has 41 member organisations.. post@robotcluster.no. https://robotcluster.no"
+    },
+    {
+      "id": "partner-necia",
+      "group": "Partners",
+      "title": "Necia",
+      "meta": "Norway · https://www.mnu-as.no/necia/contact",
+      "href": "/partners#necia",
+      "text": "Necia. Norway. Necia is a tech cluster in the Moss region that connects companies, technology providers, schools and the public sector to strengthen industrial growth and international competitiveness. It works to accelerate the introduction of automation, AI and humanoid robotics, and to build the skills and meeting places that support Norwegian industry. Its programmes include VOXTRY, a growth programme for companies with global potential and ambitions.. https://www.mnu-as.no/necia/contact. https://necia.no"
+    },
+    {
+      "id": "partner-nlrobotics",
+      "group": "Partners",
+      "title": "NLrobotics",
+      "meta": "Netherlands · contact@nlrobotics.nl",
+      "href": "/partners#nlrobotics",
+      "text": "NLrobotics. Netherlands. NLrobotics is the industry and network organisation accelerating robotisation in the Netherlands. It connects companies, knowledge institutions and governments to work on smart, cognitive robotics solutions for challenges such as labour shortages, an ageing population, sustainability and digitalisation. With an ecosystem of more than 700 organisations, NLrobotics is a co-initiator, together with FME and the broader robotics coalition, of the Nationale Robotica Agenda.. contact@nlrobotics.nl. https://www.nlrobotics.nl"
+    },
+    {
       "id": "member-3lc",
       "group": "Members",
       "title": "3LC",

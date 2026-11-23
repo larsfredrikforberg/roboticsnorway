@@ -19,7 +19,7 @@ export type MemberRecord = {
   joinedAt: string | null;
 };
 
-export type SearchGroup = "Charter" | "News" | "Documents" | "Members";
+export type SearchGroup = "Charter" | "News" | "Documents" | "Members" | "Partners";
 
 export type SearchDocument = {
   id: string;

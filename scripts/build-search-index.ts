@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { charter } from "../content/charter";
 import { articlePlainText, articles, formatNewsDate } from "../content/news";
+import { partners } from "../content/partners";
 import { publicMembers } from "../lib/members";
 import type { CorpusDocument, SearchCorpus, SearchDocument } from "../lib/types";
 
@@ -135,6 +136,23 @@ export function buildSearchCorpus(): SearchCorpus {
       text: [document.summary !== document.text ? document.summary : null, document.text]
         .filter(Boolean)
         .join("\n\n"),
+    })),
+    ...partners.map((partner) => ({
+      id: `partner-${partner.slug}`,
+      group: "Partners" as const,
+      title: partner.name,
+      meta: [partner.country, partner.contactEmail, partner.contactUrl].filter(Boolean).join(" · "),
+      href: `/partners#${partner.slug}`,
+      text: [
+        partner.name,
+        partner.country,
+        partner.description,
+        partner.contactEmail,
+        partner.contactUrl,
+        partner.website,
+      ]
+        .filter(Boolean)
+        .join(". "),
     })),
     ...publicMembers().map((member) => ({
       id: `member-${member.slug}`,

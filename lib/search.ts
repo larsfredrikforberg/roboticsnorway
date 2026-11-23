@@ -1,7 +1,7 @@
 import MiniSearch from "minisearch";
 import type { SearchDocument, SearchGroup } from "@/lib/types";
 
-const GROUP_ORDER: SearchGroup[] = ["Charter", "News", "Documents", "Members"];
+const GROUP_ORDER: SearchGroup[] = ["Charter", "News", "Documents", "Members", "Partners"];
 
 export function createSearchIndex(documents: SearchDocument[]) {
   const index = new MiniSearch<SearchDocument>({

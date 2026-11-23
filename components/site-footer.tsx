@@ -21,6 +21,9 @@ export function SiteFooter() {
           <Link className="text-navy hover:underline" href="/members">
             Members
           </Link>
+          <Link className="text-navy hover:underline" href="/partners">
+            Partners
+          </Link>
           <Link className="text-navy hover:underline" href="/news">
             News
           </Link>

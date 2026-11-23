@@ -123,3 +123,14 @@ test("the public member search corpus has no personal contacts and no Innovation
   assert.ok(saro);
   assert.match(saro.meta, /contact@sarorobotics.com/);
 });
+
+test("search finds partner networks", () => {
+  const hits = searchDocuments(data.searchDocuments, "Robotics Nation Finland");
+  const partner = hits.find((hit) => hit.href === "/partners#robotics-nation");
+  assert.ok(partner);
+  assert.equal(partner?.group, "Partners");
+  assert.equal(partner?.title, "Robotics Nation");
+
+  const odense = searchDocuments(data.searchDocuments, "info@odenserobotics.dk");
+  assert.ok(odense.some((hit) => hit.href === "/partners#odense-robotics" && hit.group === "Partners"));
+});

@@ -32,7 +32,7 @@ export function SearchScreen() {
           name="q"
           key={query}
           defaultValue={query}
-          placeholder="Charter, news, documents, members"
+          placeholder="Charter, news, documents, members, partners"
           className="h-12 w-full rounded-lg border border-input px-4 text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
         />
         <button

@@ -8,7 +8,7 @@ const data = corpus as SearchCorpus;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://roboticsnorway.org";
-  const staticRoutes = ["", "/documents", "/members", "/projects", "/news", "/contact", "/join", "/search"];
+  const staticRoutes = ["", "/documents", "/members", "/partners", "/projects", "/news", "/contact", "/join", "/search"];
   return [
     ...staticRoutes.map((path) => ({ url: `${base}${path || "/"}` })),
     ...data.documents.map((document) => ({ url: `${base}/documents/${document.slug}` })),
