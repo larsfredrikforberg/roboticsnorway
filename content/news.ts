@@ -236,11 +236,11 @@ export const articles: NewsArticle[] = [
     hero: {
       ...photo(
         "/news/norway-on-stage-at-slush-ingeborg-bogen.jpg",
-        1600,
         1200,
+        1600,
         "Ingeborg Sofie Bogen, co-founder and COO of Saro Robotics, pitching on the Oslo&Co stage at Innovation Norway's Look to Norway side event at Slush in Helsinki, with slides of offshore industrial inspection.",
       ),
-      objectPosition: "center 72%",
+      objectPosition: "center 60%",
     },
     photoCredit: "Photos: Lars-Fredrik Forberg / Robotics Norway",
     blocks: [
@@ -314,8 +314,8 @@ export const articles: NewsArticle[] = [
         credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
         figure: photo(
           "/news/norway-on-stage-at-slush-allonic.jpg",
-          1600,
           1200,
+          1600,
           "Áron Kecskés and Benedek Tasi of Allonic with the company's tendon-driven robotic hand at Slush.",
         ),
       },
