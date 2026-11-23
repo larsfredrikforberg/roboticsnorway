@@ -225,6 +225,164 @@ export const articles: NewsArticle[] = [
     ],
   },
   {
+    slug: "norway-on-stage-at-slush",
+    title: "Norway on stage at Slush",
+    date: "2026-11-23",
+    order: 0,
+    tags: ["Events"],
+    place: "Slush, Helsinki",
+    excerpt:
+      "Ingeborg Sofie Bogen, co-founder and COO of Saro Robotics, pitched at Innovation Norway's Look to Norway side event at Slush in Helsinki on 18 November 2026. She describes strong investor interest in hardware and a high appetite for European robotics. The same programme put Space Lab and Andøya Space on stage. On the exhibition floor, Robotics Norway president Lars-Fredrik Forberg also met Allonic, Pink Robotics and Swiss company coprod, which came out of stealth on 23 November.",
+    hero: {
+      ...photo(
+        "/news/norway-on-stage-at-slush-ingeborg-bogen.jpg",
+        1600,
+        1200,
+        "Ingeborg Sofie Bogen, co-founder and COO of Saro Robotics, pitching on the Oslo&Co stage at Innovation Norway's Look to Norway side event at Slush in Helsinki, with slides of offshore industrial inspection.",
+      ),
+      objectPosition: "center 72%",
+    },
+    photoCredit: "Photos: Lars-Fredrik Forberg / Robotics Norway",
+    blocks: [
+      {
+        type: "paragraph",
+        runs: [
+          {
+            text: "Ingeborg Sofie Bogen, co-founder and COO of Saro Robotics, pitched at Innovation Norway's Look to Norway side event at Slush in Helsinki on 18 November 2026. ",
+          },
+          { text: "Saro Robotics", href: "https://sarorobotics.space/" },
+          {
+            text: ", a Robotics Norway member based in Trondheim, is building autonomous pipe-climbing robots for the inspection of industrial infrastructure. Earlier this year, Saro Robotics won DNB's 100 Pitches competition.",
+          },
+        ],
+      },
+      paragraph(
+        "After the trip, Bogen wrote to Robotics Norway that the energy at Slush was incredible, and that robotics is hotter than ever. \"Investors clearly want a hardware angle in their portfolios right now, and robotics is a natural fit,\" she said. \"The general optimism is high, and you really get the feeling that Europe is onto something big.\" She reported good conversations, especially with European venture funds from France and Germany, as well as American and Asian investors who are actively scouting what is being built in Europe.",
+      ),
+      paragraph(
+        "\"For Saro Robotics, a major highlight was pitching at Innovation Norway's Look to Norway event. The theme was space, and the ambitions in the room were really bold. It was a great platform to showcase what we're building and see how Norway is positioning itself on the global stage.\"",
+      ),
+      paragraph(
+        "Beyond the investor meetings, she said, a big takeaway was how valuable it is to connect with robotics founders from other countries. Meeting founders from other ecosystems was a reminder of how important it is to keep expanding the international network, and of how much there is to learn from how others tackle the same engineering and scaling challenges. \"The global appetite for European hardware is strong, and I'm excited to see what's next for the wider Norwegian robotics community,\" she wrote.",
+      ),
+      heading("Space Lab, Andøya Space and Look to Norway"),
+      paragraph(
+        "Look to Norway at Slush took place on Wednesday 18 November 2026, from 14:00 to 16:00, in the Partner Side Event Wing at Messukeskus in Helsinki. It was the fourth time Innovation Norway had gathered Norwegian startups and international investors at the event, and this year's theme was space. The English-language programme was organised with DNB, BI Norwegian Business School, Oslo&Co, 6AM, KUPA and StartupLab, and hosted by Helene Friis, marketing director at Innovation Norway. It opened with a talk from Andøya Space, followed by a founder and investor conversation between Space Lab and Skyfall Ventures, and closed with pitches from Havguard, Bev/Art and Saro Robotics.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/norway-on-stage-at-slush-look-to-norway.jpg",
+          1600,
+          1200,
+          "Helene Friis, marketing director at Innovation Norway, hosts Look to Norway at Slush on 18 November 2026, with partners DNB, BI, Oslo&Co, 6AM, KUPA and StartupLab.",
+        ),
+      },
+      paragraph(
+        "Ketil Olsen, CEO of Andøya Space, spoke under the title \"Turning Arctic Challenges into Strategic Advantage\".",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/norway-on-stage-at-slush-andoya.jpg",
+          1600,
+          1200,
+          "Ketil Olsen, CEO of Andøya Space, presents \"Turning Arctic Challenges into Strategic Advantage\" at Look to Norway at Slush.",
+        ),
+      },
+      paragraph(
+        "Daniel Cau Varming, founder and CEO of Space Lab, then joined Jon Kåre Stene, partner and co-founder of Skyfall Ventures, for a conversation titled \"Building big. Betting early.\" Space Lab is developing Draken, a reusable rocket planned for launch from the sea. A slide during the panel showed the Draken vessel. On the same programme, Bogen pitched for Saro Robotics, alongside pitches from Havguard and Bev/Art.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/norway-on-stage-at-slush-spacelab-draken.jpg",
+          1200,
+          1600,
+          "Daniel Cau Varming, founder and CEO of Space Lab, and Jon Kåre Stene, partner and co-founder of Skyfall Ventures, in conversation under an image of Space Lab's Draken rocket at Innovation Norway's Look to Norway side event at Slush in Helsinki.",
+        ),
+      },
+      heading("Robotics on the exhibition floor"),
+      paragraph(
+        "Away from the Norway programme, the robotics exhibition at Slush was one of the strongest parts of the event, according to Robotics Norway president Lars-Fredrik Forberg, who attended Slush and Look to Norway.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/norway-on-stage-at-slush-allonic.jpg",
+          1600,
+          1200,
+          "Áron Kecskés and Benedek Tasi of Allonic with the company's tendon-driven robotic hand at Slush.",
+        ),
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "At the booth of Hungarian company " },
+          { text: "Allonic", href: "https://allonic.co/" },
+          {
+            text: ", Benedek Tasi, co-founder and CEO, and Áron Kecskés showed a tendon-driven robotic hand produced with the company's 3D tissue-braiding process.",
+          },
+        ],
+      },
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/norway-on-stage-at-slush-pink-robotics.jpg",
+          1200,
+          1600,
+          "Clemens Engelhardt of Pink Robotics with the company's humanoid at Slush 2026.",
+        ),
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Nearby, the German company " },
+          { text: "Pink Robotics", href: "https://www.pink-robotics.com/" },
+          {
+            text: " showed its humanoid, with Clemens Engelhardt at the stand. The company takes a different route from much of the field. According to the team, Pink Robotics built its robot very quickly without any external data, training it with reinforcement learning alone. The company works with a German logistics company on deploying robots in warehouses. At the stand, the team said they do not understand why other developers rely on egocentric data, the first-person human video that many humanoid companies collect to train their robots.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Swiss company " },
+          { text: "coprod", href: "https://coprod.co/" },
+          {
+            text: ", an EPFL spin-out Forberg met at the exhibition, came out of stealth on 23 November 2026 with a 6 million dollar pre-seed round led by Founderful and PROTOTYPE, with participation from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital and Venturekick, as well as angel investors including Hugging Face founder Thomas Wolf. The company is building a modular hardware stack — power, battery, motion and sensing — on a single real-time EtherCAT bus with one software API, with the aim of making it simpler and cheaper to build purpose-built robots. At Slush, the founders described the EtherCAT stack as a basis they would like to see become a wider standard.",
+          },
+        ],
+      },
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        figure: photo(
+          "/news/norway-on-stage-at-slush-coprod.jpg",
+          900,
+          1600,
+          "coprod's white bipedal robot, marked CO-PROD, hangs from a crane in the Partner Side Event Wing at Slush, with a glowing circular purple sensor on its torso.",
+        ),
+      },
+      {
+        type: "video",
+        credit: "Photo: Lars-Fredrik Forberg / Robotics Norway",
+        video: video(
+          "/news/norway-on-stage-at-slush-coprod.mp4",
+          "/news/norway-on-stage-at-slush-coprod.jpg",
+          1080,
+          1920,
+          "The coprod bipedal robot, marked CO-PROD, is demonstrated hanging from a crane in the Partner Side Event Wing at Slush, lifting and extending one leg.",
+        ),
+      },
+    ],
+  },
+  {
     slug: "humanoid-full-stack-playbook",
     title: "What makes us human? Humanoid builds robots to take on the work that holds us back",
     date: "2026-11-19",
