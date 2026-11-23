@@ -81,6 +81,98 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "odense-robotics-gateway",
+    title: "Odense Robotics, a gateway to Denmark's robotics, automation and drone industry",
+    date: "2026-11-23",
+    order: 2,
+    tags: ["Network"],
+    place: "Denmark",
+    excerpt:
+      "After a meeting with Odense Robotics, Robotics Norway looks at Denmark's national cluster — more than 440 companies, startups and knowledge institutions, the Insight Report 2026, and the International Drone Show in Odense on 2–3 June 2027.",
+    hero: photo(
+      "/news/odense-robotics-kassow-icart.jpg",
+      1600,
+      1068,
+      "A Kassow Robots mobile manipulator in a warehouse, from the Odense Robotics Insight Report 2026.",
+    ),
+    logo: photo("/news/odense-robotics-logo.png", 1184, 472, "Odense Robotics logo"),
+    photoCredit: "Photos: Kassow Robots / Odense Robotics Insight Report 2026; Odense Robotics; International Drone Show",
+    blocks: [
+      paragraph(
+        "Robotics Norway president Lars-Fredrik Forberg met Odense Robotics on 23 November 2026. Rasmus Festersen, the cluster's chief commercial officer, followed up with a short briefing on the organisation, its annual Insight Report, and upcoming events.",
+      ),
+      paragraph(
+        "Odense Robotics is Denmark's national cluster for robotics, automation and drones. It brings together more than 440 companies, startups, knowledge institutions and other actors across the ecosystem. Its focus is to strengthen innovation, growth and international scaling, and to build stronger links between technology, talent, capital and the market. Building on Denmark's robotics environment, the cluster works to develop the country's position as an international frontrunner in robotics, automation and physical AI, and describes itself as a gateway to the Danish robot, drone and automation industry.",
+      ),
+      paragraph(
+        "The cluster is headquartered in Odense on Funen, with hubs in Northern Jutland, Central Jutland, Zealand and Southern Jutland.",
+      ),
+      heading("The Danish industry in figures"),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "The wider industry is described in the Odense Robotics Insight Report 2026, the cluster's annual analysis, published in April. It draws on national statistics and a survey of member companies. The report is available from " },
+          { text: "odenserobotics.dk", href: "https://www.odenserobotics.dk/publications-and-reports-and-analyses/" },
+          { text: "." },
+        ],
+      },
+      paragraph(
+        "According to the report, Denmark had 667 robot, automation and drone companies and 20,300 people working in the industry. Turnover grew by 4.4% to EUR 4.8 billion in 2024, and exports rose by about 8% to EUR 2.6 billion. That is a clear slowdown from 2023, when turnover grew by 24% and exports by 39%. Companies remained optimistic: 48% expected higher turnover in 2025, and one in four anticipated growth above 20%.",
+      ),
+      paragraph(
+        "The industry is also changing shape. 37% of companies reported expanding into new industries and application areas; among those, nearly half were targeting defence, space and security. 53% developed and launched new technological products in the past year. 58% pointed to artificial intelligence as a key trend for the year ahead, and 20% highlighted embodied AI. 64% of companies aim to increase sales to public customers.",
+      ),
+      {
+        type: "figure",
+        credit: "Image: Odense Robotics",
+        figure: photo(
+          "/news/odense-robotics-insight-report-2026.jpg",
+          1600,
+          1067,
+          "The Odense Robotics Insight Report 2026, the cluster's annual analysis of Denmark's robotics, automation and drone industry.",
+        ),
+      },
+      paragraph(
+        "In the cluster's announcement of the report, CEO Søren Elmer Kristensen placed the slower growth in a global market marked by uncertainty, competition and geopolitical tension. \"The Danish robotics industry is born global, but a stronger domestic market can become an important lever – especially at a time when export markets are more uncertain. There is significant potential in both the public sector and among SMEs, where automation still lags behind. If we can accelerate implementation at home, it can strengthen companies and increase productivity across society.\"",
+      ),
+      heading("Events, and the International Drone Show"),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Odense Robotics publishes a calendar of events it hosts, takes part in or partners on at " },
+          { text: "odenserobotics.dk/events", href: "https://www.odenserobotics.dk/events/" },
+          { text: ". Festersen also pointed to the International Drone Show, which returns to Odense on 2–3 June 2027." },
+        ],
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "The show is jointly organised by Odense Robotics and UAS Denmark Test Center and is held at Hans Christian Andersen Airport. The official site describes it as Northern Europe's leading event for drones and unmanned systems. The 2026 edition brought 1,500 participants from 41 countries and around 170 exhibitors to Odense. Details for 2027 are at " },
+          { text: "internationaldroneshow.com", href: "https://internationaldroneshow.com/" },
+          { text: "." },
+        ],
+      },
+      {
+        type: "figure",
+        credit: "Photo: International Drone Show",
+        figure: photo(
+          "/news/odense-robotics-international-drone-show.jpg",
+          1600,
+          850,
+          "A drone demonstration at the International Drone Show in Odense. The next edition is on 2–3 June 2027.",
+        ),
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Odense Robotics is at " },
+          { text: "odenserobotics.dk", href: "https://www.odenserobotics.dk/" },
+          { text: "." },
+        ],
+      },
+    ],
+  },
+  {
     slug: "endwell-robotics-norway-workspace",
     title: "Endwell has built a workspace for the robotics landscape in Norway",
     date: "2026-11-23",
