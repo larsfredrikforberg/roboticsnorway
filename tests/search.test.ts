@@ -85,9 +85,9 @@ test("search finds the founding news article", () => {
   assert.equal(groupHits([news])[0]?.group, "News");
 });
 
-test("the Humanoid Slush article is newest and the steering group article has no photos", () => {
+test("the Endwell workspace article is newest and the steering group article has no photos", () => {
   const newest = articlesByDate()[0];
-  assert.equal(newest?.slug, "humanoid-full-stack-playbook");
+  assert.equal(newest?.slug, "endwell-robotics-norway-workspace");
   assert.ok(newest?.hero);
   const morning = getArticle("industrial-renaissance-summit-slush");
   assert.ok(morning?.video);

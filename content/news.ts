@@ -81,6 +81,58 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "endwell-robotics-norway-workspace",
+    title: "Endwell has built a workspace for the robotics landscape in Norway",
+    date: "2026-11-23",
+    order: 1,
+    tags: ["Network"],
+    place: "Fornebu",
+    excerpt:
+      "Endwell, a Robotics Norway member, has created a workspace in its app with an overview of Robotics Norway companies and of robotics initiatives in Norway. Members can sign up at app.endwell.ai to enter the workspace.",
+    hero: photo(
+      "/news/endwell-norway-map.png",
+      1600,
+      1000,
+      "A map of Robotics Norway member organisations, grouped by city.",
+    ),
+    photoCredit: "Map: Robotics Norway",
+    blocks: [
+      paragraph(
+        "Endwell provides a collaborative platform connecting humans, agents and robots. The company's website focuses on one use case, plug and abandonment of offshore wells, but the platform itself is generic. Endwell is part of Runway FBU's AI & Robotics Lab, and joined Robotics Norway in November 2026.",
+      ),
+      paragraph(
+        "Sondre Bø Kongsgård, who started Endwell, has built a workspace in the Endwell app with an overview of Robotics Norway companies and of robotics initiatives in Norway more generally. He has also been adding public developments to that overview, such as Equinor's marine robotics centre at Kårstø.",
+      ),
+      paragraph(
+        "Robotics Norway members can enter the workspace by signing up at app.endwell.ai. Kongsgård's instruction is to press Sign Up in the lower left corner, create an account with your email, and go straight into the workspace.",
+      ),
+      paragraph(
+        "Kongsgård wants it to be worthwhile for robotics organisations in Norway to add their own information, because they want to be part of the overview. A public share link for the map and landscape is not available yet; he says this can be added so that workspace owners and administrators can set how long a link remains valid. Until then, a map of Robotics Norway's member organisations is on the members page, with a link to the app.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "See the map on the " },
+          { text: "members page", href: "/members" },
+          { text: ", or open the workspace at " },
+          { text: "app.endwell.ai", href: "https://app.endwell.ai/" },
+          { text: "." },
+        ],
+      },
+      paragraph(
+        "Kongsgård is finishing a presentation on why he started Endwell for Industrial AI & Robotics Lab Demo Day on 3 December at Aker Tech House in Fornebu, hosted by RunwayFBU, where Endwell.ai is one of the 15 lab companies on the programme. He also plans to share more on LinkedIn.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Demo Day is listed at " },
+          { text: "luma.com/w3ct1r90", href: "https://luma.com/w3ct1r90" },
+          { text: "." },
+        ],
+      },
+    ],
+  },
+  {
     slug: "humanoid-full-stack-playbook",
     title: "What makes us human? Humanoid builds robots to take on the work that holds us back",
     date: "2026-11-19",

@@ -3,8 +3,10 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { MemberGrid } from "@/components/member-grid";
+import { MemberMap } from "@/components/member-map";
 import { buttonVariants } from "@/components/ui/button";
 import { getPublicMembers } from "@/lib/member-repository";
+import { clusterMembers, mappedMembers } from "@/lib/member-map";
 import { cn } from "cn";
 
 export const metadata: Metadata = {
@@ -15,7 +17,13 @@ export const metadata: Metadata = {
 async function Directory() {
   await connection();
   const members = await getPublicMembers();
-  return <MemberGrid members={members} />;
+  const clusters = clusterMembers(mappedMembers(members));
+  return (
+    <div className="space-y-14">
+      <MemberMap clusters={clusters} />
+      <MemberGrid members={members} />
+    </div>
+  );
 }
 
 export default function MembersPage() {

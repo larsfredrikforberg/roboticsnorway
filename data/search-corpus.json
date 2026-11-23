@@ -180,6 +180,14 @@
       "text": "Trust between members. Market information shared in the network stays confidential, and every member runs its own business freely."
     },
     {
+      "id": "news-endwell-robotics-norway-workspace",
+      "group": "News",
+      "title": "Endwell has built a workspace for the robotics landscape in Norway",
+      "meta": "23 November 2026",
+      "href": "/news/endwell-robotics-norway-workspace",
+      "text": "Endwell, a Robotics Norway member, has created a workspace in its app with an overview of Robotics Norway companies and of robotics initiatives in Norway. Members can sign up at app.endwell.ai to enter the workspace.\n\nNetwork\n\nA map of Robotics Norway member organisations, grouped by city.\n\nMap: Robotics Norway\n\nEndwell provides a collaborative platform connecting humans, agents and robots. The company's website focuses on one use case, plug and abandonment of offshore wells, but the platform itself is generic. Endwell is part of Runway FBU's AI & Robotics Lab, and joined Robotics Norway in November 2026.\n\nSondre Bø Kongsgård, who started Endwell, has built a workspace in the Endwell app with an overview of Robotics Norway companies and of robotics initiatives in Norway more generally. He has also been adding public developments to that overview, such as Equinor's marine robotics centre at Kårstø.\n\nRobotics Norway members can enter the workspace by signing up at app.endwell.ai. Kongsgård's instruction is to press Sign Up in the lower left corner, create an account with your email, and go straight into the workspace.\n\nKongsgård wants it to be worthwhile for robotics organisations in Norway to add their own information, because they want to be part of the overview. A public share link for the map and landscape is not available yet; he says this can be added so that workspace owners and administrators can set how long a link remains valid. Until then, a map of Robotics Norway's member organisations is on the members page, with a link to the app.\n\nSee the map on the members page, or open the workspace at app.endwell.ai.\n\nKongsgård is finishing a presentation on why he started Endwell for Industrial AI & Robotics Lab Demo Day on 3 December at Aker Tech House in Fornebu, hosted by RunwayFBU, where Endwell.ai is one of the 15 lab companies on the programme. He also plans to share more on LinkedIn.\n\nDemo Day is listed at luma.com/w3ct1r90."
+    },
+    {
       "id": "news-humanoid-full-stack-playbook",
       "group": "News",
       "title": "What makes us human? Humanoid builds robots to take on the work that holds us back",
