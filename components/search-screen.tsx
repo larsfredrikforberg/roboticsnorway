@@ -1,6 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { AiAnswer } from "@/components/ai-answer";
 import { Mascot } from "@/components/mascot";
 import corpus from "@/data/search-corpus.json";
 import { groupHits, highlightTerms, searchDocuments, webSearchHref } from "@/lib/search";
@@ -49,7 +50,8 @@ export function SearchScreen() {
         </p>
       ) : (
         <div className="mt-10">
-          <p className="text-sm text-muted-foreground">
+          <AiAnswer query={query} />
+          <p className="mt-8 text-sm text-muted-foreground">
             {hits.length === 0
               ? `No matches in Robotics Norway for “${query}”.`
               : `${hits.length} ${hits.length === 1 ? "match" : "matches"} for “${query}”.`}
