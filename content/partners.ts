@@ -35,7 +35,7 @@ export const partners: Partner[] = [
     logoUrl: "/partners/odense-robotics.svg",
     logoSource: "https://www.odenserobotics.dk/wp-content/uploads/2020/11/OR-Logo-primaer.svg",
     description:
-      "Odense Robotics is Denmark’s national robotics, automation and drone cluster. It helps robotics companies innovate and grow, and helps companies that want to automate find the right solutions. Together with its members — more than 300 robotics, automation and drone companies, knowledge institutions, municipalities and related organisations — the cluster works to realise the potential of Danish robotics.",
+      "Odense Robotics is Denmark’s national robotics, automation and drone cluster. It helps robotics companies innovate and grow, and helps companies that want to automate find the right solutions. Together with its members — more than 440 robotics, automation and drone companies, knowledge institutions, municipalities and related organisations — the cluster works to realise the potential of Danish robotics.",
     descriptionSource: "https://www.odenserobotics.dk/what-we-do/",
     contactEmail: "info@odenserobotics.dk",
     contactUrl: null,
