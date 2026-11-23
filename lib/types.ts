@@ -28,6 +28,7 @@ export type SearchDocument = {
   text: string;
   href: string;
   meta: string;
+  location: string;
 };
 
 export type CorpusDocument = {

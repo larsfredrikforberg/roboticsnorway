@@ -138,3 +138,52 @@ test("search finds partner networks", () => {
   const odense = searchDocuments(data.searchDocuments, "info@odenserobotics.dk");
   assert.ok(odense.some((hit) => hit.href === "/partners#odense-robotics" && hit.group === "Partners"));
 });
+
+const TRONDHEIM_MEMBERS = ["Saro Robotics", "PPM Robotics", "Handprint"];
+
+test("natural questions find members by city instead of letter fragments", () => {
+  const question = searchDocuments(data.searchDocuments, "who are the members in trondheim?");
+  const questionTop = question.slice(0, 3);
+  assert.equal(questionTop.length, 3);
+  assert.deepEqual(
+    questionTop.map((hit) => hit.title).sort(),
+    [...TRONDHEIM_MEMBERS].sort(),
+  );
+  assert.ok(questionTop.every((hit) => hit.group === "Members"));
+
+  const city = searchDocuments(data.searchDocuments, "trondheim");
+  const cityTop = city.slice(0, 3).map((hit) => hit.title);
+  for (const name of TRONDHEIM_MEMBERS) {
+    assert.ok(cityTop.includes(name), `expected ${name} among top results for "trondheim", got ${cityTop.join(", ")}`);
+  }
+
+  const oslo = searchDocuments(data.searchDocuments, "robots in oslo");
+  assert.ok(oslo.length > 0);
+  assert.ok(
+    oslo.some((hit) => hit.group === "Members" && /oslo/i.test(`${hit.title} ${hit.meta} ${hit.text}`)),
+    "expected an Oslo member among results for robots in Oslo",
+  );
+  const firstOslo = `${oslo[0].title} ${oslo[0].meta} ${oslo[0].text}`;
+  assert.match(firstOslo, /oslo/i);
+
+  const news = searchDocuments(data.searchDocuments, "founding meeting StartupLab");
+  const founding = news.find((hit) => hit.href === "/news/robotics-norway-is-founded");
+  assert.ok(founding);
+  assert.equal(founding.group, "News");
+  assert.equal(founding.title, "Robotics Norway is founded");
+
+  assert.deepEqual(searchDocuments(data.searchDocuments, "a"), []);
+  assert.deepEqual(searchDocuments(data.searchDocuments, "w"), []);
+  assert.deepEqual(searchDocuments(data.searchDocuments, "?"), []);
+});
+
+test("member organisations are indexed by city, including Norwegian letters", () => {
+  const saro = data.searchDocuments.find((document) => document.title === "Saro Robotics");
+  assert.ok(saro);
+  assert.match(`${saro.meta} ${saro.text}`, /Trondheim/);
+
+  const kameleon = searchDocuments(data.searchDocuments, "åros");
+  assert.ok(kameleon.some((hit) => hit.title === "Kameleon Robotics" && hit.group === "Members"));
+  const ascii = searchDocuments(data.searchDocuments, "aros");
+  assert.ok(ascii.some((hit) => hit.title === "Kameleon Robotics" && hit.group === "Members"));
+});

@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { charter } from "../content/charter";
 import { articlePlainText, articles, formatNewsDate } from "../content/news";
 import { partners } from "../content/partners";
+import { memberLocations } from "../data/member-locations";
 import { publicMembers } from "../lib/members";
 import type { CorpusDocument, SearchCorpus, SearchDocument } from "../lib/types";
 
@@ -109,6 +110,7 @@ export function buildSearchCorpus(): SearchCorpus {
       title: "Public charter",
       meta: "Charter introduction",
       href: "/#charter",
+      location: "",
       text: `${charter.intro} ${charter.attribution}`,
     },
     ...charter.points.map((point) => ({
@@ -117,6 +119,7 @@ export function buildSearchCorpus(): SearchCorpus {
       title: point.title,
       meta: "Public charter",
       href: `/#${point.slug}`,
+      location: "",
       text: `${point.title}. ${point.body}`,
     })),
     ...articles.map((article) => ({
@@ -125,6 +128,7 @@ export function buildSearchCorpus(): SearchCorpus {
       title: article.title,
       meta: formatNewsDate(article.date),
       href: `/news/${article.slug}`,
+      location: "",
       text: articlePlainText(article),
     })),
     ...documents.map((document) => ({
@@ -133,6 +137,7 @@ export function buildSearchCorpus(): SearchCorpus {
       title: document.name,
       meta: [document.type, document.translation?.title].filter(Boolean).join(" · "),
       href: `/documents/${document.slug}`,
+      location: "",
       text: [document.summary !== document.text ? document.summary : null, document.text]
         .filter(Boolean)
         .join("\n\n"),
@@ -143,6 +148,7 @@ export function buildSearchCorpus(): SearchCorpus {
       title: partner.name,
       meta: [partner.country, partner.contactEmail, partner.contactUrl].filter(Boolean).join(" · "),
       href: `/partners#${partner.slug}`,
+      location: "",
       text: [
         partner.name,
         partner.country,
@@ -154,23 +160,29 @@ export function buildSearchCorpus(): SearchCorpus {
         .filter(Boolean)
         .join(". "),
     })),
-    ...publicMembers().map((member) => ({
-      id: `member-${member.slug}`,
-      group: "Members" as const,
-      title: member.companyName,
-      meta: [member.contactEmail, member.contactUrl].filter(Boolean).join(" · "),
-      href: `/members#${member.slug}`,
-      text: [
-        member.companyName,
-        member.membershipType === "individual" ? member.affiliation : null,
-        member.description,
-        member.membershipType === "individual" ? null : member.contactEmail,
-        member.membershipType === "individual" ? null : member.contactUrl,
-        member.website,
-      ]
-        .filter(Boolean)
-        .join(". "),
-    })),
+    ...publicMembers().map((member) => {
+      const location = memberLocations.find((item) => item.companyName === member.companyName);
+      return {
+        id: `member-${member.slug}`,
+        group: "Members" as const,
+        title: member.companyName,
+        meta: [location?.city, member.contactEmail, member.contactUrl].filter(Boolean).join(" · "),
+        href: `/members#${member.slug}`,
+        location: location?.city ?? "",
+        text: [
+          member.companyName,
+          member.membershipType === "individual" ? member.affiliation : null,
+          member.description,
+          location?.city,
+          location?.note,
+          member.membershipType === "individual" ? null : member.contactEmail,
+          member.membershipType === "individual" ? null : member.contactUrl,
+          member.website,
+        ]
+          .filter(Boolean)
+          .join(". "),
+      };
+    }),
   ];
 
   return {
