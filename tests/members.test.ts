@@ -7,6 +7,7 @@ test("public members are the founding organisations that were present", () => {
   assert.deepEqual(names, [
     "3LC",
     "AI Mad Lab",
+    "Alex Moltzau",
     "Autonomous Retail Norway AS",
     "bluZenit",
     "Dotspot",
@@ -71,8 +72,16 @@ test("published websites and unconfirmed logos", () => {
   assert.equal(byName["Kinetic Blocks AS"].contactEmail, "sales@kineticblocks.com");
   assert.equal(byName["Laksiya Balasubramaniam"].membershipType, "individual");
   assert.equal(byName["Kristoffer Gjerde"].membershipType, "individual");
+  assert.equal(byName["Alex Moltzau"].membershipType, "individual");
   assert.equal(byName["Laksiya Balasubramaniam"].affiliation, "Industrial Product Developer, Robotics and AI");
   assert.equal(byName["Kristoffer Gjerde"].affiliation, "Director, Strategic Accounts, Cognite");
+  assert.equal(
+    byName["Alex Moltzau"].affiliation,
+    "The Norwegian Government AI Unit; Visiting Policy Fellow at the University of Cambridge",
+  );
+  assert.equal(byName["Alex Moltzau"].website, "https://www.csap.cam.ac.uk/network/alex-moltzau/");
+  assert.equal(byName["Alex Moltzau"].contactEmail, null);
+  assert.equal(byName["Alex Moltzau"].contactPerson, null);
   assert.equal(byName.Cognite, undefined);
 });
 
@@ -108,6 +117,7 @@ test("public organisation cards expose only generic company contacts, never a pe
     "courtney@autonomousretailnorway.no",
     "laksiyab@gmail.com",
     "kristoffer.gjerde@cognite.com",
+    "alex.moltzau@gmail.com",
   ].map((email) => email.toLowerCase());
 
   for (const member of publicMembers()) {
@@ -130,5 +140,7 @@ test("internal source contacts are still available for admin export", () => {
   assert.equal(byName["Saro Robotics"].contactPerson, "Ingeborg Sofie Bogen");
   assert.equal(byName["Kinetic Blocks AS"].contactEmail, "lars.fredrik@kineticblocks.com");
   assert.equal(byName["Laksiya Balasubramaniam"].contactEmail, "laksiyab@gmail.com");
+  assert.equal(byName["Alex Moltzau"].contactEmail, "alex.moltzau@gmail.com");
+  assert.equal(byName["Alex Moltzau"].contactPerson, "Alex Moltzau");
   assert.equal(byName["Innovation Norway"], undefined);
 });
