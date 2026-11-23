@@ -85,15 +85,14 @@ test("search finds the founding news article", () => {
   assert.equal(groupHits([news])[0]?.group, "News");
 });
 
-test("Sondre, Odense, Endwell and Norway at Slush lead the news list and the steering group article has no photos", () => {
+test("Odense, Endwell and Norway at Slush lead the news list and the steering group article has no photos", () => {
   const newest = articlesByDate()[0];
-  assert.equal(newest?.slug, "sondre-bo-kongsgard-endwell");
+  assert.equal(newest?.slug, "odense-robotics-gateway");
   assert.ok(newest?.hero);
   const sameDay = articlesByDate().filter((article) => article.date === "2026-11-23");
   assert.deepEqual(
     sameDay.map((article) => article.slug),
     [
-      "sondre-bo-kongsgard-endwell",
       "odense-robotics-gateway",
       "endwell-robotics-norway-workspace",
       "norway-on-stage-at-slush",

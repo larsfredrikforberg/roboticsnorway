@@ -81,67 +81,6 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
-    slug: "sondre-bo-kongsgard-endwell",
-    title: "Sondre Bø Kongsgård is building a shared overview of robotics in Norway",
-    date: "2026-11-23",
-    order: 3,
-    tags: ["Network"],
-    place: "Fornebu",
-    excerpt:
-      "Sondre Bø Kongsgård, founder and CEO of Endwell, has built a workspace in the company's app with an overview of Robotics Norway companies and of robotics initiatives in Norway. Members can now join through an invitation link.",
-    hero: {
-      ...photo(
-        "/news/sondre-bo-kongsgard.jpg",
-        460,
-        460,
-        "Sondre Bø Kongsgård, founder and CEO of Endwell.",
-      ),
-      objectPosition: "center 20%",
-    },
-    photoCredit: "Photo: Sondre Bø Kongsgård / GitHub",
-    blocks: [
-      paragraph(
-        "Sondre Bø Kongsgård is the founder and CEO of Endwell, a Robotics Norway member that provides a collaborative platform connecting humans, agents and robots. The company's website focuses on one use case, plug and abandonment of offshore wells, but the platform itself is generic.",
-      ),
-      paragraph(
-        "Endwell is part of Runway FBU's AI & Robotics Lab at Aker Tech House in Fornebu. When the lab's first cohort was announced in June 2026, Kongsgård's project was listed as a PP&A platform, and the company had not yet been registered. Endwell AS was incorporated on 22 October 2026, with Kongsgård as managing director and chair of the board. He joined Robotics Norway in November 2026, on the recommendation of Maria Katarina T. Michelsen of Runway FBU.",
-      ),
-      paragraph(
-        "Earlier, he was a partner in Junior Consulting, the student consultancy at NTNU.",
-      ),
-      paragraph(
-        "In the Endwell app he has built a workspace with an overview of Robotics Norway companies and of robotics initiatives in Norway more generally, including public developments such as Equinor's marine robotics centre at Kårstø. He wants it to be worthwhile for robotics organisations in Norway to add their own information, because they want to be part of the overview.",
-      ),
-      {
-        type: "paragraph",
-        runs: [
-          { text: "Robotics Norway members can " },
-          {
-            text: "join the Robotics Norway workspace",
-            href: "https://app.endwell.ai/join#aD4_JxCdPh0gFf9xSI_ri82tJ6hq27kS",
-          },
-          {
-            text: " on Endwell. Create an account with your email and ask to join. The workspace's administrators approve each request, and new people join as guests, who can read and comment. Organisations that want to add or update their own information can ask to be made members. A map of member organisations is also on the ",
-          },
-          { text: "members page", href: "/members" },
-          { text: ", and the workspace itself is described in a separate " },
-          { text: "news story", href: "/news/endwell-robotics-norway-workspace" },
-          { text: "." },
-        ],
-      },
-      {
-        type: "paragraph",
-        runs: [
-          {
-            text: "On 3 December Kongsgård will present why Endwell was started at Industrial AI & Robotics Lab Demo Day at Aker Tech House in Fornebu, hosted by RunwayFBU, where Endwell is one of the 15 lab companies on the programme. Demo Day is listed at ",
-          },
-          { text: "luma.com/w3ct1r90", href: "https://luma.com/w3ct1r90" },
-          { text: "." },
-        ],
-      },
-    ],
-  },
-  {
     slug: "odense-robotics-gateway",
     title: "Odense Robotics, a gateway to Denmark's robotics, automation and drone industry",
     date: "2026-11-23",
