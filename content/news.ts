@@ -154,13 +154,13 @@ export const articles: NewsArticle[] = [
     excerpt:
       "After a meeting with Odense Robotics, Robotics Norway looks at Denmark's national cluster — more than 440 companies, startups and knowledge institutions, the Insight Report 2026, and the International Drone Show in Odense on 2–3 June 2027.",
     hero: photo(
-      "/news/odense-robotics-kassow-icart.jpg",
+      "/news/odense-robotics-universal-robots-ur3.jpg",
       1600,
-      1068,
-      "A Kassow Robots mobile manipulator in a warehouse, from the Odense Robotics Insight Report 2026.",
+      1067,
+      "A UR3 collaborative robot from Universal Robots, Odense, Denmark.",
     ),
     logo: photo("/news/odense-robotics-logo.png", 1184, 472, "Odense Robotics logo"),
-    photoCredit: "Photos: Kassow Robots / Odense Robotics Insight Report 2026; Odense Robotics; International Drone Show",
+    photoCredit: "Photos: Caio.st.oliveira / Wikimedia Commons (CC BY-SA 4.0); Odense Robotics; International Drone Show",
     blocks: [
       paragraph(
         "Robotics Norway president Lars-Fredrik Forberg met Odense Robotics on 23 November 2026. Rasmus Festersen, the cluster's chief commercial officer, followed up with a short briefing on the organisation, its annual Insight Report, and upcoming events.",
