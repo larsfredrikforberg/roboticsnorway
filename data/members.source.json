@@ -987,6 +987,28 @@
       "membership_status": "joined_by_email",
       "notes": "Asked to join by email to Lars-Fredrik Forberg, 21 Nov 2026. Added manually.",
       "company_name": "Proptonomy AS"
+    },
+    {
+      "website": "https://o-id.net",
+      "website_certainty": "verified",
+      "short_description": "Builds fully modular, field-serviceable humanoid robots for industrial work in manufacturing, logistics and inspection. Modules can be swapped on site. Founded in Tokyo in 2025 and made in Japan.",
+      "description_source": "https://o-id.net/ fetched 24 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": "Stian Jakobsen",
+      "contact_email": "stian@o-id.net",
+      "contact_certainty": "verified",
+      "public_contact_email": "contact@o-id.net",
+      "public_contact_url": null,
+      "additional_contacts": [],
+      "logo_url": "/members/o-id-logo.png",
+      "logo_certainty": "verified",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Co-founder and CEO Stian Jakobsen asked to be listed as a member in email to Lars-Fredrik Forberg, 24 Nov 2026. Added manually. Japanese entity is O-ID合同会社; US entity is O-ID, Inc. Logo is the official apple-touch-icon from o-id.net, saved locally.",
+      "company_name": "O-ID"
     }
   ],
   "declined_according_to_invitation": [

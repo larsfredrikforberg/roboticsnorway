@@ -6,7 +6,7 @@ import { MemberGrid } from "@/components/member-grid";
 import { MemberMap } from "@/components/member-map";
 import { buttonVariants } from "@/components/ui/button";
 import { getPublicMembers } from "@/lib/member-repository";
-import { clusterMembers, mappedMembers } from "@/lib/member-map";
+import { clusterMembers, mappedMembersAbroad, mappedMembersOnMainland } from "@/lib/member-map";
 import { cn } from "cn";
 
 export const metadata: Metadata = {
@@ -17,10 +17,11 @@ export const metadata: Metadata = {
 async function Directory() {
   await connection();
   const members = await getPublicMembers();
-  const clusters = clusterMembers(mappedMembers(members));
+  const clusters = clusterMembers(mappedMembersOnMainland(members));
+  const abroad = mappedMembersAbroad(members);
   return (
     <div className="space-y-14">
-      <MemberMap clusters={clusters} />
+      <MemberMap clusters={clusters} abroad={abroad} />
       <MemberGrid members={members} />
     </div>
   );

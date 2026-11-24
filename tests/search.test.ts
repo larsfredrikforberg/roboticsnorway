@@ -122,6 +122,7 @@ test("the public member search corpus has no personal contacts and no Innovation
     "geir.haugum@innovationnorway.no",
     "vidar@robotcluster.no",
     "crokseth@gmail.com",
+    "stian@o-id.net",
   ]) {
     assert.equal(blob.toLowerCase().includes(email.toLowerCase()), false, email);
   }
@@ -183,6 +184,10 @@ test("member organisations are indexed by city, including Norwegian letters", ()
   const saro = data.searchDocuments.find((document) => document.title === "Saro Robotics");
   assert.ok(saro);
   assert.match(`${saro.meta} ${saro.text}`, /Trondheim/);
+
+  const oid = data.searchDocuments.find((document) => document.title === "O-ID");
+  assert.ok(oid);
+  assert.match(`${oid.meta} ${oid.text}`, /Tokyo/);
 
   const kameleon = searchDocuments(data.searchDocuments, "åros");
   assert.ok(kameleon.some((hit) => hit.title === "Kameleon Robotics" && hit.group === "Members"));

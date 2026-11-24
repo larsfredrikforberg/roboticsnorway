@@ -68,4 +68,12 @@ export const memberLocations: MemberLocation[] = [
     certainty: "split",
     note: "Registered in Florø; LinkedIn lists Bergen.",
   },
+  {
+    companyName: "O-ID",
+    city: "Tokyo",
+    lat: 35.6762,
+    lng: 139.6503,
+    certainty: "high",
+    note: "Based in Tokyo, Japan. Coordinates are those shown on o-id.net.",
+  },
 ];

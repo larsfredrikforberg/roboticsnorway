@@ -3,14 +3,15 @@
 import Link from "next/link";
 import { useId, useMemo, useState } from "react";
 import { buttonVariants } from "@/components/ui/button";
-import { ENDWELL_JOIN_URL, labelSide, layoutMap, type CityCluster } from "@/lib/member-map";
+import { ENDWELL_JOIN_URL, labelSide, layoutMap, type CityCluster, type MappedMember } from "@/lib/member-map";
 import { cn } from "cn";
 
 export type MemberMapProps = {
   clusters: CityCluster[];
+  abroad?: MappedMember[];
 };
 
-export function MemberMap({ clusters }: MemberMapProps) {
+export function MemberMap({ clusters, abroad = [] }: MemberMapProps) {
   const titleId = useId();
   const layout = useMemo(() => layoutMap(clusters), [clusters]);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -23,9 +24,12 @@ export function MemberMap({ clusters }: MemberMapProps) {
         <p className="font-heading text-sm tracking-[0.14em] text-flag uppercase">Across Norway</p>
         <h2 className="mt-2 font-heading text-3xl text-navy sm:text-4xl">Members on the map</h2>
         <p className="mt-4 leading-7 text-ink">
-          {total} member organisations, grouped by city. The map shows Robotics Norway
-          members only. A broader landscape of robotics initiatives in Norway lives in
-          Endwell&apos;s app.
+          {total} member organisations in Norway, grouped by city.
+          {abroad.length > 0
+            ? ` ${abroad.map((member) => `${member.companyName} is based in ${member.city}`).join(". ")}.`
+            : null}{" "}
+          The map shows Robotics Norway members only. A broader landscape of robotics
+          initiatives in Norway lives in Endwell&apos;s app.
         </p>
         <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
           <a

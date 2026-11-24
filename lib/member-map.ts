@@ -57,6 +57,19 @@ export function mappedMembers(members: MemberRecord[]): MappedMember[] {
     });
 }
 
+/** Mainland Norway as drawn on the members map. Locations abroad are not pinned. */
+export function isOnMembersMap(location: Pick<MemberLocation, "lat" | "lng">) {
+  return location.lat >= 57.8 && location.lat <= 71.4 && location.lng >= 4 && location.lng <= 32;
+}
+
+export function mappedMembersOnMainland(members: MemberRecord[]): MappedMember[] {
+  return mappedMembers(members).filter(isOnMembersMap);
+}
+
+export function mappedMembersAbroad(members: MemberRecord[]): MappedMember[] {
+  return mappedMembers(members).filter((member) => !isOnMembersMap(member));
+}
+
 export function clusterMembers(members: MappedMember[]): CityCluster[] {
   const parent = members.map((_, index) => index);
 

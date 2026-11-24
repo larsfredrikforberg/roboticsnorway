@@ -25,6 +25,7 @@ test("public members are the founding organisations that were present", () => {
     "Mechatronics Innovation Lab",
     "Necia",
     "Norwegian Robotics Cluster",
+    "O-ID",
     "OEM Automatic",
     "Oslo kommune, Sykehjemsetaten",
     "Physical Robotics",
@@ -69,6 +70,14 @@ test("published websites and unconfirmed logos", () => {
   assert.equal(byName["Saro Robotics"].contactEmail, "contact@sarorobotics.com");
   assert.equal(byName["Saro Robotics"].contactPerson, null);
   assert.equal(byName["Endwell"].contactEmail, "hello@endwell.ai");
+  assert.equal(byName["O-ID"].website, "https://o-id.net");
+  assert.equal(byName["O-ID"].logoUrl, "/members/o-id-logo.png");
+  assert.equal(byName["O-ID"].contactEmail, "contact@o-id.net");
+  assert.equal(byName["O-ID"].contactPerson, null);
+  assert.match(
+    byName["O-ID"].description,
+    /modular, field-serviceable humanoid robots/,
+  );
   assert.equal(byName["Kinetic Blocks AS"].contactEmail, "sales@kineticblocks.com");
   assert.equal(byName["Laksiya Balasubramaniam"].membershipType, "individual");
   assert.equal(byName["Kristoffer Gjerde"].membershipType, "individual");
@@ -118,6 +127,7 @@ test("public organisation cards expose only generic company contacts, never a pe
     "laksiyab@gmail.com",
     "kristoffer.gjerde@cognite.com",
     "alex.moltzau@gmail.com",
+    "stian@o-id.net",
   ].map((email) => email.toLowerCase());
 
   for (const member of publicMembers()) {
