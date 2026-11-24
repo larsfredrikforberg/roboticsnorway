@@ -81,6 +81,45 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "lito-touch-data-for-robots",
+    title: "Lito is collecting the touch data robots still lack",
+    date: "2026-11-24",
+    order: 1,
+    tags: ["Network"],
+    place: "StartupLab, Oslo",
+    excerpt:
+      "Lito, a Robotics Norway member at StartupLab, builds handheld grippers with touch sensors that record how people handle objects. The data is used to train robot models. This week the team is mounting new sensors, and on 1 December cofounder Thomas Sørensen travels to San Francisco.",
+    hero: photo(
+      "/news/lito-touch-data-for-robots.jpg",
+      1600,
+      1067,
+      "Hands handling a soft fabric, from Lito's website.",
+    ),
+    photoCredit: "Photo: Lito, from lito.so",
+    blocks: [
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Lito, a member of Robotics Norway, builds handheld grippers with touch sensors that record how people handle things: video, movement and what the fingers feel. The recordings are used to train robot models. The company is based at StartupLab in Oslo, where it is part of the Mad House accelerator, and describes itself as a robotics data lab. Its site is " },
+          { text: "lito.so", href: "https://lito.so/" },
+          { text: "." },
+        ],
+      },
+      paragraph(
+        "\"Robots have become good at seeing, but almost no data today includes touch, and that is where many tasks fail, such as inserting a plug or holding something fragile,\" says Thomas Sørensen, cofounder and CEO.",
+      ),
+      paragraph(
+        "According to Lito, the grippers are wireless and record people doing real manipulation tasks from the same view and grip a robot will have. Each recording captures stereo video, motion and gripper opening, together with the tactile signal of what the fingers feel. A pipeline checks every session automatically and turns it into training-ready datasets for robotics labs and companies. The team tests the data on its own robot arms before delivering it.",
+      ),
+      paragraph(
+        "Lito was founded by Sørensen and Ludvig Øvrevik, the CTO, both from NTNU, with Ivar and Gabriel on the team. Shifter listed the company among those present when Robotics Norway was founded at StartupLab on 5 November.",
+      ),
+      paragraph(
+        "This week the team is mounting new touch sensors on the grippers. On 1 December, Sørensen travels to San Francisco to meet the companies that train robot models.",
+      ),
+    ],
+  },
+  {
     slug: "runway-fbu-lab-demo-day",
     title: "Demo Day at Runway FBU's Industrial AI & Robotics Lab",
     date: "2026-11-23",

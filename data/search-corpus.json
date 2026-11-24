@@ -187,6 +187,15 @@
       "text": "Trust between members. Market information shared in the network stays confidential, and every member runs its own business freely."
     },
     {
+      "id": "news-lito-touch-data-for-robots",
+      "group": "News",
+      "title": "Lito is collecting the touch data robots still lack",
+      "meta": "24 November 2026",
+      "href": "/news/lito-touch-data-for-robots",
+      "location": "",
+      "text": "Lito, a Robotics Norway member at StartupLab, builds handheld grippers with touch sensors that record how people handle objects. The data is used to train robot models. This week the team is mounting new sensors, and on 1 December cofounder Thomas Sørensen travels to San Francisco.\n\nNetwork\n\nHands handling a soft fabric, from Lito's website.\n\nPhoto: Lito, from lito.so\n\nLito, a member of Robotics Norway, builds handheld grippers with touch sensors that record how people handle things: video, movement and what the fingers feel. The recordings are used to train robot models. The company is based at StartupLab in Oslo, where it is part of the Mad House accelerator, and describes itself as a robotics data lab. Its site is lito.so.\n\n\"Robots have become good at seeing, but almost no data today includes touch, and that is where many tasks fail, such as inserting a plug or holding something fragile,\" says Thomas Sørensen, cofounder and CEO.\n\nAccording to Lito, the grippers are wireless and record people doing real manipulation tasks from the same view and grip a robot will have. Each recording captures stereo video, motion and gripper opening, together with the tactile signal of what the fingers feel. A pipeline checks every session automatically and turns it into training-ready datasets for robotics labs and companies. The team tests the data on its own robot arms before delivering it.\n\nLito was founded by Sørensen and Ludvig Øvrevik, the CTO, both from NTNU, with Ivar and Gabriel on the team. Shifter listed the company among those present when Robotics Norway was founded at StartupLab on 5 November.\n\nThis week the team is mounting new touch sensors on the grippers. On 1 December, Sørensen travels to San Francisco to meet the companies that train robot models."
+    },
+    {
       "id": "news-runway-fbu-lab-demo-day",
       "group": "News",
       "title": "Demo Day at Runway FBU's Industrial AI & Robotics Lab",

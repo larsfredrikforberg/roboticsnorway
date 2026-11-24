@@ -85,11 +85,16 @@ test("search finds the founding news article", () => {
   assert.equal(groupHits([news])[0]?.group, "News");
 });
 
-test("Sonair is newest, then Demo Day, Odense, Endwell and Norway at Slush, and the steering group article has no photos", () => {
+test("Lito is newest, then Sonair, then Demo Day, Odense, Endwell and Norway at Slush, and the steering group article has no photos", () => {
   const newest = articlesByDate()[0];
-  assert.equal(newest?.slug, "teaching-robots-to-listen");
+  assert.equal(newest?.slug, "lito-touch-data-for-robots");
   assert.equal(newest?.date, "2026-11-24");
   assert.ok(newest?.hero);
+  const sameDay24 = articlesByDate().filter((article) => article.date === "2026-11-24");
+  assert.deepEqual(
+    sameDay24.map((article) => article.slug),
+    ["lito-touch-data-for-robots", "teaching-robots-to-listen"],
+  );
   const sameDay = articlesByDate().filter((article) => article.date === "2026-11-23");
   assert.deepEqual(
     sameDay.map((article) => article.slug),
