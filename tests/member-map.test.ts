@@ -41,4 +41,15 @@ test("every public organisation has a city on the map, and individuals do not", 
     clusters.some((cluster) => cluster.members.some((member) => member.companyName === "O-ID")),
     false,
   );
+  const jona = mapped.find((member) => member.companyName === "Jona Engineering AS");
+  assert.equal(jona?.city, "Burfjord");
+  assert.equal(jona?.lat, 69.938);
+  assert.equal(jona?.lng, 22.052);
+  assert.equal(jona ? isOnMembersMap(jona) : false, true);
+  assert.ok(mainland.some((member) => member.companyName === "Jona Engineering AS"));
+  assert.ok(
+    clusters.some((cluster) => cluster.label.includes("Burfjord") && cluster.members.some((member) => member.companyName === "Jona Engineering AS")),
+  );
+  assert.equal(mainland.length, organisations.length - abroad.length);
+  assert.equal(mainland.length, 33);
 });

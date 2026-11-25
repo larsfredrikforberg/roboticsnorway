@@ -128,6 +128,8 @@ test("the public member search corpus has no personal contacts and no Innovation
     "vidar@robotcluster.no",
     "crokseth@gmail.com",
     "stian@o-id.net",
+    "rl@jonaengineering.com",
+    "robinliebert@onmail.com",
   ]) {
     assert.equal(blob.toLowerCase().includes(email.toLowerCase()), false, email);
   }
@@ -198,4 +200,15 @@ test("member organisations are indexed by city, including Norwegian letters", ()
   assert.ok(kameleon.some((hit) => hit.title === "Kameleon Robotics" && hit.group === "Members"));
   const ascii = searchDocuments(data.searchDocuments, "aros");
   assert.ok(ascii.some((hit) => hit.title === "Kameleon Robotics" && hit.group === "Members"));
+
+  const jona = data.searchDocuments.find((document) => document.title === "Jona Engineering AS");
+  assert.ok(jona);
+  assert.match(`${jona.meta} ${jona.text}`, /Burfjord/);
+  assert.match(`${jona.meta} ${jona.text}`, /Kvænangen/);
+  const burfjord = searchDocuments(data.searchDocuments, "burfjord");
+  assert.ok(burfjord.some((hit) => hit.title === "Jona Engineering AS" && hit.group === "Members"));
+  const kvenangen = searchDocuments(data.searchDocuments, "kvænangen");
+  assert.ok(kvenangen.some((hit) => hit.title === "Jona Engineering AS" && hit.group === "Members"));
+  const asciiKvaenangen = searchDocuments(data.searchDocuments, "kvaenangen");
+  assert.ok(asciiKvaenangen.some((hit) => hit.title === "Jona Engineering AS" && hit.group === "Members"));
 });

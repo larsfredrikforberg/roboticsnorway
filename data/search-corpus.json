@@ -511,6 +511,15 @@
       "text": "Humanoid.guide. Introduced at the founding meeting from an investor/founder angle by Christian Rokseth. Invitation lists the company as Humanoid.guide (Stavanger).. Stavanger. human@humanoid.guide. https://humanoid.guide"
     },
     {
+      "id": "member-jona-engineering-as",
+      "group": "Members",
+      "title": "Jona Engineering AS",
+      "meta": "Burfjord",
+      "href": "/members#jona-engineering-as",
+      "location": "Burfjord",
+      "text": "Jona Engineering AS. At Jona Engineering we bring data-efficient AI to clients in traditional industry and public transport. We're using an in-house training algorithm to reduce the amount of training data. Our reference projects span from a single quality assurance feedback loop using a camera stream and smaller GenAI solutions to enterprise-grade classification systems with custom speech-to-text models and a full AI system for classifying data in ERP software in real time for more than 7000 employees. We partner with clients from the Barents Sea to operations across Europe.. Burfjord. Kvænangen, Troms.. https://jonaengineering.com"
+    },
+    {
       "id": "member-kameleon-robotics",
       "group": "Members",
       "title": "Kameleon Robotics",

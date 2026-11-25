@@ -69,6 +69,14 @@ export const memberLocations: MemberLocation[] = [
     note: "Registered in Florø; LinkedIn lists Bergen.",
   },
   {
+    companyName: "Jona Engineering AS",
+    city: "Burfjord",
+    lat: 69.938,
+    lng: 22.052,
+    certainty: "high",
+    note: "Kvænangen, Troms.",
+  },
+  {
     companyName: "O-ID",
     city: "Tokyo",
     lat: 35.6762,

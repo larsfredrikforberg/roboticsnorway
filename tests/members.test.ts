@@ -16,6 +16,7 @@ test("public members are the founding organisations that were present", () => {
     "Handprint",
     "Hive Autonomy",
     "Humanoid.guide",
+    "Jona Engineering AS",
     "Kameleon Robotics",
     "Kinetic Blocks AS",
     "Kristoffer Gjerde",
@@ -78,6 +79,15 @@ test("published websites and unconfirmed logos", () => {
     byName["O-ID"].description,
     /modular, field-serviceable humanoid robots/,
   );
+  assert.equal(byName["Jona Engineering AS"].website, "https://jonaengineering.com");
+  assert.equal(byName["Jona Engineering AS"].logoUrl, "/members/jona-logo.png");
+  assert.equal(byName["Jona Engineering AS"].slug, "jona-engineering-as");
+  assert.equal(byName["Jona Engineering AS"].contactEmail, null);
+  assert.equal(byName["Jona Engineering AS"].contactPerson, null);
+  assert.match(
+    byName["Jona Engineering AS"].description,
+    /data-efficient AI to clients in traditional industry and public transport/,
+  );
   assert.equal(byName["Kinetic Blocks AS"].contactEmail, "sales@kineticblocks.com");
   assert.equal(byName["Laksiya Balasubramaniam"].membershipType, "individual");
   assert.equal(byName["Kristoffer Gjerde"].membershipType, "individual");
@@ -128,6 +138,8 @@ test("public organisation cards expose only generic company contacts, never a pe
     "kristoffer.gjerde@cognite.com",
     "alex.moltzau@gmail.com",
     "stian@o-id.net",
+    "rl@jonaengineering.com",
+    "robinliebert@onmail.com",
   ].map((email) => email.toLowerCase());
 
   for (const member of publicMembers()) {

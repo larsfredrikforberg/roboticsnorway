@@ -1009,6 +1009,28 @@
       "membership_status": "joined_by_email",
       "notes": "Co-founder and CEO Stian Jakobsen asked to be listed as a member in email to Lars-Fredrik Forberg, 24 Nov 2026. Added manually. Japanese entity is O-ID合同会社; US entity is O-ID, Inc. Logo is the official apple-touch-icon from o-id.net, saved locally.",
       "company_name": "O-ID"
+    },
+    {
+      "website": "https://jonaengineering.com",
+      "website_certainty": "verified",
+      "short_description": "At Jona Engineering we bring data-efficient AI to clients in traditional industry and public transport. We're using an in-house training algorithm to reduce the amount of training data. Our reference projects span from a single quality assurance feedback loop using a camera stream and smaller GenAI solutions to enterprise-grade classification systems with custom speech-to-text models and a full AI system for classifying data in ERP software in real time for more than 7000 employees. We partner with clients from the Barents Sea to operations across Europe.",
+      "description_source": "Company-provided English description in the membership request relayed 25 Nov 2026.",
+      "description_certainty": "verified",
+      "contact_person": null,
+      "contact_email": null,
+      "contact_certainty": "unknown",
+      "public_contact_email": null,
+      "public_contact_url": null,
+      "additional_contacts": [],
+      "logo_url": "/members/jona-logo.png",
+      "logo_certainty": "verified",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Asked to be listed as a company member, 25 Nov 2026. Added manually, not yet published. Business address in Brønnøysundregistrene (org.nr. 930 008 664) is Kvænangsveien 4872, 9161 Burfjord, Kvænangen, Troms. Logo is the official wordmark from jonaengineering.com/assets/images/Jona_Logo.svg, converted to PNG and saved locally. A personal-looking address was provided with the request and is withheld from the public page pending a decision. The company's own contact page lists a generic post@ address; that was also left off for now.",
+      "company_name": "Jona Engineering AS"
     }
   ],
   "declined_according_to_invitation": [
