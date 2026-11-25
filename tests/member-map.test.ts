@@ -51,5 +51,18 @@ test("every public organisation has a city on the map, and individuals do not", 
     clusters.some((cluster) => cluster.label.includes("Burfjord") && cluster.members.some((member) => member.companyName === "Jona Engineering AS")),
   );
   assert.equal(mainland.length, organisations.length - abroad.length);
-  assert.equal(mainland.length, 33);
+  assert.equal(mainland.length, 34);
+  const tekview = mapped.find((member) => member.companyName === "TekView Electronics");
+  assert.equal(tekview?.city, "Oslo");
+  assert.equal(tekview?.lat, 59.9139);
+  assert.equal(tekview?.lng, 10.7522);
+  assert.equal(tekview ? isOnMembersMap(tekview) : false, true);
+  assert.ok(mainland.some((member) => member.companyName === "TekView Electronics"));
+  assert.ok(
+    clusters.some((cluster) => cluster.label.includes("Oslo") && cluster.members.some((member) => member.companyName === "TekView Electronics")),
+  );
+  assert.equal(
+    names.has("Sigrid Schaanning"),
+    false,
+  );
 });

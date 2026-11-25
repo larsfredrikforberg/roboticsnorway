@@ -709,6 +709,15 @@
       "text": "Saro Robotics. Builds autonomous climbing robots for inspection of industrial pipe networks, delivering continuous inspection data for energy infrastructure (including corrosion under insulation).. Trondheim. contact@sarorobotics.com. https://www.sarorobotics.com"
     },
     {
+      "id": "member-sigrid-schaanning",
+      "group": "Members",
+      "title": "Sigrid Schaanning",
+      "meta": "",
+      "href": "/members#sigrid-schaanning",
+      "location": "",
+      "text": "Sigrid Schaanning. Senior Software Engineer & Technical Project Leader, Cognite. Senior Software Engineer and Technical Project Leader at Cognite, working on the rollout of autonomous robotics for industrial customers. She has assisted in robot deployments at large industrial sites, and contributes to Cognite's work on 3D capture, 360-image contextualization and robotics data analysis. M.Sc. in Cybernetics. Named one of Norway's top 50 women in tech for 2025 by Abelia and ODA."
+    },
+    {
       "id": "member-sonair",
       "group": "Members",
       "title": "Sonair",
@@ -734,6 +743,15 @@
       "href": "/members#takt-logistikk",
       "location": "Gullaug",
       "text": "Takt Logistikk. Helps contractors and developers take control of construction-site logistics: planning, coordinated deliveries and digital information sharing from planning to completed project, based on Lean Construction.. Gullaug. https://taktlogistikk.no/about/contact. https://taktlogistikk.no"
+    },
+    {
+      "id": "member-tekview-electronics",
+      "group": "Members",
+      "title": "TekView Electronics",
+      "meta": "Oslo",
+      "href": "/members#tekview-electronics",
+      "location": "Oslo",
+      "text": "TekView Electronics. TekView Electronics develops circuit boards, embedded electronics and power management for companies that need reliable hardware, from first sketch to a production-ready prototype. Based in Oslo, it works with companies and startups in energy, IoT and electric-vehicle technology.. Oslo. https://tekview.no"
     },
     {
       "id": "member-wybe-robotics",

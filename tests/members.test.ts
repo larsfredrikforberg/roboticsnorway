@@ -38,9 +38,11 @@ test("public members are the founding organisations that were present", () => {
     "Runway FBU",
     "Ruter AS",
     "Saro Robotics",
+    "Sigrid Schaanning",
     "Sonair",
     "Startuplab",
     "Takt Logistikk",
+    "TekView Electronics",
     "Wybe Robotics",
   ]);
   assert.equal(names.includes("Innovation Norway"), false);
@@ -88,12 +90,24 @@ test("published websites and unconfirmed logos", () => {
     byName["Jona Engineering AS"].description,
     /data-efficient AI to clients in traditional industry and public transport/,
   );
+  assert.equal(byName["TekView Electronics"].website, "https://tekview.no");
+  assert.equal(byName["TekView Electronics"].logoUrl, "/members/tekview-logo.png");
+  assert.equal(byName["TekView Electronics"].slug, "tekview-electronics");
+  assert.equal(byName["TekView Electronics"].contactEmail, null);
+  assert.equal(byName["TekView Electronics"].contactPerson, null);
+  assert.match(byName["TekView Electronics"].description, /circuit boards, embedded electronics and power management/);
   assert.equal(byName["Kinetic Blocks AS"].contactEmail, "sales@kineticblocks.com");
   assert.equal(byName["Laksiya Balasubramaniam"].membershipType, "individual");
   assert.equal(byName["Kristoffer Gjerde"].membershipType, "individual");
   assert.equal(byName["Alex Moltzau"].membershipType, "individual");
+  assert.equal(byName["Sigrid Schaanning"].membershipType, "individual");
   assert.equal(byName["Laksiya Balasubramaniam"].affiliation, "Industrial Product Developer, Robotics and AI");
   assert.equal(byName["Kristoffer Gjerde"].affiliation, "Director, Strategic Accounts, Cognite");
+  assert.equal(byName["Sigrid Schaanning"].affiliation, "Senior Software Engineer & Technical Project Leader, Cognite");
+  assert.equal(byName["Sigrid Schaanning"].slug, "sigrid-schaanning");
+  assert.equal(byName["Sigrid Schaanning"].contactEmail, null);
+  assert.equal(byName["Sigrid Schaanning"].contactPerson, null);
+  assert.equal(byName["Sigrid Schaanning"].website, null);
   assert.equal(
     byName["Alex Moltzau"].affiliation,
     "The Norwegian Government AI Unit; Visiting Policy Fellow at the University of Cambridge",
@@ -140,6 +154,9 @@ test("public organisation cards expose only generic company contacts, never a pe
     "stian@o-id.net",
     "rl@jonaengineering.com",
     "robinliebert@onmail.com",
+    "anas@tekview.no",
+    "tekviewelectronics@outlook.com",
+    "sigrid.schaanning@cognite.com",
   ].map((email) => email.toLowerCase());
 
   for (const member of publicMembers()) {
@@ -164,5 +181,9 @@ test("internal source contacts are still available for admin export", () => {
   assert.equal(byName["Laksiya Balasubramaniam"].contactEmail, "laksiyab@gmail.com");
   assert.equal(byName["Alex Moltzau"].contactEmail, "alex.moltzau@gmail.com");
   assert.equal(byName["Alex Moltzau"].contactPerson, "Alex Moltzau");
+  assert.equal(byName["TekView Electronics"].contactPerson, "Anas Aldabbagh");
+  assert.equal(byName["TekView Electronics"].contactEmail, "anas@tekview.no");
+  assert.equal(byName["Sigrid Schaanning"].contactPerson, "Sigrid Schaanning");
+  assert.equal(byName["Sigrid Schaanning"].contactEmail, "sigrid.schaanning@cognite.com");
   assert.equal(byName["Innovation Norway"], undefined);
 });

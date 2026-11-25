@@ -84,4 +84,11 @@ export const memberLocations: MemberLocation[] = [
     certainty: "high",
     note: "Based in Tokyo, Japan. Coordinates are those shown on o-id.net.",
   },
+  {
+    companyName: "TekView Electronics",
+    city: "Oslo",
+    lat: 59.9139,
+    lng: 10.7522,
+    certainty: "high",
+  },
 ];
