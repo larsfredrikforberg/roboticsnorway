@@ -65,4 +65,8 @@ test("every public organisation has a city on the map, and individuals do not", 
     names.has("Sigrid Schaanning"),
     false,
   );
+  assert.equal(
+    names.has("Bjørn Lier"),
+    false,
+  );
 });

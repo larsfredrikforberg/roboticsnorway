@@ -9,6 +9,7 @@ test("public members are the founding organisations that were present", () => {
     "AI Mad Lab",
     "Alex Moltzau",
     "Autonomous Retail Norway AS",
+    "Bjørn Lier",
     "bluZenit",
     "Dotspot",
     "Endwell",
@@ -108,6 +109,16 @@ test("published websites and unconfirmed logos", () => {
   assert.equal(byName["Sigrid Schaanning"].contactEmail, null);
   assert.equal(byName["Sigrid Schaanning"].contactPerson, null);
   assert.equal(byName["Sigrid Schaanning"].website, null);
+  assert.equal(byName["Bjørn Lier"].membershipType, "individual");
+  assert.equal(byName["Bjørn Lier"].affiliation, "Founder, Revenue Connect");
+  assert.equal(byName["Bjørn Lier"].slug, "bjorn-lier");
+  assert.equal(byName["Bjørn Lier"].contactEmail, null);
+  assert.equal(byName["Bjørn Lier"].contactPerson, null);
+  assert.equal(byName["Bjørn Lier"].website, "https://revenueconnect.no");
+  assert.match(
+    byName["Bjørn Lier"].description,
+    /helps robotics and industrial technology companies with go-to-market and sales/,
+  );
   assert.equal(
     byName["Alex Moltzau"].affiliation,
     "The Norwegian Government AI Unit; Visiting Policy Fellow at the University of Cambridge",
@@ -157,6 +168,7 @@ test("public organisation cards expose only generic company contacts, never a pe
     "anas@tekview.no",
     "tekviewelectronics@outlook.com",
     "sigrid.schaanning@cognite.com",
+    "bjorn@revenueconnect.no",
   ].map((email) => email.toLowerCase());
 
   for (const member of publicMembers()) {
@@ -185,5 +197,7 @@ test("internal source contacts are still available for admin export", () => {
   assert.equal(byName["TekView Electronics"].contactEmail, "anas@tekview.no");
   assert.equal(byName["Sigrid Schaanning"].contactPerson, "Sigrid Schaanning");
   assert.equal(byName["Sigrid Schaanning"].contactEmail, "sigrid.schaanning@cognite.com");
+  assert.equal(byName["Bjørn Lier"].contactPerson, "Bjørn Lier");
+  assert.equal(byName["Bjørn Lier"].contactEmail, "bjorn@revenueconnect.no");
   assert.equal(byName["Innovation Norway"], undefined);
 });

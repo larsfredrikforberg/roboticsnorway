@@ -1077,6 +1077,30 @@
       "membership_status": "joined_by_email",
       "notes": "Asked to join as an individual member from Cognite by email 23 Nov 2026, per the Robotics Norway member sheet, and was checking company membership internally. Added manually, not yet published. Public affiliation uses the title in Cognite's newsroom. Her work email is withheld from the public directory. No map pin, following the existing individual-member pattern (Kristoffer Gjerde, Laksiya Balasubramaniam, Alex Moltzau).",
       "company_name": "Sigrid Schaanning"
+    },
+    {
+      "website": "https://revenueconnect.no",
+      "website_certainty": "verified",
+      "membership_kind": "individual",
+      "affiliation": "Founder, Revenue Connect",
+      "short_description": "Founder of Revenue Connect, where he helps robotics and industrial technology companies with go-to-market and sales. He previously developed and introduced AutoStore's go-to-market and account-based marketing strategy, and has commercial experience from Norwegian, RiksTV and DNB. Saro Robotics is among Revenue Connect's clients.",
+      "description_source": "Membership request email from Bjørn Lier to Lars-Fredrik Forberg, 26 Nov 2026; revenueconnect.no.",
+      "description_certainty": "verified",
+      "contact_person": "Bjørn Lier",
+      "contact_email": "bjorn@revenueconnect.no",
+      "contact_certainty": "verified",
+      "public_contact_email": null,
+      "public_contact_url": null,
+      "additional_contacts": [],
+      "logo_url": null,
+      "logo_certainty": "unknown",
+      "on_inception_list": false,
+      "on_calendar_guest_list": false,
+      "rsvp": null,
+      "introduced_at_meeting": false,
+      "membership_status": "joined_by_email",
+      "notes": "Asked to join as an individual member by email to Lars-Fredrik Forberg, 26 Nov 2026. Accepted the same day. His work email and phone are withheld from the public directory. No map pin, following the existing individual-member pattern.",
+      "company_name": "Bjørn Lier"
     }
   ],
   "declined_according_to_invitation": [

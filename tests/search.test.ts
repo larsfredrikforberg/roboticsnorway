@@ -138,6 +138,7 @@ test("the public member search corpus has no personal contacts and no Innovation
     "anas@tekview.no",
     "tekviewelectronics@outlook.com",
     "sigrid.schaanning@cognite.com",
+    "bjorn@revenueconnect.no",
   ]) {
     assert.equal(blob.toLowerCase().includes(email.toLowerCase()), false, email);
   }
@@ -229,4 +230,11 @@ test("member organisations are indexed by city, including Norwegian letters", ()
   assert.ok(sigrid);
   assert.match(`${sigrid.meta} ${sigrid.text}`, /Cognite/);
   assert.equal(sigrid.href, "/members#sigrid-schaanning");
+
+  const bjorn = data.searchDocuments.find((document) => document.title === "Bjørn Lier");
+  assert.ok(bjorn);
+  assert.match(`${bjorn.meta} ${bjorn.text}`, /Revenue Connect/);
+  assert.match(`${bjorn.meta} ${bjorn.text}`, /AutoStore/);
+  assert.equal(bjorn.href, "/members#bjorn-lier");
+  assert.equal(bjorn.location, "");
 });
