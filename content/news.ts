@@ -81,6 +81,140 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "ilya-orlov-robot-data-lab-bangkok",
+    title: "Ilya Orlov's long road to a robot data lab in Bangkok",
+    date: "2026-11-26",
+    order: 2,
+    tags: ["Network"],
+    place: "Bangkok",
+    excerpt:
+      "After CoRL 2026 in Austin, Ilya Orlov wrote that raw hours of robot data are getting cheap, and that the durable bet is teleoperation data and physical infrastructure. That is why FileMarket, the company he founded, is building a robot data collection centre in Bangkok. The path there ran through a crypto wallet, a Techstars pivot, and a call centre in Kathmandu.",
+    hero: photo(
+      "/news/ilya-orlov-filemarket-kathmandu.jpg",
+      1536,
+      1024,
+      "FileMarket's offices in Lazimpat, Kathmandu, with the company name on the facade. Kathmandu remains the company's main collection hub.",
+    ),
+    photoCredit: "Photos: FileMarket",
+    blocks: [
+      paragraph(
+        "After four days at the Conference on Robot Learning in Austin this month, Ilya Orlov came back with a clear conclusion. Almost every major talk, he wrote, came back to data. Egocentric human video is now a foundation layer for robot models. Raw, generic hours are getting cheap. The durable bet, in his view, is teleoperation data and physical infrastructure.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "\"That's why we're building a robot data collection center in Bangkok,\" he wrote after the conference, in a " },
+          {
+            text: "report published on LinkedIn",
+            href: "https://www.linkedin.com/pulse/raw-hours-getting-cheap-what-robot-labs-want-from-data-ilya-orlov-xyh2c",
+          },
+          { text: "." },
+        ],
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "Orlov is the founder and chief executive of " },
+          { text: "FileMarket", href: "https://filemarket.ai" },
+          { text: ", a company that organises robotics training data for AI labs and robot makers. He is based in Bangkok and has been building startups for about 15 years. The new centre is meant for collecting teleoperation data and running evaluations, the work he now thinks robot labs will pay for as bulk video becomes a commodity." },
+        ],
+      },
+      {
+        type: "figure",
+        credit: "Photo: FileMarket",
+        figure: photo(
+          "/news/ilya-orlov.jpg",
+          640,
+          640,
+          "Ilya Orlov, founder and chief executive of FileMarket.",
+        ),
+      },
+      heading("A theory about data, then a call centre"),
+      paragraph(
+        "The road there was not a straight line. In a post this autumn he went back to the beginning. He started launching digital projects in 2012, and by 2014 startups were his full-time life. In 2016 he went deep into blockchain, convinced that giving people control over their own data could change society. \"I love political philosophy,\" he wrote, \"so an interest in permissionless, programmable open databases became a theory about humanity's future. Fairly modest ambitions.\"",
+      ),
+      paragraph(
+        "FileMarket began in 2022 as a way for people to store, share and sell files through a crypto wallet, with on-chain provenance. The aim was to make people the custodians of their digital assets. In 2024 the company joined Techstars and pivoted. The idea, he says, stayed the same: help people monetise their data. This time, people could contribute images and videos, get paid, and build crowdsourced datasets that AI companies would buy.",
+      ),
+      paragraph("That was how FileMarket became a data collection company."),
+      {
+        type: "figure",
+        credit: "Photo: FileMarket",
+        figure: photo(
+          "/news/ilya-orlov-filemarket-team.jpg",
+          1320,
+          968,
+          "Orlov, front and centre in a Techstars hoodie, with the FileMarket team in Kathmandu.",
+        ),
+      },
+      paragraph(
+        "In 2025 he was living in Kathmandu when Evgenii joined him. They had a paying client and opened a call centre to collect speech data. \"Somewhere between wanting to change the data economy and running a call centre in Nepal, my days had become quite different from what I'd imagined.\"",
+      ),
+      paragraph(
+        "They recruited people, managed collection, checked quality and delivered to clients. \"You quickly learn that selling something and executing it are two separate skills. Ideally, you need both at once.\"",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: Ilya Orlov / FileMarket",
+        figure: photo(
+          "/news/ilya-orlov-filemarket-kathmandu-rooftop.jpg",
+          800,
+          600,
+          "Orlov, third from the left, with colleagues overlooking Kathmandu.",
+        ),
+      },
+      paragraph(
+        "By the end of that year they realised the same pipeline worked for video. Physical AI companies needed recordings of people doing things in the real world. Kathmandu remains FileMarket's main collection hub. The company now lists a 15-person core team, more than 3,000 project-based contributors, and 120 custom capture rigs. On its website it says it has delivered more than 40,000 hours of accepted first-person video for a leading US humanoid robotics company, in a project involving more than 1,000 contributors.",
+      ),
+      {
+        type: "figure",
+        credit: "Photo: FileMarket",
+        figure: photo(
+          "/news/ilya-orlov-filemarket-egocentric.jpg",
+          1280,
+          720,
+          "A first-person recording of packing goods into a carton, of the kind FileMarket collects to train robot models.",
+        ),
+      },
+      paragraph(
+        "The company collects first-person video of real tasks, handheld-gripper demonstrations and teleoperation on robot hardware, and, for custom projects, hand and tactile data. It works with collection partners across regions and says it runs projects around a shared specification for capture, quality checks, consent and licensing.",
+      ),
+      paragraph(
+        "A group chat Orlov started has grown into a community of more than 500 startup founders and industry people in physical AI and data collection. \"Many of us compete, collaborate, and help each other deliver projects. It's a funny industry that way.\"",
+      ),
+      heading("What he heard at CoRL"),
+      paragraph(
+        "Orlov spent 9 to 12 November at CoRL 2026 in Austin listening for what robot learning teams actually want from data, and published the long report afterwards.",
+      ),
+      paragraph(
+        "NVIDIA's EgoScale, he noted, showed a scaling law: robot performance rose with hours of human egocentric data. Their recipe used about 50 hours of human video plus four hours of robot teleoperation. AgiBot put the division of labour simply, in his notes: \"Human videos teach dynamics, robot trajectories teach actions.\"",
+      ),
+      paragraph(
+        "The message that mattered most for collectors, he wrote, came from Russ Tedrake of MIT and Walden Robotics: mid-training data is being commoditised, there is now a huge ecosystem of data providers, and the cost is going down. NVIDIA and Lightwheel are each open-sourcing 100,000 hours of human or egocentric data. \"If your business is raw, generic hours, the price floor is moving toward zero.\"",
+      ),
+      paragraph(
+        "What buyers will pay for next, in his ranking, is force, torque and touch; failure, recovery and intervention data; dexterous, heavy-payload capture useful for humanoids; occupational egocentric data from real workplaces; and, over time, data from robots already in deployment. \"In the limit, deployed robot data will dwarf everything else,\" Tedrake said, in Orlov's notes.",
+      ),
+      paragraph(
+        "His own read of the room is that demand for diverse egocentric, UMI and teleoperation data stays heavy into 2028, then shifts toward targeted top-ups, annotation and evaluation, and later toward deployment data and fleet services. \"The bulk-data boom is real, but it is a phase. The durable value sits in physical infrastructure: specialized data, real-world evaluation and deployment support.\"",
+      ),
+      paragraph(
+        "That is the bet behind the Bangkok centre. He has also said he wants robotics arenas there to host competitions and games. \"If we're building robotics arenas, we should have some fun with them.\" An earlier post mentioned plans that start with robot Muay Thai.",
+      ),
+      paragraph(
+        "Robotics Norway spoke with Orlov this week, after he had published the CoRL report. For a Norwegian robotics network, the interest is practical. Training data, and the physical work of collecting it, is now a central constraint in robot learning, not a side issue. FileMarket's path, from a theory about data ownership to a call centre in Kathmandu and a planned lab in Bangkok, is one version of how that industry is being built.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "He also filmed the trip, from a Waymo ride to the expo floor. The video is on " },
+          { text: "YouTube", href: "https://youtu.be/LQov0DgtJlE" },
+          { text: "." },
+        ],
+      },
+    ],
+  },
+  {
     slug: "five-lessons-ai-product-startuplab",
     title: "Five lessons from taking an AI product from zero to millions in revenue",
     date: "2026-11-26",
