@@ -81,6 +81,131 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "five-lessons-ai-product-startuplab",
+    title: "Five lessons from taking an AI product from zero to millions in revenue",
+    date: "2026-11-26",
+    order: 1,
+    tags: ["Events"],
+    place: "StartupLab, Oslo",
+    excerpt:
+      "At StartupLab's AI X Breakfast, Pradeep Sankaran, chief product officer at Puzzel and formerly senior vice president of product at Gelato, shared five lessons from taking an AI quoting product from a prototype to more than €1 million in signed annual recurring revenue. Asked about robotics, he said that if it is the brain of the hardware, he does not see why the same approach would be any different.",
+    hero: photo(
+      "/news/five-lessons-ai-product-startuplab.jpg",
+      1600,
+      1200,
+      "Pradeep Sankaran at AI X Breakfast at StartupLab, in front of a slide on how cheap it has become to produce code, and how that is not the same as building something people will pay for.",
+    ),
+    photoCredit: "Photos: Lars-Fredrik Forberg",
+    blocks: [
+      {
+        type: "paragraph",
+        runs: [
+          { text: "This morning at " },
+          { text: "StartupLab", href: "https://www.startuplab.no" },
+          { text: " in Oslo, Christina Wiig opened another AI X Breakfast, the biweekly series on building with AI. Robotics Norway has a partner programme with StartupLab." },
+        ],
+      },
+      {
+        type: "paragraph",
+        runs: [
+          { text: "She introduced Pradeep Sankaran, who joined " },
+          { text: "Puzzel", href: "https://www.puzzel.com" },
+          { text: ", a customer experience and contact centre company, as chief product officer in October. Before that he spent eight years at Gelato, latterly as senior vice president of product, as the company grew from a small team to more than €100 million in revenue. He had also been an entrepreneur in residence at StartupLab." },
+        ],
+      },
+      paragraph(
+        "\"It has never been cheaper to produce code,\" he said, standing in front of GitHub charts climbing through 2026. \"But what matters is really building something that people will actually pay for.\"",
+      ),
+      paragraph(
+        "He drew on the AI Estimator, a quoting engine from his last two years at Gelato. Manufacturers and printers still take a day, sometimes a week, to answer a simple question: how much would this cost? The product was meant to get a quote back in seconds.",
+      ),
+      heading("Find what they'll actually pay for"),
+      paragraph(
+        "The risk, in a phrase they used at Gelato, was building an empty airport: a beautiful terminal, and nobody who wants to fly there.",
+      ),
+      paragraph(
+        "Before writing any code, the team spoke to 30 customers. The most common request was one tool that would solve everything. \"One tool to solve it all is like the worst insight that you can get from a customer to try and build for it,\" he said.",
+      ),
+      paragraph(
+        "They flew customers to Madrid and sat them in a room for eight hours. The real pressure was fixed cost: they needed to fill machines and people, and therefore to win more jobs. Speed and better pricing would help.",
+      ),
+      paragraph(
+        "\"Get commitment or willingness to pay before you build. That is the most important part.\" For most B2B products, a Silicon Valley Product Group rule of thumb is about six customers who will sign a paper: a profitable price, a specific pain, a date. The team aimed for six and signed more.",
+      ),
+      heading("Build at the edge of what's possible"),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg",
+        figure: photo(
+          "/news/five-lessons-ai-product-startuplab-the-edge.jpg",
+          1600,
+          1200,
+          "Sankaran points to the edge on a slide of a Norwegian fjord: safe ground, the edge, and too far out.",
+        ),
+      },
+      paragraph(
+        "Adding a chat bubble to a knowledge base and calling yourself an AI company is \"safe ground,\" he said: the technology works, and nobody pays for it. The place to build is at the edge of what the models can do, about three to six months out.",
+      ),
+      paragraph(
+        "When they first put the estimator on GPT-4, it handled about 60 percent of cases, \"which is absolutely useless,\" he said. \"You have to solve 100 percent of a customer's problem. They don't care whether it's AI hallucinating or it just means your product doesn't work.\" Then the models improved. GPT-4o, and the ones after it, let the team strip out guardrails and leave more of the judgment to the model. At Puzzel, the current bet is voice: that in about three months a call to a bank can still sound like AI, but do the job.",
+      ),
+      paragraph(
+        "Knowing where that edge will be is \"more art than science,\" he said later: spend time with the technology yourself, and do not take benchmarks on trust.",
+      ),
+      heading("Make agents team members, not tools"),
+      paragraph(
+        "Most people still use the web version of ChatGPT, he said, and start from scratch every time. \"It's a smart intern. I am babysitting it every single minute or hour.\"",
+      ),
+      paragraph(
+        "To make an intern useful you would not reintroduce the company every morning. Agents need the same: context, skills, orchestration, and inputs from systems such as a CRM or Jira. He called the working setup a Team OS: markdown files in Git or a shared drive, connections to the company's tools, and routines that sync call notes and email, so the intern can find answers without being asked.",
+      ),
+      paragraph(
+        "He also described a newer Personal OS: an hourly sync, a daily check that confidential material stays put, and a weekly lint that moves stale notes to the back of the brain.",
+      ),
+      heading("Don't celebrate the prototype"),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg",
+        figure: photo(
+          "/news/five-lessons-ai-product-startuplab-prototype.jpg",
+          1600,
+          1200,
+          "Lesson four: don't celebrate the prototype. Never been easier to prototype, never been harder to reach revenue.",
+        ),
+      },
+      paragraph(
+        "The estimator prototype blew people's minds. Buyers signed letters of intent worth more than €1 million in annual recurring revenue, conditional on delivery, and it felt like a milestone. \"That was the mistake,\" he said, \"because 99 percent plus of the work actually comes after that.\"",
+      ),
+      paragraph(
+        "Price calculation has to be deterministic: the same job must return the same answer every time. When the first version produced decimal-level discrepancies, customers said they could never use it. Parsing messy requests could stay non-deterministic; that was where the model earned its keep. The price engine had to be written back as proper code.",
+      ),
+      heading("Become the builder"),
+      {
+        type: "figure",
+        credit: "Photo: Lars-Fredrik Forberg",
+        figure: photo(
+          "/news/five-lessons-ai-product-startuplab-become-the-builder.jpg",
+          1600,
+          1200,
+          "Lesson five: become the builder, cutting the handoffs between customer, product manager, designer and engineer.",
+        ),
+      },
+      paragraph(
+        "The last lesson was the human collaboration tax: every handoff slows an early AI product down. For new AI products, his team had no dedicated designer and no QA. The requirements document became a markdown file plus a prototype, then a short meeting with the pilot customers. Anyone could push a simple change; a proper engineer had to review every pull request.",
+      ),
+      paragraph(
+        "AI does not replace product sense, he said, or deep system expertise. The shift from manager to player-coach was uncomfortable. It was also, he said, more fun.",
+      ),
+      heading("The brain of the hardware"),
+      paragraph(
+        "In the questions, someone asked whether a Team OS could take in physical AI, knowledge of work on construction sites and in hospitals, and later plug that into robotics. Sankaran said he is not a hardware person at the moment, though he used to be. \"But for me, if it's the brain of the hardware, I don't see why it would be any different.\"",
+      ),
+      paragraph(
+        "The same questions apply: how you give an agent the context to act, and what must be exact.",
+      ),
+    ],
+  },
+  {
     slug: "lito-touch-data-for-robots",
     title: "Lito is collecting the touch data robots still lack",
     date: "2026-11-24",
