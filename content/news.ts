@@ -81,6 +81,69 @@ const photoCredit = "Photos: Jonas Kloster";
 
 export const articles: NewsArticle[] = [
   {
+    slug: "veien-til-fysisk-ki",
+    title: "Veien til fysisk KI: Norwegian Robotics Cluster event on physical AI",
+    date: "2026-11-28",
+    order: 1,
+    tags: ["Events"],
+    place: "Vestlandshuset, Bergen",
+    excerpt:
+      "On Tuesday 1 December, Norwegian Robotics Cluster hosts the breakfast meeting Veien til fysisk KI at Vestlandshuset in Bergen. The programme looks at adaptive systems that point towards physical AI, with cases from Retrams, Zivid and TYO Automation. Registration is open.",
+    hero: photo(
+      "/news/veien-til-fysisk-ki.jpg",
+      960,
+      548,
+      "A robot arm reaches into warehouse storage bins. Lead image from the Norwegian Robotics Cluster event page for Veien til fysisk KI.",
+    ),
+    photoCredit: "Image: Norwegian Robotics Cluster",
+    blocks: [
+      {
+        type: "paragraph",
+        runs: [
+          { text: "On Tuesday 1 December 2026, " },
+          { text: "Norwegian Robotics Cluster", href: "https://www.robotcluster.no/arrangementer/veien-til-fysisk-ki" },
+          { text: " is holding the breakfast meeting Veien til fysisk KI at Vestlandshuset, Vestre Strømkaien 13, in Bergen. The meeting runs from 08:00 to 10:00, with registration, breakfast and mingling from 08:00 and a welcome at 08:30." },
+        ],
+      },
+      paragraph(
+        "Physical AI, as the organisers define it, is artificial intelligence that can independently solve physical tasks, for example through robots. The programme looks at how advanced AI-based systems are already used to solve complex physical tasks, and at the new possibilities opening up with models that connect vision, language and action — large behaviour models, or vision-language-action models — which are now developing rapidly. The meeting will open with a short recap of the first breakfast in the series, Fysisk KI – den neste revolusjonen, so that those who did not attend earlier can follow the programme.",
+      ),
+      heading("The programme"),
+      paragraph(
+        "Bård Sandal, director of business, planning and innovation at Vestland County Municipality, gives the welcome. He will talk about how the county's work with regional development actors is meant, among other things, to increase the use of artificial intelligence in industry and other sectors.",
+      ),
+      paragraph(
+        "Vidar Tufteland, managing director of the Robotics Competence Centre (Kompetansesenteret for robotteknologi, KORT) and cluster lead of Norwegian Robotics Cluster, will give a short recap of the first meeting and some highlights from recent technology development. He will then turn to the day's theme: adaptive systems that point towards physical AI, and give an overview of where the market stands and what is changing.",
+      ),
+      paragraph(
+        "Stein Asle Øvrebotn, founder and managing director of Retrams AS, will present an AI-based solution for identifying and sorting surgical equipment. The solution was developed for the health sector, but the organisers note that the technology has transfer value to other industries. Johannes Møgster, CTO of Retrams, will talk about the opportunities the company sees as its team begins to experiment with models for physical AI.",
+      ),
+      paragraph(
+        "Jørgen Hjemmen Andersen, application engineer at Zivid AS, will talk about advanced 3D cameras and machine-vision technology that let robots perceive their physical surroundings and form a basis for intelligent handling of objects, with concrete examples and his perspectives on how physical AI can open new possibilities.",
+      ),
+      paragraph(
+        "Steffen Viddal, CTO of TYO Automation Viddal AS, will go through an ongoing development project on adaptive robot grippers that automatically adapt to different objects and tasks, intended to increase flexibility in the use of robots.",
+      ),
+      paragraph(
+        "The meeting closes with a sofa conversation, Utvikleren møter forskeren, between a technologist and a researcher on the opportunities, challenges and the road ahead towards physical AI, including how vision-language-action (VLA) models will change robotics and when the technology will be mature enough for practical use. There will also be time for questions from the audience. Johannes Møgster, CTO of Retrams AS / Mojo Tech, and Daniel Schäle, a PhD research fellow at HVL Robotics, take part. The conversation is moderated by Espen Børhaug, head of communications at Bergen Næringsråd. The meeting is chaired by Anette Larsen, project manager at the Robotics Competence Centre.",
+      ),
+      heading("Register"),
+      paragraph(
+        "The breakfast meeting is the second in a series on physical AI organised by Norwegian Robotics Cluster in collaboration with the Robotics Competence Centre, Industriutvikling Vest, Bergen Næringsråd, Næringsalliansen, Vestland County Municipality and the Western Norway University of Applied Sciences (Høgskulen på Vestlandet). The first meeting is being staged again in Florø on 28 January. A third meeting, En ny hverdag med fysisk KI, is planned for the new year and will look at the development of humanoids.",
+      ),
+      {
+        type: "paragraph",
+        runs: [
+          { text: "The full programme is on the " },
+          { text: "event page", href: "https://www.robotcluster.no/arrangementer/veien-til-fysisk-ki" },
+          { text: ". " },
+          { text: "Register with Bergen Næringsråd", href: "https://www.bergen-chamber.no/arrangementer/moeteserie-veien-til-fysisk-ki/registration" },
+          { text: "." },
+        ],
+      },
+    ],
+  },
+  {
     slug: "ilya-orlov-robot-data-lab-bangkok",
     title: "Ilya Orlov's long road to a robot data lab in Bangkok",
     date: "2026-11-26",

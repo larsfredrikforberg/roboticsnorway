@@ -85,10 +85,10 @@ test("search finds the founding news article", () => {
   assert.equal(groupHits([news])[0]?.group, "News");
 });
 
-test("Ilya Orlov is newest, then five lessons, then Lito and Sonair, then Demo Day, Odense, Endwell and Norway at Slush, and the steering group article has no photos", () => {
+test("Veien til fysisk KI is newest, then Ilya Orlov and five lessons, then Lito and Sonair, then Demo Day, Odense, Endwell and Norway at Slush, and the steering group article has no photos", () => {
   const newest = articlesByDate()[0];
-  assert.equal(newest?.slug, "ilya-orlov-robot-data-lab-bangkok");
-  assert.equal(newest?.date, "2026-11-26");
+  assert.equal(newest?.slug, "veien-til-fysisk-ki");
+  assert.equal(newest?.date, "2026-11-28");
   assert.ok(newest?.hero);
   const sameDay26 = articlesByDate().filter((article) => article.date === "2026-11-26");
   assert.deepEqual(
